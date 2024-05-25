@@ -1,0 +1,99 @@
+{
+    "chatbot": "dubi-OPP-bot-2",
+    "performance_metrics": {
+        "accuracy": 0.9036,
+        "precision": 0.9359,
+        "recall": 0.9605,
+        "f1score": 0.9481
+    },
+    "dialog_metrics": {
+        "tmR": 1.3673,
+        "tf": 0.0602,
+        "tc": 0.9487,
+        "tcr": 0.9024,
+        "tamb": 0.0602
+    },
+    "test_coverage": {
+        "intents": 0.9259,
+        "dialog_nodes": 0.8889
+    },
+    "test_case": {
+        "id": "ac11ddf0-f8b8-41e3-aa88-e1211b69e396",
+        "total_interactions": 83,
+        "total_failed_interactions": 8,
+        "failed_interactions": [
+            {
+                "id": "f477b9e1-127d-4260-8b5f-f3a72ad7753b",
+                "type": 1,
+                "binding_intent": "Consulta_Publica_DI",
+                "simulated_message": "Quais informações estão disponíveis na API de consulta DI?",
+                "expected_answer": "Quer saber quando foi a última atualização da Declaração de Importação (DI)? Use o serviço:<br>\n\n- GET \n/declaracoes-importacao/data-ultima-atualizacao <br><br>\n\nVeja mais detalhes na nossa documentação:\n<a href=\"https://sisOPP-di.OPP.gov.br/sisOPP-di-api/#/declaracoes-importacao/obterUsingGET\" target=\"_blank\">Consulta DI</a>",
+                "received_answer": "No momento não sei falar sobre isso. Vamos falar de outra coisa?",
+                "response_time": 1.0348286628723145
+            },
+            {
+                "id": "a26137b2-37e2-4313-9b3c-7b070419ac86",
+                "type": 2,
+                "binding_intent": "Consulta_Publica_DI",
+                "simulated_message": "Como posso consultar a última atualização dos dados na consulta pública de Declaração de Importação?",
+                "expected_answer": "Quer saber quando foi a última atualização da Declaração de Importação (DI)? Use o serviço:<br>\n\n- GET \n/declaracoes-importacao/data-ultima-atualizacao <br><br>\n\nVeja mais detalhes na nossa documentação:\n<a href=\"https://sisOPP-di.OPP.gov.br/sisOPP-di-api/#/declaracoes-importacao/obterUsingGET\" target=\"_blank\">Consulta DI</a>",
+                "received_answer": "('Consulta Publica Declaração de Importação', 'suggestion-watson|d:775bb195-9d14-462a-a68a-326186094431'), ('Consulta Publica Licenciamento de Importação', 'suggestion-watson|d:1ff7ce59-7124-4e16-8d18-51767a17ddb4'), ('Nenhuma das anteriores', 'suggestion-watson|d:f1c47b67-f60c-4167-b5b7-e1c1a79612b3')",
+                "response_time": 0.8986496925354004
+            },
+            {
+                "id": "b612bb93-11d8-4b40-9509-7ffd28be1bff",
+                "type": 2,
+                "binding_intent": "Consulta_Publica_DI",
+                "simulated_message": "Quais são os dados disponíveis através da API para consultar DI?",
+                "expected_answer": "Quer saber quando foi a última atualização da Declaração de Importação (DI)? Use o serviço:<br>\n\n- GET \n/declaracoes-importacao/data-ultima-atualizacao <br><br>\n\nVeja mais detalhes na nossa documentação:\n<a href=\"https://sisOPP-di.OPP.gov.br/sisOPP-di-api/#/declaracoes-importacao/obterUsingGET\" target=\"_blank\">Consulta DI</a>",
+                "received_answer": "No momento não sei falar sobre isso. Vamos falar de outra coisa?",
+                "response_time": 0.9007155895233154
+            },
+            {
+                "id": "6f43e108-25c9-47ea-9290-99f7550970e9",
+                "type": 1,
+                "binding_intent": "Consulta_Publica_LI",
+                "simulated_message": "Existe uma forma específica de consulta para verificar os dados de licença?",
+                "expected_answer": "Para saber quando foi a última vez que o Licenciamento de Importação (LI) foi atualizado, você pode usar este serviço:<br>\n- /licencas-importacao/data-ultima-atualizacao: obter a data mais recente de atualização do licenciamento de importação.<br><br>\nSe precisar de mais informações, dê uma olhada na nossa documentação: <a href=\"https://sisOPP-li.OPP.gov.br/sisOPP-li-api/\" target=\"_blank\">Consulta LI</a>",
+                "received_answer": "No momento não sei falar sobre isso. Vamos falar de outra coisa?",
+                "response_time": 1.0183014869689941
+            },
+            {
+                "id": "8e01541e-514e-407b-9f5b-80b8c9102d4a",
+                "type": 1,
+                "binding_intent": "SERVICO_Consultas_Permitidas",
+                "simulated_message": "É possível consultar uma declaração de importação de outro importador?",
+                "expected_answer": " Para realizar as consultas é necessário, eCPF ou eCNPJ:\n<br>- eCPF: no caso de Operadores de OPP, para os serviços de acesso às informações de um conhecimento de embarque, DI e LI ou que verificam perfil e representação SisOPP.\n<br>- eCNPJ: no caso das demais empresas, para o(s) serviço(s) de Consulta Declaração de Importação Avulsa (DI), de acesso às informações de LPCO por chave de acesso",
+                "received_answer": "('Consultas Permitidas pelo Serviço', 'suggestion-watson|d:b6efc314-53a6-4070-94bf-7355a9568c36'), ('Acessar DI', 'suggestion-watson|d:95275c44-1cdb-4eab-bc0e-b3cc2b170ec7'), ('Nenhuma das anteriores', 'suggestion-watson|d:24f8f317-e460-4edd-ba1d-8b2acf7b2fda')",
+                "response_time": 0.843813419342041
+            },
+            {
+                "id": "2c08ef04-5505-473a-ae44-950415eb427c",
+                "type": 1,
+                "binding_intent": "SERVICO_Consultas_Permitidas",
+                "simulated_message": "Quais informações posso obter no OPP?",
+                "expected_answer": " Para realizar as consultas é necessário, eCPF ou eCNPJ:\n<br>- eCPF: no caso de Operadores de OPP, para os serviços de acesso às informações de um conhecimento de embarque, DI e LI ou que verificam perfil e representação SisOPP.\n<br>- eCNPJ: no caso das demais empresas, para o(s) serviço(s) de Consulta Declaração de Importação Avulsa (DI), de acesso às informações de LPCO por chave de acesso",
+                "received_answer": "('Consultas Permitidas pelo Serviço', 'suggestion-watson|d:233d8011-6683-4bfe-8de5-7eb225e7c556'), ('Serviços candidatos', 'suggestion-watson|d:1788d007-79f8-4ccf-b37e-9ff355796575'), ('Nenhuma das anteriores', 'suggestion-watson|d:1ad014bb-37d8-4f20-8c6d-2faf1eccb878')",
+                "response_time": 1.1116156578063965
+            },
+            {
+                "id": "2ba0f2d0-75b0-483a-bb01-a38021659cf0",
+                "type": 1,
+                "binding_intent": "SERVICO_Custo_Mensal",
+                "simulated_message": "Qual é o preço para utilizar o OPP?",
+                "expected_answer": "O custo de utilização a plataforma OPP é de 999 consultas por R$ 1.000,00 / mês. Não possui taxa de instalação ou de cancelamento e o acesso é liberado imediatamente.<br>\n\nSe você fizer mais de 999 consultas no mês, o valor unitário da consulta ainda pode cair. Verifique a franquia no link abaixo:\n<a href=\"https://www.loja.OPP.gov.br/OPP\" target=\"_blank\">Custos</a>",
+                "received_answer": "('Custos dos serviços', 'suggestion-watson|d:aee42c68-e95b-4a02-9005-7cc990ca415c'), ('Definição do Produto', 'suggestion-watson|d:f3fab17c-25ae-4b8f-b419-6cddd259b507'), ('Nenhuma das anteriores', 'suggestion-watson|d:70df02aa-cda4-47eb-ac38-278da930a763')",
+                "response_time": 0.885462760925293
+            },
+            {
+                "id": "a0b5302c-d42f-4dca-9647-70d78af5558d",
+                "type": 1,
+                "binding_intent": "Testar_Carga_Maritima",
+                "simulated_message": "Onde posso encontrar a documentação para testar a API Aquaviária de Carga?",
+                "expected_answer": "Para testar os serviços do tema Aquaviário, dê uma olhada na página com a documentação:\n\n<a href=\"https://doc-OPP.gov.br/OPP/documentacao/carga/\" target=\"_blank\">Testar Carga Maritima</a>",
+                "received_answer": "('Carga Marítima', 'suggestion-watson|d:bd35dcd2-2fba-452e-a828-9c5906bbb2ab'), ('Carga Aquaviária', 'suggestion-watson|d:6aea11c6-91f4-417b-851f-65aef5d7282e'), ('Nenhuma das anteriores', 'suggestion-watson|d:423dc3f0-8665-44e9-8863-267db1a750ca')",
+                "response_time": 1.1098284721374512
+            }
+        ]
+    }
+}

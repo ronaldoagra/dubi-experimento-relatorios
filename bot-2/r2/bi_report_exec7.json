@@ -1,0 +1,117 @@
+{
+    "chatbot": "dubi-OPP-bot-2",
+    "performance_metrics": {
+        "accuracy": 0.8969,
+        "precision": 0.9341,
+        "recall": 0.9551,
+        "f1score": 0.9444
+    },
+    "dialog_metrics": {
+        "tmR": 1.3294,
+        "tf": 0.0619,
+        "tc": 0.9302,
+        "tcr": 0.8958,
+        "tamb": 0.0515
+    },
+    "test_coverage": {
+        "intents": 1.0,
+        "dialog_nodes": 0.963
+    },
+    "test_case": {
+        "id": "cd3cfc97-f298-4062-bf24-5ad71c1f1271",
+        "total_interactions": 97,
+        "total_failed_interactions": 10,
+        "failed_interactions": [
+            {
+                "id": "e027fa89-1319-4f6d-9c1b-64aa294e9a3c",
+                "type": 1,
+                "binding_intent": "Consulta_Publica_DI",
+                "simulated_message": "Explique o processo de autenticação do serviço de consulta pública da DI",
+                "expected_answer": "Para obter informações sobre a última atualização da Declaração de Importação (DI), utilize o serviço:<br>\n\n- GET \n/declaracoes-importacao/data-ultima-atualizacao <br><br>\n\nConsulte nossa documentação para mais detalhes:\n<a href=\"https://sisOPP-di.OPP.gov.br/sisOPP-di-api/#/declaracoes-importacao/obterUsingGET\" target=\"_blank\">Consulta DI</a>",
+                "received_answer": "('Consulta Publica Declaração de Importação', 'suggestion-watson|d:6c72470d-3bfa-4954-8e34-b414091b69e0'), ('LPCO', 'suggestion-watson|d:eba09a02-a122-4c29-940a-41bd24d947a6'), ('Nenhuma das anteriores', 'suggestion-watson|d:580c6a3a-5ead-4002-a111-143d371a7a0e')",
+                "response_time": 2.1134731769561768
+            },
+            {
+                "id": "44f7b957-0af7-4c80-a438-f9f35f0846c7",
+                "type": 1,
+                "binding_intent": "Consulta_Publica_LI",
+                "simulated_message": "Como posso acessar os dados de licença?",
+                "expected_answer": "Para obter informações sobre a última atualização do Licenciamento de Importação (LI), utilize o endpoint:<br>\n- GET \n/licencas-importacao/data-ultima-atualizacao <br><br>\n\nConsulte nossa documentação para mais detalhes: <a href=\"https://sisOPP-li.OPP.gov.br/sisOPP-li-api/\" target=\"_blank\">Consulta LI</a>",
+                "received_answer": "No momento não sei falar sobre isso. Vamos falar de outra coisa?",
+                "response_time": 1.0216624736785889
+            },
+            {
+                "id": "88a72e7c-4027-473b-91e9-72967f707652",
+                "type": 1,
+                "binding_intent": "SERVICO_Bem_vindo",
+                "simulated_message": "Como utilizar os serviços do OPP?",
+                "expected_answer": "Olá! Eu sou a Maia, a assistente virtual do OPP. Estou aqui para te ajudar na contratação e utilização dos serviços do nosso produto.\n\nVocê tem alguma dúvida em que posso te ajudar? Fica à vontade para perguntar sobre temas como contratação, custo, pagamento, autenticação e consultas de Declaração de Importação - DI, Licenciamento de Importação - LI , Carga, Mercante, DUIMP e LPCO.",
+                "received_answer": "No momento não sei falar sobre isso. Vamos falar de outra coisa?",
+                "response_time": 0.9182014465332031
+            },
+            {
+                "id": "460d6d28-2fe9-4116-8a60-9977b9a4d0c3",
+                "type": 1,
+                "binding_intent": "SERVICO_Bem_vindo",
+                "simulated_message": "Você pode me ajudar?",
+                "expected_answer": "Olá! Eu sou a Maia, a assistente virtual do OPP. Estou aqui para te ajudar na contratação e utilização dos serviços do nosso produto.\n\nVocê tem alguma dúvida em que posso te ajudar? Fica à vontade para perguntar sobre temas como contratação, custo, pagamento, autenticação e consultas de Declaração de Importação - DI, Licenciamento de Importação - LI , Carga, Mercante, DUIMP e LPCO.",
+                "received_answer": "Eu estou aqui para te ajudar! O que você precisa? Pode perguntar sobre contratação, autenticação ou pagamento dos serviços do OPP que vai ser um grande prazer te ajudar!",
+                "response_time": 1.1474056243896484
+            },
+            {
+                "id": "08a553f6-0ae4-4b9a-bba5-6989921f5e55",
+                "type": 1,
+                "binding_intent": "SERVICO_Consultas_Permitidas",
+                "simulated_message": "Quais informações do Licenciamento de Importação estão disponíveis?",
+                "expected_answer": " Para realizar as consultas é necessário, eCPF ou eCNPJ:\n<br>- eCPF: no caso de Operadores de OPP, para os serviços de acesso às informações de um conhecimento de embarque, DI e LI ou que verificam perfil e representação SisOPP.\n<br>- eCNPJ: no caso das demais empresas, para o(s) serviço(s) de Consulta Declaração de Importação Avulsa (DI), de acesso às informações de LPCO por chave de acesso",
+                "received_answer": "('Consulta Publica Licenciamento de Importação', 'suggestion-watson|d:26767fa2-b5b3-4ff6-afad-738f814653c0'), ('Consultas Permitidas pelo Serviço', 'suggestion-watson|d:fb080133-bdee-49b8-9800-59582502e262'), ('Acessar LI', 'suggestion-watson|d:df3b355f-dfd4-4236-bf22-798b2375eef4'), ('Nenhuma das anteriores', 'suggestion-watson|d:01852622-b3e0-4a67-9d10-5a4add5fc7f6')",
+                "response_time": 0.8505096435546875
+            },
+            {
+                "id": "5e38f0cd-4a73-4d3b-aff8-e281ce580722",
+                "type": 2,
+                "binding_intent": "SERVICO_Consultas_Publicas",
+                "simulated_message": "Quanto eu preciso pagar para utilizar o serviço?",
+                "expected_answer": "('Carga Marítima', 'Consulta Pública Carga Marítima'), ('Declaração de Importação - DI', 'Consulta Pública Declaração de Importação'), ('Licenciamento de Importação - LI', 'Consulta Pública Licenciamento de Importação')",
+                "received_answer": "('Custos dos serviços', 'suggestion-watson|d:62bfd6c3-5337-446f-a9b4-649696730631'), ('Consultas Publicas Disponiveis', 'suggestion-watson|d:b8d611a6-cec0-4405-a89f-4430ca5d80a7'), ('Disponibilidade dos serviços', 'suggestion-watson|d:4a62e28a-3444-4552-b7ce-549edf1da663'), ('Nenhuma das anteriores', 'suggestion-watson|d:d1729626-045e-4833-a101-f782f7890df8')",
+                "response_time": 0.820258378982544
+            },
+            {
+                "id": "7233b8a8-2cdd-49c2-bd96-794f829613fb",
+                "type": 1,
+                "binding_intent": "SERVICO_Custo_Mensal",
+                "simulated_message": "Qual é o preço para utilizar o serviço do OPP?",
+                "expected_answer": "O custo de utilização a plataforma OPP é de 999 consultas por R$ 1.000,00 / mês. Não possui taxa de instalação ou de cancelamento e o acesso é liberado imediatamente.<br>\n\nSe você fizer mais de 999 consultas no mês, o valor unitário da consulta ainda pode cair. Verifique a franquia no link abaixo:\n<a href=\"https://www.loja.OPP.gov.br/OPP\" target=\"_blank\">Custos</a>",
+                "received_answer": "('Custos dos serviços', 'suggestion-watson|d:79a046f4-f1ad-4430-8030-9d923f52543e'), ('Definição do Produto', 'suggestion-watson|d:f2a556fc-8ad1-4ccc-a96a-a356c7a49b3c'), ('Nenhuma das anteriores', 'suggestion-watson|d:48cc87ac-b16f-4946-a7a6-b70fb4070514')",
+                "response_time": 0.8800439834594727
+            },
+            {
+                "id": "32bdc392-ecb2-4e2c-a80e-9f702f50bac0",
+                "type": 1,
+                "binding_intent": "SERVICO_Obter_token",
+                "simulated_message": "Como resolver problemas para obter o bearer?",
+                "expected_answer": "Para consultar as APIs disponibilizadas pelo OPP, é necessário obter um Token de Acesso Temporário (Bearer). Esse token possui um tempo de validade e sempre que expirado, este passo de requisição de um novo token de acesso deve ser repetido. <br>\nPara solicitar o token temporário é necessário realizar uma requisição HTTP POST para o endpoint URL_BASE_AUTENTICACAO/authenticate",
+                "received_answer": "No momento não sei falar sobre isso. Vamos falar de outra coisa?",
+                "response_time": 0.8163204193115234
+            },
+            {
+                "id": "e75c7325-93d7-48ef-a69d-b2d359c787c8",
+                "type": 2,
+                "binding_intent": "SERVICO_Obter_token",
+                "simulated_message": "Qual é a solução para resolver o problema de obter retorno do bearer?",
+                "expected_answer": "Para consultar as APIs disponibilizadas pelo OPP, é necessário obter um Token de Acesso Temporário (Bearer). Esse token possui um tempo de validade e sempre que expirado, este passo de requisição de um novo token de acesso deve ser repetido. <br>\nPara solicitar o token temporário é necessário realizar uma requisição HTTP POST para o endpoint URL_BASE_AUTENTICACAO/authenticate",
+                "received_answer": "No momento não sei falar sobre isso. Vamos falar de outra coisa?",
+                "response_time": 5.939969539642334
+            },
+            {
+                "id": "5e66c4ee-d3c7-4845-b27d-c2d22c9cf4c6",
+                "type": 2,
+                "binding_intent": "SERVICO_Obter_token",
+                "simulated_message": "Como faço para adquirir as credenciais de acesso?",
+                "expected_answer": "Para consultar as APIs disponibilizadas pelo OPP, é necessário obter um Token de Acesso Temporário (Bearer). Esse token possui um tempo de validade e sempre que expirado, este passo de requisição de um novo token de acesso deve ser repetido. <br>\nPara solicitar o token temporário é necessário realizar uma requisição HTTP POST para o endpoint URL_BASE_AUTENTICACAO/authenticate",
+                "received_answer": "('Obtenção dos tokens de acesso', 'suggestion-watson|d:ba1be307-814d-47c7-be32-85657a73c82b'), ('Acessar LPCO', 'suggestion-watson|d:2e8db488-0bce-4b19-b16d-49ba9ea1391b'), ('Contratação dos serviços', 'suggestion-watson|d:2efab3bb-f56f-4f27-b7cd-72db182c9d2d'), ('Nenhuma das anteriores', 'suggestion-watson|d:e216adb1-ba2a-46b7-a210-decf37c6ec8a')",
+                "response_time": 0.8367760181427002
+            }
+        ]
+    }
+}

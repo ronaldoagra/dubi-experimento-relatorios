@@ -1,0 +1,230 @@
+{
+    "static_evaluation": {
+        "chatbot": "dubi-OPP-bot-2",
+        "conversation_engines": [
+            {
+                "name": "Watson OPP bot-2",
+                "type": "watson-assistant",
+                "general_info": {
+                    "num_intents": 27,
+                    "num_training_examples": 277,
+                    "avg_training_examples_per_intent": 10.26,
+                    "num_dialog_nodes": 30
+                },
+                "qet": {
+                    "recommended_min_examples": 5,
+                    "recommended_max_examples": 20,
+                    "inadequate_intents_rate": 0.0,
+                    "inadequate_intents": []
+                },
+                "bet": {
+                    "imbalance_threshold": 0.25,
+                    "imbalanced_intents_rate": 0.0,
+                    "imbalanced_intents": []
+                },
+                "tet": {
+                    "min_words_per_training_examples": 3,
+                    "max_words_per_training_examples": 20,
+                    "inadequate_intents_rate": 0.0,
+                    "inadequate_intents": {}
+                },
+                "sid": {
+                    "similarity_threshold": 0.8,
+                    "similar_intents_rate": 0.0,
+                    "similar_intents": []
+                },
+                "let": {
+                    "idx_min_expected_readability": 10.0,
+                    "desc_min_expected_readability": "Ensino superior: graduados.",
+                    "inadequate_intents_rate": 0.0,
+                    "inadequate_intents": []
+                },
+                "ret": {
+                    "min_expected_representativeness": 0.5,
+                    "intents_low_representativeness_rate": 0.22,
+                    "intents_low_representativeness": [
+                        {
+                            "intent": "Acessar_API_Carga_Aquaviaria",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "Quais são os endpoints disponíveis para consultar informações sobre Carga Aquaviária?",
+                                    "idx_representativeness": 0.45
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "Acessar_API_DI",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "Quais são os endpoints disponíveis para consulta de uma Declaração de Importação específica?",
+                                    "idx_representativeness": 0.46
+                                },
+                                {
+                                    "example": "Quais são os endpoints disponíveis para uma consulta avulsa de Declaração de Importação?",
+                                    "idx_representativeness": 0.46
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "SERVICO_Acessar_API",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "Quais informações são retornadas?",
+                                    "idx_representativeness": 0.0
+                                },
+                                {
+                                    "example": "Quais são as APIs? ",
+                                    "idx_representativeness": 0.25
+                                },
+                                {
+                                    "example": "Quais são os serviços?",
+                                    "idx_representativeness": 0.25
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "SERVICO_Canditado",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "Quais são as opções de serviços que estão sendo consideradas para integração no OPP?",
+                                    "idx_representativeness": 0.47
+                                },
+                                {
+                                    "example": "Quais são os serviços candidatos disponíveis para integração no OPP?",
+                                    "idx_representativeness": 0.45
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "SERVICO_Consultas_Permitidas",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "Quais dados de LPCO estão disponíveis?",
+                                    "idx_representativeness": 0.33
+                                },
+                                {
+                                    "example": "Todas as informações de LPCO estão disponíveis?",
+                                    "idx_representativeness": 0.43
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "SERVICO_Consultas_Publicas",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "Todos os serviços são pagos?",
+                                    "idx_representativeness": 0.4
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "qio": {
+                    "unlinked_intents_rate": 0.0,
+                    "unlinked_intents": []
+                },
+                "ttr": {
+                    "max_characters_answer": 850,
+                    "inadequate_answers_rate": 0.0,
+                    "inadequate_answers": []
+                },
+                "ltr": {
+                    "idx_min_expected_readability": 10.0,
+                    "desc_min_expected_readability": "Ensino superior: graduados.",
+                    "inadequate_answers_rate": 0.17,
+                    "inadequate_answers": [
+                        {
+                            "dialog_node_id": "node_aa2c342d-0d85-4bb9-9021-64bb98e1f718",
+                            "dialog_node_title": "Consulta Publica Licenciamento de Importação",
+                            "inadequate_answers": [
+                                {
+                                    "answer_idx": 1,
+                                    "answer_text": "Para obter informações sobre a...",
+                                    "readability_idx": 0,
+                                    "readability_desc": "Profissional."
+                                }
+                            ]
+                        },
+                        {
+                            "dialog_node_id": "node_c852de46-b793-4786-bf19-b812b34ee45b",
+                            "dialog_node_title": "Carga Aquaviária",
+                            "inadequate_answers": [
+                                {
+                                    "answer_idx": 1,
+                                    "answer_text": "Para acessar os serviços relac...",
+                                    "readability_idx": 0,
+                                    "readability_desc": "Profissional."
+                                }
+                            ]
+                        },
+                        {
+                            "dialog_node_id": "node_ca0fb1ef-8e4e-4ecb-a7fa-bca43411dbeb",
+                            "dialog_node_title": "Consulta Publica Carga Maritima",
+                            "inadequate_answers": [
+                                {
+                                    "answer_idx": 1,
+                                    "answer_text": "Para acessar os serviços relac...",
+                                    "readability_idx": 0,
+                                    "readability_desc": "Profissional."
+                                }
+                            ]
+                        },
+                        {
+                            "dialog_node_id": "node_dccda6f7-40c9-4507-abd6-4d419e4bdb72",
+                            "dialog_node_title": "Acessar LI",
+                            "inadequate_answers": [
+                                {
+                                    "answer_idx": 1,
+                                    "answer_text": "Para acessar o serviço de Lice...",
+                                    "readability_idx": 0,
+                                    "readability_desc": "Profissional."
+                                }
+                            ]
+                        },
+                        {
+                            "dialog_node_id": "node_fd597504-8a2e-4c7b-adff-c1bee6d053c5",
+                            "dialog_node_title": "Acessar DI",
+                            "inadequate_answers": [
+                                {
+                                    "answer_idx": 1,
+                                    "answer_text": "Para acessar os serviços relac...",
+                                    "readability_idx": 0,
+                                    "readability_desc": "Profissional."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "rtr": {
+                    "min_expected_representativeness": 0.5,
+                    "dialogs_low_representativeness_rate": 0.0,
+                    "dialogs_low_representativeness": []
+                },
+                "str": {
+                    "inadequate_dialog_nodes_rate": 0.0,
+                    "inadequate_dialog_nodes": []
+                },
+                "qid": {
+                    "inadequate_dialog_nodes_rate": 0.0,
+                    "inadequate_dialog_nodes": []
+                },
+                "qdv": {
+                    "inadequate_dialog_nodes_rate": 0.0,
+                    "inadequate_dialog_nodes": []
+                },
+                "qdf": {
+                    "inadequate_dialog_nodes_rate": 0.0,
+                    "inadequate_dialog_nodes": []
+                },
+                "qdr": {
+                    "inadequate_dialog_nodes_rate": 0.0,
+                    "inadequate_dialog_nodes": []
+                },
+                "qcf": {
+                    "amount_detected_cycles": 0,
+                    "detected_cycles": []
+                }
+            }
+        ]
+    }
+}

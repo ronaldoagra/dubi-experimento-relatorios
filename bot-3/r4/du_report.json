@@ -1,0 +1,877 @@
+{
+    "static_evaluation": {
+        "chatbot": "dubi-OPP-bot-3",
+        "conversation_engines": [
+            {
+                "name": "Watson OPP bot-3",
+                "type": "watson-assistant",
+                "general_info": {
+                    "num_intents": 77,
+                    "num_training_examples": 1222,
+                    "avg_training_examples_per_intent": 15.87,
+                    "num_dialog_nodes": 184
+                },
+                "qet": {
+                    "recommended_min_examples": 5,
+                    "recommended_max_examples": 20,
+                    "inadequate_intents_rate": 0.0,
+                    "inadequate_intents": []
+                },
+                "bet": {
+                    "imbalance_threshold": 0.25,
+                    "imbalanced_intents_rate": 0.04,
+                    "imbalanced_intents": [
+                        {
+                            "intent": "COMP_OPT_NaoEmail",
+                            "imbalance": -0.61
+                        },
+                        {
+                            "intent": "COMP_OPT_NaoFormulario",
+                            "imbalance": -0.67
+                        },
+                        {
+                            "intent": "COMP_OPT_Resolvido",
+                            "imbalance": -0.67
+                        }
+                    ]
+                },
+                "tet": {
+                    "min_words_per_training_examples": 3,
+                    "max_words_per_training_examples": 20,
+                    "inadequate_intents_rate": 0.0,
+                    "inadequate_intents": {}
+                },
+                "sid": {
+                    "similarity_threshold": 0.8,
+                    "similar_intents_rate": 0.44,
+                    "similar_intents": [
+                        {
+                            "intent": "AcessoOPP_NovaContaPF_BancosCredenciados",
+                            "similar_intents": {
+                                "AcessoOPP_NovaContaPF_InternetBanking": 0.8054
+                            }
+                        },
+                        {
+                            "intent": "AcessoOPP_NovaContaPF_InternetBanking",
+                            "similar_intents": {
+                                "AcessoOPP_NovaContaPF_BancosCredenciados": 0.8054
+                            }
+                        },
+                        {
+                            "intent": "AcessoOPP_NovaContaPF_SeuCertificadoDigital",
+                            "similar_intents": {
+                                "AcessoOPP_Vocabulario_CertificadoDigital": 0.8305
+                            }
+                        },
+                        {
+                            "intent": "AcessoOPP_NovaSenha",
+                            "similar_intents": {
+                                "AcessoOPP_NovaSenha_Celular": 0.8259,
+                                "AcessoOPP_NovaSenha_DicasGerarSenhaForte": 0.8422
+                            }
+                        },
+                        {
+                            "intent": "AcessoOPP_NovaSenha_BancosCredenciados",
+                            "similar_intents": {
+                                "AcessoOPP_NovaSenha_InternetBanking": 0.8401
+                            }
+                        },
+                        {
+                            "intent": "AcessoOPP_NovaSenha_Celular",
+                            "similar_intents": {
+                                "AcessoOPP_NovaSenha": 0.8259,
+                                "AcessoOPP_NovaSenha_Email": 0.8217,
+                                "AcessoOPP_NovaSenha_ValidacaoFacial": 0.8058
+                            }
+                        },
+                        {
+                            "intent": "AcessoOPP_NovaSenha_DicasGerarSenhaForte",
+                            "similar_intents": {
+                                "AcessoOPP_NovaSenha": 0.8422
+                            }
+                        },
+                        {
+                            "intent": "AcessoOPP_NovaSenha_Email",
+                            "similar_intents": {
+                                "AcessoOPP_NovaSenha_Celular": 0.8217
+                            }
+                        },
+                        {
+                            "intent": "AcessoOPP_NovaSenha_InternetBanking",
+                            "similar_intents": {
+                                "AcessoOPP_NovaSenha_BancosCredenciados": 0.8401
+                            }
+                        },
+                        {
+                            "intent": "AcessoOPP_NovaSenha_ValidacaoFacial",
+                            "similar_intents": {
+                                "AcessoOPP_NovaSenha_Celular": 0.8058
+                            }
+                        },
+                        {
+                            "intent": "AcessoOPP_PJ_AtualizarCNPJ",
+                            "similar_intents": {
+                                "AcessoOPP_PJ_DesativarEmpresaCadastrada": 0.8905,
+                                "AcessoOPP_PJ_VincularCNPJnaConta": 0.8437
+                            }
+                        },
+                        {
+                            "intent": "AcessoOPP_PJ_CadastrarColaborador",
+                            "similar_intents": {
+                                "AcessoOPP_PJ_RemoverColaborador": 0.8705
+                            }
+                        },
+                        {
+                            "intent": "AcessoOPP_PJ_CadastroPessoaJuridica",
+                            "similar_intents": {
+                                "AcessoOPP_PJ_DesativarEmpresaCadastrada": 0.818,
+                                "AcessoOPP_PJ_VincularCNPJnaConta": 0.847
+                            }
+                        },
+                        {
+                            "intent": "AcessoOPP_PJ_DesativarEmpresaCadastrada",
+                            "similar_intents": {
+                                "AcessoOPP_PJ_AtualizarCNPJ": 0.8905,
+                                "AcessoOPP_PJ_CadastroPessoaJuridica": 0.818,
+                                "AcessoOPP_PJ_VincularCNPJnaConta": 0.9168
+                            }
+                        },
+                        {
+                            "intent": "AcessoOPP_PJ_RemoverColaborador",
+                            "similar_intents": {
+                                "AcessoOPP_PJ_CadastrarColaborador": 0.8705
+                            }
+                        },
+                        {
+                            "intent": "AcessoOPP_PJ_VincularCNPJnaConta",
+                            "similar_intents": {
+                                "AcessoOPP_PJ_AtualizarCNPJ": 0.8437,
+                                "AcessoOPP_PJ_CadastroPessoaJuridica": 0.847,
+                                "AcessoOPP_PJ_DesativarEmpresaCadastrada": 0.9168
+                            }
+                        },
+                        {
+                            "intent": "AcessoOPP_Problemas_AlteracaoNosDadosdaConta",
+                            "similar_intents": {
+                                "AcessoOPP_Problemas_AtualizarDados": 0.8265
+                            }
+                        },
+                        {
+                            "intent": "AcessoOPP_Problemas_AtualizarDados",
+                            "similar_intents": {
+                                "AcessoOPP_Problemas_AlteracaoNosDadosdaConta": 0.8265
+                            }
+                        },
+                        {
+                            "intent": "AcessoOPP_Problemas_CertificadoDigitalNaoEncontrado",
+                            "similar_intents": {
+                                "AcessoOPP_Vocabulario_CertificadoDigital": 0.8286
+                            }
+                        },
+                        {
+                            "intent": "AcessoOPP_Problemas_CPFInconsistente",
+                            "similar_intents": {
+                                "AcessoOPP_Problemas_NaoTenhoCPF": 0.8416,
+                                "AcessoOPP_Vocabulario_CPF": 0.8751
+                            }
+                        },
+                        {
+                            "intent": "AcessoOPP_Problemas_NaoRecebiCodigodeAcessoEmail",
+                            "similar_intents": {
+                                "AcessoOPP_Problemas_NaoRecebiCodigodeAcessoSMS": 0.8792,
+                                "AcessoOPP_Problemas_NaoRecebiOCodigodeAcesso": 0.8639,
+                                "AcessoOPP_Vocabulario_CodigodeAcesso": 0.8004
+                            }
+                        },
+                        {
+                            "intent": "AcessoOPP_Problemas_NaoRecebiCodigodeAcessoSMS",
+                            "similar_intents": {
+                                "AcessoOPP_Problemas_NaoRecebiCodigodeAcessoEmail": 0.8792,
+                                "AcessoOPP_Problemas_NaoRecebiOCodigodeAcesso": 0.883
+                            }
+                        },
+                        {
+                            "intent": "AcessoOPP_Problemas_NaoRecebiOCodigodeAcesso",
+                            "similar_intents": {
+                                "AcessoOPP_Problemas_NaoRecebiCodigodeAcessoEmail": 0.8639,
+                                "AcessoOPP_Problemas_NaoRecebiCodigodeAcessoSMS": 0.883,
+                                "AcessoOPP_Problemas_NaoRecebiOCodigodeAcessoAlteracoesConta": 0.8452,
+                                "AcessoOPP_Vocabulario_CodigodeAcesso": 0.8916
+                            }
+                        },
+                        {
+                            "intent": "AcessoOPP_Problemas_NaoRecebiOCodigodeAcessoAlteracoesConta",
+                            "similar_intents": {
+                                "AcessoOPP_Problemas_NaoRecebiOCodigodeAcesso": 0.8452
+                            }
+                        },
+                        {
+                            "intent": "AcessoOPP_Problemas_NaoTenhoCPF",
+                            "similar_intents": {
+                                "AcessoOPP_Problemas_CPFInconsistente": 0.8416,
+                                "AcessoOPP_Vocabulario_CPF": 0.8976
+                            }
+                        },
+                        {
+                            "intent": "AcessoOPP_Problemas_VerificacaoDuasEtapasComoAtivar",
+                            "similar_intents": {
+                                "AcessoOPP_Vocabulario_VerificacaoDuasEtapas": 0.8977
+                            }
+                        },
+                        {
+                            "intent": "AcessoOPP_Vocabulario_CertificadoDigital",
+                            "similar_intents": {
+                                "AcessoOPP_NovaContaPF_SeuCertificadoDigital": 0.8305,
+                                "AcessoOPP_Problemas_CertificadoDigitalNaoEncontrado": 0.8286
+                            }
+                        },
+                        {
+                            "intent": "AcessoOPP_Vocabulario_CertificadoEmNuvem",
+                            "similar_intents": {
+                                "AcessoOPP_Vocabulario_CertificadoNuvemPorqueUsar": 0.9578
+                            }
+                        },
+                        {
+                            "intent": "AcessoOPP_Vocabulario_CertificadoNuvemPorqueUsar",
+                            "similar_intents": {
+                                "AcessoOPP_Vocabulario_CertificadoEmNuvem": 0.9578
+                            }
+                        },
+                        {
+                            "intent": "AcessoOPP_Vocabulario_CodigodeAcesso",
+                            "similar_intents": {
+                                "AcessoOPP_Problemas_NaoRecebiCodigodeAcessoEmail": 0.8004,
+                                "AcessoOPP_Problemas_NaoRecebiOCodigodeAcesso": 0.8916
+                            }
+                        },
+                        {
+                            "intent": "AcessoOPP_Vocabulario_CPF",
+                            "similar_intents": {
+                                "AcessoOPP_Problemas_CPFInconsistente": 0.8751,
+                                "AcessoOPP_Problemas_NaoTenhoCPF": 0.8976
+                            }
+                        },
+                        {
+                            "intent": "AcessoOPP_Vocabulario_VerificacaoDuasEtapas",
+                            "similar_intents": {
+                                "AcessoOPP_Problemas_VerificacaoDuasEtapasComoAtivar": 0.8977
+                            }
+                        },
+                        {
+                            "intent": "COMP_OPT_NaoEmail",
+                            "similar_intents": {
+                                "COMP_OPT_NaoFormulario": 0.9604,
+                                "COMP_OPT_Resolvido": 0.9172
+                            }
+                        },
+                        {
+                            "intent": "COMP_OPT_NaoFormulario",
+                            "similar_intents": {
+                                "COMP_OPT_NaoEmail": 0.9604,
+                                "COMP_OPT_Resolvido": 0.9056
+                            }
+                        },
+                        {
+                            "intent": "COMP_OPT_Resolvido",
+                            "similar_intents": {
+                                "COMP_OPT_NaoEmail": 0.9172,
+                                "COMP_OPT_NaoFormulario": 0.9056
+                            }
+                        }
+                    ]
+                },
+                "let": {
+                    "idx_min_expected_readability": 30.0,
+                    "desc_min_expected_readability": "Ensino superior: em curso.",
+                    "inadequate_intents_rate": 0.11,
+                    "inadequate_intents": [
+                        {
+                            "intent": "AcessoOPP_NovaSenha_CertificadoDigital",
+                            "idx_readability": 28.42,
+                            "desc_readability": "Ensino superior: graduados."
+                        },
+                        {
+                            "intent": "AcessoOPP_NovaSenha_ValidacaoFacial",
+                            "idx_readability": 26.77,
+                            "desc_readability": "Ensino superior: graduados."
+                        },
+                        {
+                            "intent": "AcessoOPP_Problemas_ReconhecimentoFacialInvalido",
+                            "idx_readability": 10.01,
+                            "desc_readability": "Ensino superior: graduados."
+                        },
+                        {
+                            "intent": "AcessoOPP_Vocabulario_CertificadoDigital",
+                            "idx_readability": 26.6,
+                            "desc_readability": "Ensino superior: graduados."
+                        },
+                        {
+                            "intent": "AcessoOPP_Vocabulario_DadosBiometricos",
+                            "idx_readability": 20.72,
+                            "desc_readability": "Ensino superior: graduados."
+                        },
+                        {
+                            "intent": "AcessoOPP_Vocabulario_ValidacaoFacial",
+                            "idx_readability": 21.77,
+                            "desc_readability": "Ensino superior: graduados."
+                        },
+                        {
+                            "intent": "COMP_OPT_NaoEmail",
+                            "idx_readability": 14.92,
+                            "desc_readability": "Ensino superior: graduados."
+                        },
+                        {
+                            "intent": "COMP_OPT_NaoFormulario",
+                            "idx_readability": 5.49,
+                            "desc_readability": "Profissional."
+                        },
+                        {
+                            "intent": "COMP_OPT_Resolvido",
+                            "idx_readability": 9.54,
+                            "desc_readability": "Profissional."
+                        }
+                    ]
+                },
+                "ret": {
+                    "min_expected_representativeness": 0.5,
+                    "intents_low_representativeness_rate": 0.34,
+                    "intents_low_representativeness": [
+                        {
+                            "intent": "AcessoOPP_PJ_AtualizarCNPJ",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "OPT - Atualizar CNPJ",
+                                    "idx_representativeness": 0.33
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "AcessoOPP_PJ_DesativarEmpresaCadastrada",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "Como remover um negócio vinculado no @gov.br?",
+                                    "idx_representativeness": 0.43
+                                },
+                                {
+                                    "example": "Instruções para desativação de @CNPJ no @gov.br.",
+                                    "idx_representativeness": 0.43
+                                },
+                                {
+                                    "example": "OPT - Desvincular CNPJ.",
+                                    "idx_representativeness": 0.0
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "AcessoOPP_PJ_RemoverColaborador",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "OPT - Remover Colaborador",
+                                    "idx_representativeness": 0.33
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "AcessoOPP_Problemas_AcessarBancoSeguro",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "O OPP terá acesso às minhas informações bancárias?",
+                                    "idx_representativeness": 0.38
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "AcessoOPP_Problemas_AlteracaoNosDadosdaConta",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "Ajustar informações alteradas sem permissão no OPP.",
+                                    "idx_representativeness": 0.43
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "AcessoOPP_Problemas_ContaBronzePrata",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "Quais serviços são restritos para contas prata?",
+                                    "idx_representativeness": 0.43
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "AcessoOPP_Problemas_NaoRecebiCodigoAcessoVerificacaoEmDuasEtapas",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "OPT - Não recebi codigo 2FA",
+                                    "idx_representativeness": 0.4
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "AcessoOPP_Problemas_NaoRecebiCodigodeAcessoEmail",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "OPT - Não recebi código e-mail",
+                                    "idx_representativeness": 0.4
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "AcessoOPP_Problemas_NaoRecebiOCodigodeAcessoAlteracoesConta",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "OPT - Não recebi código alterações",
+                                    "idx_representativeness": 0.4
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "AcessoOPP_Problemas_ReconhecimentoFacialInvalido",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "OPT - Reconhec. facial invalido",
+                                    "idx_representativeness": 0.25
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "AcessoOPP_Problemas_SenhaTemporariaExpirada",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "OPT - Senha temporária expirada",
+                                    "idx_representativeness": 0.25
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "AcessoOPP_Problemas_UsuarioouSenhaInvalidos",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "CPF informado inválido ERL0000400",
+                                    "idx_representativeness": 0.25
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "AcessoOPP_Problemas_VerificacaoDuasEtapasComoDesativar",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "OPT - Desativar 2FA",
+                                    "idx_representativeness": 0.33
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "AcessoOPP_Vocabulario_BancosCredenciados",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "Ative a função OPT - Bancos Credenciados.",
+                                    "idx_representativeness": 0.33
+                                },
+                                {
+                                    "example": "Conceitue 'banco credenciado'.",
+                                    "idx_representativeness": 0.33
+                                },
+                                {
+                                    "example": "Instituições bancárias conveniadas, quais são?",
+                                    "idx_representativeness": 0.0
+                                },
+                                {
+                                    "example": "Quais instituições estão credenciadas?",
+                                    "idx_representativeness": 0.25
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "AcessoOPP_Vocabulario_Captcha",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "Captcha para verificação de usuário.",
+                                    "idx_representativeness": 0.4
+                                },
+                                {
+                                    "example": "Descreva a mecânica do captcha.",
+                                    "idx_representativeness": 0.4
+                                },
+                                {
+                                    "example": "Esclareça a função do captcha.",
+                                    "idx_representativeness": 0.4
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "AcessoOPP_Vocabulario_CertificadoNuvemPorqueUsar",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "Ative a função OPT - Benefícios certificado nuvem.",
+                                    "idx_representativeness": 0.43
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "AcessoOPP_Vocabulario_ContaOPP",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "Benefícios da conta única do @OPP, quais são?",
+                                    "idx_representativeness": 0.38
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "AcessoOPP_Vocabulario_OqueEhOPP",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "Explicações sobre a credencial @OPP.",
+                                    "idx_representativeness": 0.4
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "AcessoOPP_Vocabulario_QRCode",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "Aplicações práticas de QR Codes.",
+                                    "idx_representativeness": 0.2
+                                },
+                                {
+                                    "example": "Como escanear um QR Code?",
+                                    "idx_representativeness": 0.4
+                                },
+                                {
+                                    "example": "Definição clara de QR Code.",
+                                    "idx_representativeness": 0.4
+                                },
+                                {
+                                    "example": "Funcionalidades do QR Code.",
+                                    "idx_representativeness": 0.25
+                                },
+                                {
+                                    "example": "Princípio de operação do QRCode.",
+                                    "idx_representativeness": 0.4
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "AcessoOPP_Vocabulario_REDESIM",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "Integração de serviços na REDESIM.",
+                                    "idx_representativeness": 0.4
+                                },
+                                {
+                                    "example": "REDESIM, quais suas funções?",
+                                    "idx_representativeness": 0.25
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "COMP_Agradecimento",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "Agradecido pela assistência.",
+                                    "idx_representativeness": 0.33
+                                },
+                                {
+                                    "example": "Obrigado, minha questão foi resolvida.",
+                                    "idx_representativeness": 0.4
+                                },
+                                {
+                                    "example": "Obrigado pela explicação detalhada.",
+                                    "idx_representativeness": 0.25
+                                },
+                                {
+                                    "example": "Você foi muito útil, obrigado.",
+                                    "idx_representativeness": 0.4
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "COMP_Apresentacao",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "Quais são seus serviços?",
+                                    "idx_representativeness": 0.25
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "COMP_Encerramento",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "Já finalizei aqui, obrigado.",
+                                    "idx_representativeness": 0.25
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "COMP_NaoQueroAvaliar",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "Avaliação não é necessária, obrigado.",
+                                    "idx_representativeness": 0.4
+                                },
+                                {
+                                    "example": "Dispensarei a avaliação, obrigado.",
+                                    "idx_representativeness": 0.25
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "COMP_OPT_NaoEmail",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "Selecionar opção OPT-NaoEmail",
+                                    "idx_representativeness": 0.33
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "COMP_OPT_NaoFormulario",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "Selecionar opção OPT-NaoFormulario",
+                                    "idx_representativeness": 0.33
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "COMP_Saudacao",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "Oi, como faço para começar?",
+                                    "idx_representativeness": 0.4
+                                },
+                                {
+                                    "example": "Olá, gostaria de algumas informações.",
+                                    "idx_representativeness": 0.4
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "qio": {
+                    "unlinked_intents_rate": 0.0,
+                    "unlinked_intents": []
+                },
+                "ttr": {
+                    "max_characters_answer": 850,
+                    "inadequate_answers_rate": 0.0,
+                    "inadequate_answers": []
+                },
+                "ltr": {
+                    "idx_min_expected_readability": 30.0,
+                    "desc_min_expected_readability": "Ensino superior: em curso.",
+                    "inadequate_answers_rate": 0.07,
+                    "inadequate_answers": [
+                        {
+                            "dialog_node_id": "node_1_1653576728998",
+                            "dialog_node_title": "Por que usar o certificado digital em nuvem?",
+                            "inadequate_answers": [
+                                {
+                                    "answer_idx": 1,
+                                    "answer_text": "Os principais benefícios de op...",
+                                    "readability_idx": 0,
+                                    "readability_desc": "Profissional."
+                                }
+                            ]
+                        },
+                        {
+                            "dialog_node_id": "node_1_1654865927317",
+                            "dialog_node_title": "Cadastro CNPJ        | WhatsApp",
+                            "inadequate_answers": [
+                                {
+                                    "answer_idx": 1,
+                                    "answer_text": "Com o OPP você terá facilid...",
+                                    "readability_idx": 29.68,
+                                    "readability_desc": "Ensino superior: graduados."
+                                }
+                            ]
+                        },
+                        {
+                            "dialog_node_id": "node_2_1654177667573",
+                            "dialog_node_title": "Validação facial",
+                            "inadequate_answers": [
+                                {
+                                    "answer_idx": 1,
+                                    "answer_text": "Reconhecimento facial é uma té...",
+                                    "readability_idx": 24.06,
+                                    "readability_desc": "Ensino superior: graduados."
+                                }
+                            ]
+                        },
+                        {
+                            "dialog_node_id": "node_3_1641489551414",
+                            "dialog_node_title": "Cadastro CNPJ",
+                            "inadequate_answers": [
+                                {
+                                    "answer_idx": 1,
+                                    "answer_text": "Com o OPP você terá facilid...",
+                                    "readability_idx": 29.68,
+                                    "readability_desc": "Ensino superior: graduados."
+                                }
+                            ]
+                        },
+                        {
+                            "dialog_node_id": "node_3_1654264092868",
+                            "dialog_node_title": "Certificado digital   | WhatsApp",
+                            "inadequate_answers": [
+                                {
+                                    "answer_idx": 1,
+                                    "answer_text": "O Certificado Digital funciona...",
+                                    "readability_idx": 14.02,
+                                    "readability_desc": "Ensino superior: graduados."
+                                }
+                            ]
+                        },
+                        {
+                            "dialog_node_id": "node_4_1644420699474",
+                            "dialog_node_title": "Desativar 2 etapas",
+                            "inadequate_answers": [
+                                {
+                                    "answer_idx": 1,
+                                    "answer_text": "A verificação em duas etapas é...",
+                                    "readability_idx": 0,
+                                    "readability_desc": "Profissional."
+                                }
+                            ]
+                        },
+                        {
+                            "dialog_node_id": "node_5_1641924454624",
+                            "dialog_node_title": "Erro de certificado",
+                            "inadequate_answers": [
+                                {
+                                    "answer_idx": 1,
+                                    "answer_text": "Você recebeu a mensagem Certif...",
+                                    "readability_idx": 22.72,
+                                    "readability_desc": "Ensino superior: graduados."
+                                }
+                            ]
+                        },
+                        {
+                            "dialog_node_id": "node_5_1653326703032",
+                            "dialog_node_title": "Por que minha conta não é ouro?  | WhatsApp",
+                            "inadequate_answers": [
+                                {
+                                    "answer_idx": 1,
+                                    "answer_text": "Entenda agora por que sua cont...",
+                                    "readability_idx": 11.78,
+                                    "readability_desc": "Ensino superior: graduados."
+                                }
+                            ]
+                        },
+                        {
+                            "dialog_node_id": "node_5_1656939519784",
+                            "dialog_node_title": "Não resolveu - encaminha para e-mail",
+                            "inadequate_answers": [
+                                {
+                                    "answer_idx": 1,
+                                    "answer_text": "Caso não tenha sucesso em nenh...",
+                                    "readability_idx": 29.3,
+                                    "readability_desc": "Ensino superior: graduados."
+                                }
+                            ]
+                        },
+                        {
+                            "dialog_node_id": "node_6_1641819436842",
+                            "dialog_node_title": "O que é reconhecimento facial",
+                            "inadequate_answers": [
+                                {
+                                    "answer_idx": 1,
+                                    "answer_text": "Reconhecimento facial é uma té...",
+                                    "readability_idx": 24.06,
+                                    "readability_desc": "Ensino superior: graduados."
+                                }
+                            ]
+                        },
+                        {
+                            "dialog_node_id": "node_6_1643823810832",
+                            "dialog_node_title": "Não recebi o código de acesso via SMS no celular cadastrado",
+                            "inadequate_answers": [
+                                {
+                                    "answer_idx": 1,
+                                    "answer_text": "Se você não recebeu o código d...",
+                                    "readability_idx": 11.08,
+                                    "readability_desc": "Ensino superior: graduados."
+                                }
+                            ]
+                        },
+                        {
+                            "dialog_node_id": "node_8_1641820006552",
+                            "dialog_node_title": "Certificado digital",
+                            "inadequate_answers": [
+                                {
+                                    "answer_idx": 1,
+                                    "answer_text": "O Certificado Digital funciona...",
+                                    "readability_idx": 14.02,
+                                    "readability_desc": "Ensino superior: graduados."
+                                }
+                            ]
+                        },
+                        {
+                            "dialog_node_id": "node_9_1641819543928",
+                            "dialog_node_title": "Bancos credenciados",
+                            "inadequate_answers": [
+                                {
+                                    "answer_idx": 1,
+                                    "answer_text": "Bancos credenciados são instit...",
+                                    "readability_idx": 29.91,
+                                    "readability_desc": "Ensino superior: graduados."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "rtr": {
+                    "min_expected_representativeness": 0.5,
+                    "dialogs_low_representativeness_rate": 0.0,
+                    "dialogs_low_representativeness": []
+                },
+                "str": {
+                    "inadequate_dialog_nodes_rate": 0.01,
+                    "inadequate_dialog_nodes": [
+                        {
+                            "dialog_node_id": "node_1_1655472878748",
+                            "dialog_title": "Não quero avaliar      | WhatsApp",
+                            "negative_answers": [
+                                {
+                                    "text_answer": "Que pena, a sua avaliação é muito importante para melhorar o meu atendimento.\n\nSe você mudar de ideia, escreva no assistente a frase <b><i>Avaliar o atendimento</i></b>.",
+                                    "negative_score": 0.7031
+                                }
+                            ]
+                        },
+                        {
+                            "dialog_node_id": "node_3_1654806311898",
+                            "dialog_title": "Não quero avaliar",
+                            "negative_answers": [
+                                {
+                                    "text_answer": "Que pena, a sua avaliação é muito importante para melhorar o meu atendimento.\n\nSe você mudar de ideia, pressione o botão <b><i>Avaliar o atendimento</i></b> que se encontra no canto inferior direito.",
+                                    "negative_score": 0.8126
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "qid": {
+                    "inadequate_dialog_nodes_rate": 0.0,
+                    "inadequate_dialog_nodes": []
+                },
+                "qdv": {
+                    "inadequate_dialog_nodes_rate": 0.0,
+                    "inadequate_dialog_nodes": []
+                },
+                "qdf": {
+                    "inadequate_dialog_nodes_rate": 0.0,
+                    "inadequate_dialog_nodes": []
+                },
+                "qdr": {
+                    "inadequate_dialog_nodes_rate": 0.0,
+                    "inadequate_dialog_nodes": []
+                },
+                "qcf": {
+                    "amount_detected_cycles": 0,
+                    "detected_cycles": []
+                }
+            }
+        ]
+    }
+}

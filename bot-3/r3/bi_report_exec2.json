@@ -1,0 +1,1143 @@
+{
+    "chatbot": "dubi-OPP-bot-3",
+    "performance_metrics": {
+        "accuracy": 0.6173,
+        "precision": 0.6678,
+        "recall": 0.8884,
+        "f1score": 0.7625
+    },
+    "dialog_metrics": {
+        "tmR": 1.55,
+        "tf": 0.0802,
+        "tc": 0.5833,
+        "tcr": 0.618,
+        "tamb": 0.0833
+    },
+    "test_coverage": {
+        "intents": 0.95,
+        "dialog_nodes": 0.4141
+    },
+    "test_case": {
+        "id": "77c28c41-bcd5-43fa-a344-6b674340ba09",
+        "total_interactions": 324,
+        "total_failed_interactions": 124,
+        "failed_interactions": [
+            {
+                "id": "beed7582-fabd-4b55-8705-c7cbf1d6465f",
+                "type": 2,
+                "binding_intent": "AcessoOPP_NovaContaPF_InternetBanking",
+                "simulated_message": "Qual é a senha temporária que devo utilizar para gerar minha conta?",
+                "expected_answer": "É possível criar sua conta utilizando o <b>Internet Banking</b>. Vou explicar como fazer.  \n\nPrimeiro, você acessa o seu Internet Banking para gerar uma <b>senha temporária</b> que será utilizada no OPP. Os bancos, de modo geral, disponibilizam essa opção no menu outros serviços.  \n\nEm seguida, utilize a senha gerada no Internet Banking como sua <b>senha</b> para entrar no OPP  \n\nAssim que você entrar na <b>sua conta OPP</b>, será solicitada a criação de uma <b>nova senha</b>.Você prefere seguir um passo a passo para gerar a senha temporária? \n\nEntão consulte <a href=\"http://OPP/en/latest/_perguntasdafaq/comocadastrarsenhatemporariadosbancosconveniados.html\" target=\"_blank\">Como cadastrar uma senha temporária nos bancos conveniados</a>. ",
+                "received_answer": "Cada <b>senha temporária</b> gerada pelo Internet Banking é <b>utilizada</b> uma <b>única vez</b>. Assim que ela é utilizada, o OPP solicita a criação de uma nova senha. \n\nSe você esqueceu a senha criada, solicite a <b>recuperação de senha OPP</b> ou uma <b>nova senha temporária</b> via Internet Banking. Você também pode escolher uma das outras formas de acesso do OPP.('Como criar senha temporária', 'OPT - Criar senha Temporaria')",
+                "response_time": 0.8462371826171875
+            },
+            {
+                "id": "67fc85f7-1aed-4200-bc37-c56c3c075056",
+                "type": 2,
+                "binding_intent": "AcessoOPP_NovaContaPF_QueroCriarConta",
+                "simulated_message": "Como faço para criar uma conta no OPP?",
+                "expected_answer": "Se você deseja criar sua conta, acesse a <a href=\"https://sso.acesso.gov.br/\" target=\"_blank\"><b>página de acesso do OPP</b></a> ou baixe o App na sua loja, <b>informe seu CPF</b> e pressione <b><i>Continuar</i></b>.\n\nPediu uma senha? \nSignifica que você já tem uma conta OPP. É só utilizá-la.\n \nNão pediu a senha? \nEntão, siga as instruções no OPP e descubra como é fácil criar a sua conta.('Como baixar o App', 'OPT - Como baixar o App'), ('Não lembro minha senha', 'OPT - redefinir senha')",
+                "received_answer": "('Como criar conta', 'suggestion-watson|d:59abd048-2b16-476d-9fdb-0938176a7aad'), ('Vincular CNPJ', 'suggestion-watson|d:18b67af4-6d79-4362-befc-1923936f912a'), ('Nenhuma acima', 'suggestion-watson|d:f1ebb0a8-1788-4503-8530-2fec5e1a2adc')",
+                "response_time": 0.9983272552490234
+            },
+            {
+                "id": "a31b6960-f9f0-4e40-bc4e-ffaacf7ddf9f",
+                "type": 1,
+                "binding_intent": "AcessoOPP_NovaContaPF_ReconhecimentoFacia",
+                "simulated_message": "Como criar uma conta utilizando o aplicativo OPP?",
+                "expected_answer": "Para criar sua conta OPP usando <b>Reconhecimento Facial</B> você vai precisar do <b>aplicativo OPP</b> instalado em seu celular.  \n\nAinda não tem? Você pode baixar o aplicativo OPP gratuitamente na loja de aplicativos do seu celular. \n \nDepois, na <a href=\"https://sso.acesso.gov.br/\" target=\"_blank\"><b>página de acesso do OPP</b></a>, digite o <b>Número do CPF</b> e pressione <b><i>Continuar</i></b>. Então, siga os passos que serão apresentados na tela. \n \nSe após informar o CPF for <b>solicitada uma senha</b>, significa que <b>já existe uma conta OPP</b> para esse CPF. ('Como baixar o App', 'OPT - Como baixar o App'), ('Esqueci minha senha', 'OPT - redefinir senha')",
+                "received_answer": "('Como criar conta', 'suggestion-watson|d:7bc74fda-0cf2-431f-9d46-dee34dd587bd'), ('Confirmação de dados pessoais', 'suggestion-watson|d:4834769a-02e6-4e4b-9b0e-4d3dd178667a'), ('Nenhuma acima', 'suggestion-watson|d:744b63b8-1583-490a-896f-fabcd2fce7c7')",
+                "response_time": 0.9993314743041992
+            },
+            {
+                "id": "6e62cfaf-e8ca-4a84-b95d-aef3fdb94a80",
+                "type": 1,
+                "binding_intent": "AcessoOPP_NovaContaPF_SeuCertificadoDigital",
+                "simulated_message": "Como criar uma conta utilizando o certificado digital?",
+                "expected_answer": "Você pode criar sua conta OPP utilizando <b>Certificado Digital</b>. Sua conta será nível <b>ouro</b>.  \n\nComo? Na página acesso.gov.br, vá em <b><i>outras opções de identificação</i></b> e selecione se vai fazer o cadastro com <i>Certificado digital</i> ou <i>Certificado digital em nuvem</i>. ",
+                "received_answer": "Você pode criar sua conta OPP utilizando <b>Certificado Digital</b>. Sua conta será nível <b>Ouro</b>.  \n\nComo? Na <a href=\"https://sso.acesso.gov.br/\" target=\"_blank\"><b>página de acesso do OPP</b></a>, vá em <b><i>outras opções de identificação</i></b> e selecione se vai fazer o cadastro com <i>Certificado digital</i> ou <i>Certificado digital em nuvem</i>. ",
+                "response_time": 0.8751840591430664
+            },
+            {
+                "id": "b674417e-5eef-4ab4-a55f-03e7d96f1f7b",
+                "type": 1,
+                "binding_intent": "AcessoOPP_NovaContaPF_SeuCertificadoDigital",
+                "simulated_message": "Quais são os passos para criar uma conta com o certificado digital?",
+                "expected_answer": "Você pode criar sua conta OPP utilizando <b>Certificado Digital</b>. Sua conta será nível <b>ouro</b>.  \n\nComo? Na página acesso.gov.br, vá em <b><i>outras opções de identificação</i></b> e selecione se vai fazer o cadastro com <i>Certificado digital</i> ou <i>Certificado digital em nuvem</i>. ",
+                "received_answer": "Você pode criar sua conta OPP utilizando <b>Certificado Digital</b>. Sua conta será nível <b>Ouro</b>.  \n\nComo? Na <a href=\"https://sso.acesso.gov.br/\" target=\"_blank\"><b>página de acesso do OPP</b></a>, vá em <b><i>outras opções de identificação</i></b> e selecione se vai fazer o cadastro com <i>Certificado digital</i> ou <i>Certificado digital em nuvem</i>. ",
+                "response_time": 1.0778555870056152
+            },
+            {
+                "id": "678f5f15-e4b7-4190-92a8-eba9f9155b62",
+                "type": 1,
+                "binding_intent": "AcessoOPP_NovaContaPF_SeuCertificadoDigital",
+                "simulated_message": "É possível fazer minha conta utilizando o certificado digital?",
+                "expected_answer": "Você pode criar sua conta OPP utilizando <b>Certificado Digital</b>. Sua conta será nível <b>ouro</b>.  \n\nComo? Na página acesso.gov.br, vá em <b><i>outras opções de identificação</i></b> e selecione se vai fazer o cadastro com <i>Certificado digital</i> ou <i>Certificado digital em nuvem</i>. ",
+                "received_answer": "Você pode criar sua conta OPP utilizando <b>Certificado Digital</b>. Sua conta será nível <b>Ouro</b>.  \n\nComo? Na <a href=\"https://sso.acesso.gov.br/\" target=\"_blank\"><b>página de acesso do OPP</b></a>, vá em <b><i>outras opções de identificação</i></b> e selecione se vai fazer o cadastro com <i>Certificado digital</i> ou <i>Certificado digital em nuvem</i>. ",
+                "response_time": 1.0632848739624023
+            },
+            {
+                "id": "d14493b2-27e1-405c-bb6f-fd9bcf87287e",
+                "type": 2,
+                "binding_intent": "AcessoOPP_NovaContaPF_SeuCertificadoDigital",
+                "simulated_message": "Como criar uma conta usando meu certificado digital?",
+                "expected_answer": "Você pode criar sua conta OPP utilizando <b>Certificado Digital</b>. Sua conta será nível <b>ouro</b>.  \n\nComo? Na página acesso.gov.br, vá em <b><i>outras opções de identificação</i></b> e selecione se vai fazer o cadastro com <i>Certificado digital</i> ou <i>Certificado digital em nuvem</i>. ",
+                "received_answer": "Você pode criar sua conta OPP utilizando <b>Certificado Digital</b>. Sua conta será nível <b>Ouro</b>.  \n\nComo? Na <a href=\"https://sso.acesso.gov.br/\" target=\"_blank\"><b>página de acesso do OPP</b></a>, vá em <b><i>outras opções de identificação</i></b> e selecione se vai fazer o cadastro com <i>Certificado digital</i> ou <i>Certificado digital em nuvem</i>. ",
+                "response_time": 6.685990333557129
+            },
+            {
+                "id": "c40302ca-826f-49b3-bd84-5aa3f5789f7a",
+                "type": 2,
+                "binding_intent": "AcessoOPP_NovaContaPF_SeuCertificadoDigital",
+                "simulated_message": "É possível fazer minha conta utilizando o certificado digitar?",
+                "expected_answer": "Você pode criar sua conta OPP utilizando <b>Certificado Digital</b>. Sua conta será nível <b>ouro</b>.  \n\nComo? Na página acesso.gov.br, vá em <b><i>outras opções de identificação</i></b> e selecione se vai fazer o cadastro com <i>Certificado digital</i> ou <i>Certificado digital em nuvem</i>. ",
+                "received_answer": "No momento não sei falar sobre isso. Vamos falar de outra coisa?",
+                "response_time": 1.2991902828216553
+            },
+            {
+                "id": "5dc7f859-3714-411c-8564-af877925e6f1",
+                "type": 1,
+                "binding_intent": "AcessoOPP_NovaSenha",
+                "simulated_message": "Como realizar o reset da minha senha?",
+                "expected_answer": "É possível trocar sua senha utilizando o <b>Internet Banking</b>. Vou explicar como fazer.  \n\nPrimeiro, você acessa o seu Internet Banking para gerar uma <b>senha temporária</b> que será utilizada no <b>gov.br</b>. Os bancos, de modo geral, disponibilizam essa opção no menu outros serviços.  \n\nEm seguida, utilize a senha gerada no Internet Banking como sua <b>senha</b> para entrar no OPP  \n\nAssim que você entrar na <b>sua conta OPP</b>, será solicitada a criação de uma nova senha.  \n\nVocê prefere seguir um passo a passo para gerar a senha temporária? \n\nEntão consulte  <a href=\"http://OPP/en/latest/_perguntasdafaq/comocadastrarsenhatemporariadosbancosconveniados.html\" target=\"_blank\">Como cadastrar uma senha temporária nos bancos conveniados</a>.('Senha temporária com problema', 'OPT - Senha temporária expirada')",
+                "received_answer": "Se você não lembra ou perdeu sua senha OPP, é fácil <b>criar</b> uma <b>nova senha</b>. Vou explicar como fazer:\n\nPrimeiro, na <a href=\"https://sso.acesso.gov.br/\" target=\"_blank\"><b>página de acesso do OPP</b></a>, digite seu CPF e pressione <b><i>Continuar</i></b>. \nNa próxima tela, selecione <b><i>Esqueci minha senha</i></b>. \nDepois, é só seguir os passos apresentados na tela.\n\nO OPP vai orientar você a gerar a senha usando os meios mais seguros.  \n\nVocê pode me chamar sempre que for necessário.  ",
+                "response_time": 4.093394756317139
+            },
+            {
+                "id": "80bbeafd-30c5-4055-a23b-a2f4a4961f7d",
+                "type": 2,
+                "binding_intent": "AcessoOPP_NovaSenha",
+                "simulated_message": "Como faço para redefinir minha senha?",
+                "expected_answer": "É possível trocar sua senha utilizando o <b>Internet Banking</b>. Vou explicar como fazer.  \n\nPrimeiro, você acessa o seu Internet Banking para gerar uma <b>senha temporária</b> que será utilizada no <b>gov.br</b>. Os bancos, de modo geral, disponibilizam essa opção no menu outros serviços.  \n\nEm seguida, utilize a senha gerada no Internet Banking como sua <b>senha</b> para entrar no OPP  \n\nAssim que você entrar na <b>sua conta OPP</b>, será solicitada a criação de uma nova senha.  \n\nVocê prefere seguir um passo a passo para gerar a senha temporária? \n\nEntão consulte  <a href=\"http://OPP/en/latest/_perguntasdafaq/comocadastrarsenhatemporariadosbancosconveniados.html\" target=\"_blank\">Como cadastrar uma senha temporária nos bancos conveniados</a>.('Senha temporária com problema', 'OPT - Senha temporária expirada')",
+                "received_answer": "Se você não lembra ou perdeu sua senha OPP, é fácil <b>criar</b> uma <b>nova senha</b>. Vou explicar como fazer:\n\nPrimeiro, na <a href=\"https://sso.acesso.gov.br/\" target=\"_blank\"><b>página de acesso do OPP</b></a>, digite seu CPF e pressione <b><i>Continuar</i></b>. \nNa próxima tela, selecione <b><i>Esqueci minha senha</i></b>. \nDepois, é só seguir os passos apresentados na tela.\n\nO OPP vai orientar você a gerar a senha usando os meios mais seguros.  \n\nVocê pode me chamar sempre que for necessário.  ",
+                "response_time": 1.7642521858215332
+            },
+            {
+                "id": "9eddd2f4-6b25-4e59-a48a-26cca7f3e1d3",
+                "type": 2,
+                "binding_intent": "AcessoOPP_NovaSenha",
+                "simulated_message": "Esqueci minha senha cadastrada, como posso recuperá-la?",
+                "expected_answer": "É possível trocar sua senha utilizando o <b>Internet Banking</b>. Vou explicar como fazer.  \n\nPrimeiro, você acessa o seu Internet Banking para gerar uma <b>senha temporária</b> que será utilizada no <b>gov.br</b>. Os bancos, de modo geral, disponibilizam essa opção no menu outros serviços.  \n\nEm seguida, utilize a senha gerada no Internet Banking como sua <b>senha</b> para entrar no OPP  \n\nAssim que você entrar na <b>sua conta OPP</b>, será solicitada a criação de uma nova senha.  \n\nVocê prefere seguir um passo a passo para gerar a senha temporária? \n\nEntão consulte  <a href=\"http://OPP/en/latest/_perguntasdafaq/comocadastrarsenhatemporariadosbancosconveniados.html\" target=\"_blank\">Como cadastrar uma senha temporária nos bancos conveniados</a>.('Senha temporária com problema', 'OPT - Senha temporária expirada')",
+                "received_answer": "Se você não lembra ou perdeu sua senha OPP, é fácil <b>criar</b> uma <b>nova senha</b>. Vou explicar como fazer:\n\nPrimeiro, na <a href=\"https://sso.acesso.gov.br/\" target=\"_blank\"><b>página de acesso do OPP</b></a>, digite seu CPF e pressione <b><i>Continuar</i></b>. \nNa próxima tela, selecione <b><i>Esqueci minha senha</i></b>. \nDepois, é só seguir os passos apresentados na tela.\n\nO OPP vai orientar você a gerar a senha usando os meios mais seguros.  \n\nVocê pode me chamar sempre que for necessário.  ",
+                "response_time": 6.394270896911621
+            },
+            {
+                "id": "694a51c9-1623-442e-a7c7-2f9fe5bcece0",
+                "type": 2,
+                "binding_intent": "AcessoOPP_NovaSenha",
+                "simulated_message": "Preciso criar uma nova senha para acessar o governo.",
+                "expected_answer": "É possível trocar sua senha utilizando o <b>Internet Banking</b>. Vou explicar como fazer.  \n\nPrimeiro, você acessa o seu Internet Banking para gerar uma <b>senha temporária</b> que será utilizada no <b>gov.br</b>. Os bancos, de modo geral, disponibilizam essa opção no menu outros serviços.  \n\nEm seguida, utilize a senha gerada no Internet Banking como sua <b>senha</b> para entrar no OPP  \n\nAssim que você entrar na <b>sua conta OPP</b>, será solicitada a criação de uma nova senha.  \n\nVocê prefere seguir um passo a passo para gerar a senha temporária? \n\nEntão consulte  <a href=\"http://OPP/en/latest/_perguntasdafaq/comocadastrarsenhatemporariadosbancosconveniados.html\" target=\"_blank\">Como cadastrar uma senha temporária nos bancos conveniados</a>.('Senha temporária com problema', 'OPT - Senha temporária expirada')",
+                "received_answer": "('Redefinir senha', 'suggestion-watson|d:b67e998e-d461-4657-8bb2-d529b7a991ae'), ('Trocar senha por meio do e-mail cadastrado no OPP', 'suggestion-watson|d:e10212fc-72e5-459c-8835-5f4a4cf42d87'), ('Nenhuma acima', 'suggestion-watson|d:085f4d4b-98b0-4d41-aecd-cbfd572806e7')",
+                "response_time": 0.9328453540802002
+            },
+            {
+                "id": "154bc8e3-b57c-4d1d-8404-c59fe1cc334b",
+                "type": 2,
+                "binding_intent": "AcessoOPP_NovaSenha_BancosCredenciados",
+                "simulated_message": "Como trocar a @snahei pelo seu banco credenciado?",
+                "expected_answer": "Você pode recuperar sua senha utilizando um dos <b>bancos credenciados</b> no OPP.  \nVou explicar como fazer. \n \nNa <a href=\"https://sso.acesso.gov.br/\" target=\"_blank\"><b>página de acesso do OPP</b></a>, digite seu CPF e pressione <b><i>Continuar</i></b>. Na próxima tela, selecione <b><i>Esqueci minha senha</i></b>. \n \nEm seguida, se não quiser utilizar o Reconhecimento Facial, escolha a opção <b><i>Não tenho celular</i></b>.\n \nDepois, na nova tela apresentada, selecione o seu banco e siga as orientações para recuperar a senha. ('O que são Bancos Credenciados?', 'OPT - O que são Bancos Credenciados'), ('Não achei meu banco', 'OPT - Não achei meu banco')",
+                "received_answer": "No momento não sei falar sobre isso. Vamos falar de outra coisa?",
+                "response_time": 1.2983183860778809
+            },
+            {
+                "id": "7d042021-284b-4a6c-987f-e636942a7970",
+                "type": 1,
+                "binding_intent": "AcessoOPP_NovaSenha_Celular",
+                "simulated_message": "É possível trocar a senha por meio de SMS?",
+                "expected_answer": "Você pode recuperar sua senha pelo celular.\n  \nVou explicar as etapas necessárias para fazer isso:\n<ol><li>Na <a href=\"https://sso.acesso.gov.br/\" target=\"_blank\"><b>página de acesso do OPP</b></a>, digite seu CPF e pressione <b><i>Continuar</i></b>. Na próxima tela, selecione <b><i>Esqueci minha senha</i></b>.</li>\n<li>Pode ser que apareça uma página indicando utilizar o <b>Reconhecimento Facial</b> no aplicativo OPP. Caso não queira utilizar o Reconhecimento Facial, escolha a opção <b><i>Não tenho celular</i></b>.</li>\n<li>Depois, se não quiser utilizar os Bancos Credenciados, escolha a opção <b>Recuperar de outra forma</i></b>.</li>\n<li>Em seguida, selecione <b></i>Não tenho acesso a este e-mail</i></b>. \nPor fim, na tela \"Recuperar senha com celular\", selecione <b><i>Enviar código</i></b>.</li> \n<li>Agora, é só você informar o <b>código de acesso</b> que recebeu no celular cadastrado em sua conta OPP e criar sua nova senha.</li></ol>('Código de acesso não chegou no celular', 'OPT - Não recebi código SMS'), ('O que é código de acesso', 'OPT - O que é Código de Acesso')",
+                "received_answer": "('Trocar senha por meio do celular cadastrado no OPP', 'suggestion-watson|d:a20e42e4-18b3-447c-a2a9-16ec4a99f354'), ('Trocar senha por meio de bancos credenciados', 'suggestion-watson|d:7a9ba378-75ff-4f2d-b147-03a273ff63ce'), ('Nenhuma acima', 'suggestion-watson|d:22de6ced-37d5-4b1f-a940-0715c7bca0ba')",
+                "response_time": 6.835033416748047
+            },
+            {
+                "id": "2210a980-dd49-4541-87a2-daf58e95224f",
+                "type": 2,
+                "binding_intent": "AcessoOPP_NovaSenha_Celular",
+                "simulated_message": "Como trocar a senha através do telefone cadastrado no OPP?",
+                "expected_answer": "Você pode recuperar sua senha pelo celular.\n  \nVou explicar as etapas necessárias para fazer isso:\n<ol><li>Na <a href=\"https://sso.acesso.gov.br/\" target=\"_blank\"><b>página de acesso do OPP</b></a>, digite seu CPF e pressione <b><i>Continuar</i></b>. Na próxima tela, selecione <b><i>Esqueci minha senha</i></b>.</li>\n<li>Pode ser que apareça uma página indicando utilizar o <b>Reconhecimento Facial</b> no aplicativo OPP. Caso não queira utilizar o Reconhecimento Facial, escolha a opção <b><i>Não tenho celular</i></b>.</li>\n<li>Depois, se não quiser utilizar os Bancos Credenciados, escolha a opção <b>Recuperar de outra forma</i></b>.</li>\n<li>Em seguida, selecione <b></i>Não tenho acesso a este e-mail</i></b>. \nPor fim, na tela \"Recuperar senha com celular\", selecione <b><i>Enviar código</i></b>.</li> \n<li>Agora, é só você informar o <b>código de acesso</b> que recebeu no celular cadastrado em sua conta OPP e criar sua nova senha.</li></ol>('Código de acesso não chegou no celular', 'OPT - Não recebi código SMS'), ('O que é código de acesso', 'OPT - O que é Código de Acesso')",
+                "received_answer": "('Trocar senha por meio do formulário de atendimento', 'suggestion-watson|d:4e4e809b-b967-4896-9dfa-aa07ff7e65a0'), ('Trocar senha por meio do e-mail cadastrado no OPP', 'suggestion-watson|d:90c6837c-cb87-4880-81cf-e6e86c9b48f6'), ('Nenhuma acima', 'suggestion-watson|d:1fbf4c2a-6567-4138-a4a6-10426345ec4f')",
+                "response_time": 1.424461841583252
+            },
+            {
+                "id": "448f9528-783d-4486-84af-2f3a598e83c9",
+                "type": 2,
+                "binding_intent": "AcessoOPP_NovaSenha_Celular",
+                "simulated_message": "É possível gerar uma nova senha utilizando o celular?",
+                "expected_answer": "Você pode recuperar sua senha pelo celular.\n  \nVou explicar as etapas necessárias para fazer isso:\n<ol><li>Na <a href=\"https://sso.acesso.gov.br/\" target=\"_blank\"><b>página de acesso do OPP</b></a>, digite seu CPF e pressione <b><i>Continuar</i></b>. Na próxima tela, selecione <b><i>Esqueci minha senha</i></b>.</li>\n<li>Pode ser que apareça uma página indicando utilizar o <b>Reconhecimento Facial</b> no aplicativo OPP. Caso não queira utilizar o Reconhecimento Facial, escolha a opção <b><i>Não tenho celular</i></b>.</li>\n<li>Depois, se não quiser utilizar os Bancos Credenciados, escolha a opção <b>Recuperar de outra forma</i></b>.</li>\n<li>Em seguida, selecione <b></i>Não tenho acesso a este e-mail</i></b>. \nPor fim, na tela \"Recuperar senha com celular\", selecione <b><i>Enviar código</i></b>.</li> \n<li>Agora, é só você informar o <b>código de acesso</b> que recebeu no celular cadastrado em sua conta OPP e criar sua nova senha.</li></ol>('Código de acesso não chegou no celular', 'OPT - Não recebi código SMS'), ('O que é código de acesso', 'OPT - O que é Código de Acesso')",
+                "received_answer": "('Trocar senha por meio do celular cadastrado no OPP', 'suggestion-watson|d:5f41d150-1f33-4260-83c7-a1756b5c934e'), ('Preencher contato', 'suggestion-watson|d:a89e8a8f-ed41-4b50-a851-8b03a98c3345'), ('Nenhuma acima', 'suggestion-watson|d:cdb4e9e3-4664-4798-ba46-768fcb1e62b3')",
+                "response_time": 0.9533591270446777
+            },
+            {
+                "id": "306aae53-0f88-41f1-8377-d59cca105b7e",
+                "type": 1,
+                "binding_intent": "AcessoOPP_NovaSenha_DicasGerarSenhaForte",
+                "simulated_message": "Qual é o melhor método para criar uma senha forte?",
+                "expected_answer": "É importante que você defina uma senha segura para sua <b>conta OPP</b>.\n\nPara isso, crie uma senha com pelo menos <b>8 caracteres</b> que contenha: \n<ul><li>Letras MAIÚSCULAS e minúsculas \nO sistema diferencia entre maiúsculas e minúsculas, logo, C é diferente de c </li>\n<li>Números \n1, 2, 3, 4, 5, ...</li> \n<li>Símbolos \n#, &, @, ...</li></ul>\nEvite senhas simples, como datas, sequências e nomes. ",
+                "received_answer": "No momento não sei falar sobre isso. Vamos falar de outra coisa?",
+                "response_time": 1.050091028213501
+            },
+            {
+                "id": "adab24de-2e17-487c-a83a-052d35824a4f",
+                "type": 1,
+                "binding_intent": "AcessoOPP_NovaSenha_DicasGerarSenhaForte",
+                "simulated_message": "Quais são as diretrizes para gerar uma senha forte?",
+                "expected_answer": "É importante que você defina uma senha segura para sua <b>conta OPP</b>.\n\nPara isso, crie uma senha com pelo menos <b>8 caracteres</b> que contenha: \n<ul><li>Letras MAIÚSCULAS e minúsculas \nO sistema diferencia entre maiúsculas e minúsculas, logo, C é diferente de c </li>\n<li>Números \n1, 2, 3, 4, 5, ...</li> \n<li>Símbolos \n#, &, @, ...</li></ul>\nEvite senhas simples, como datas, sequências e nomes. ",
+                "received_answer": "No momento não sei falar sobre isso. Vamos falar de outra coisa?",
+                "response_time": 1.0267648696899414
+            },
+            {
+                "id": "bff570b3-92ea-4a58-b9d7-084f9e090692",
+                "type": 1,
+                "binding_intent": "AcessoOPP_NovaSenha_DicasGerarSenhaForte",
+                "simulated_message": "Quais são as dicas para criar uma senha segura?",
+                "expected_answer": "É importante que você defina uma senha segura para sua <b>conta OPP</b>.\n\nPara isso, crie uma senha com pelo menos <b>8 caracteres</b> que contenha: \n<ul><li>Letras MAIÚSCULAS e minúsculas \nO sistema diferencia entre maiúsculas e minúsculas, logo, C é diferente de c </li>\n<li>Números \n1, 2, 3, 4, 5, ...</li> \n<li>Símbolos \n#, &, @, ...</li></ul>\nEvite senhas simples, como datas, sequências e nomes. ",
+                "received_answer": "No momento não sei falar sobre isso. Vamos falar de outra coisa?",
+                "response_time": 0.8600902557373047
+            },
+            {
+                "id": "f2a106ca-20e5-4d5f-937d-95082f7b9aec",
+                "type": 2,
+                "binding_intent": "AcessoOPP_NovaSenha_DicasGerarSenhaForte",
+                "simulated_message": "Quais são as melhores diretrizes para gerar uma @senha poderosa",
+                "expected_answer": "É importante que você defina uma senha segura para sua <b>conta OPP</b>.\n\nPara isso, crie uma senha com pelo menos <b>8 caracteres</b> que contenha: \n<ul><li>Letras MAIÚSCULAS e minúsculas \nO sistema diferencia entre maiúsculas e minúsculas, logo, C é diferente de c </li>\n<li>Números \n1, 2, 3, 4, 5, ...</li> \n<li>Símbolos \n#, &, @, ...</li></ul>\nEvite senhas simples, como datas, sequências e nomes. ",
+                "received_answer": "No momento não sei falar sobre isso. Vamos falar de outra coisa?",
+                "response_time": 1.04644775390625
+            },
+            {
+                "id": "ed6b9b70-4f79-444a-9102-7cd76957c460",
+                "type": 2,
+                "binding_intent": "AcessoOPP_NovaSenha_DicasGerarSenhaForte",
+                "simulated_message": "Quais são as etapas para criar uma @senha forte",
+                "expected_answer": "É importante que você defina uma senha segura para sua <b>conta OPP</b>.\n\nPara isso, crie uma senha com pelo menos <b>8 caracteres</b> que contenha: \n<ul><li>Letras MAIÚSCULAS e minúsculas \nO sistema diferencia entre maiúsculas e minúsculas, logo, C é diferente de c </li>\n<li>Números \n1, 2, 3, 4, 5, ...</li> \n<li>Símbolos \n#, &, @, ...</li></ul>\nEvite senhas simples, como datas, sequências e nomes. ",
+                "received_answer": "No momento não sei falar sobre isso. Vamos falar de outra coisa?",
+                "response_time": 1.1663196086883545
+            },
+            {
+                "id": "c795d749-f344-4f7c-9919-7a58aa7a4be4",
+                "type": 2,
+                "binding_intent": "AcessoOPP_NovaSenha_DicasGerarSenhaForte",
+                "simulated_message": "Por que é necessário definir uma @senha segura",
+                "expected_answer": "É importante que você defina uma senha segura para sua <b>conta OPP</b>.\n\nPara isso, crie uma senha com pelo menos <b>8 caracteres</b> que contenha: \n<ul><li>Letras MAIÚSCULAS e minúsculas \nO sistema diferencia entre maiúsculas e minúsculas, logo, C é diferente de c </li>\n<li>Números \n1, 2, 3, 4, 5, ...</li> \n<li>Símbolos \n#, &, @, ...</li></ul>\nEvite senhas simples, como datas, sequências e nomes. ",
+                "received_answer": "No momento não sei falar sobre isso. Vamos falar de outra coisa?",
+                "response_time": 1.0416343212127686
+            },
+            {
+                "id": "ce419887-a614-4e80-a5d5-e2914fcc58f3",
+                "type": 2,
+                "binding_intent": "AcessoOPP_NovaSenha_FormularioDeAtendimento",
+                "simulated_message": "Não consegui gerar uma nova senha pelas opções disponíveis.",
+                "expected_answer": "Você já tentou todas as opções disponíveis para alterar a senha e recuperar a sua conta OPP e não deu certo? \n \nNesse caso, <b>solicite ajuda da nossa equipe</b> utilizando o <a href=\"https://portaldeservicos.economia.gov.br/atendimento/\" target=\"_blank\"><b>Formulário de Atendimento</b></a>.  \n\nFique atento: a recuperação de senha pelo Formulário de Atendimento pode levar <b>alguns dias</b>.",
+                "received_answer": "Você já tentou todas as opções disponíveis para alterar a senha e recuperar a sua conta OPP e não deu certo? \n \nNesse caso, <b>solicite ajuda da nossa equipe</b> utilizando o <a href=\"https://portaldeservicos.economia.gov.br/atendimento/\" target=\"_blank\">Formulário de Atendimento</a>.  \n\nFique atento: a recuperação de senha pelo Formulário de Atendimento pode levar <b>alguns dias</b>.",
+                "response_time": 1.1464462280273438
+            },
+            {
+                "id": "4e894197-611c-4d46-959c-b9652e6d1a71",
+                "type": 2,
+                "binding_intent": "AcessoOPP_NovaSenha_FormularioDeAtendimento",
+                "simulated_message": "Como solicitar uma nova senha através do formulário de atendimenta?",
+                "expected_answer": "Você já tentou todas as opções disponíveis para alterar a senha e recuperar a sua conta OPP e não deu certo? \n \nNesse caso, <b>solicite ajuda da nossa equipe</b> utilizando o <a href=\"https://portaldeservicos.economia.gov.br/atendimento/\" target=\"_blank\"><b>Formulário de Atendimento</b></a>.  \n\nFique atento: a recuperação de senha pelo Formulário de Atendimento pode levar <b>alguns dias</b>.",
+                "received_answer": "Você já tentou todas as opções disponíveis para alterar a senha e recuperar a sua conta OPP e não deu certo? \n \nNesse caso, <b>solicite ajuda da nossa equipe</b> utilizando o <a href=\"https://portaldeservicos.economia.gov.br/atendimento/\" target=\"_blank\">Formulário de Atendimento</a>.  \n\nFique atento: a recuperação de senha pelo Formulário de Atendimento pode levar <b>alguns dias</b>.",
+                "response_time": 1.2682809829711914
+            },
+            {
+                "id": "4affa169-5bae-4df8-b747-bec88fb2ead9",
+                "type": 2,
+                "binding_intent": "AcessoOPP_NovaSenha_FormularioDeAtendimento",
+                "simulated_message": "OPT - nova senha formulario.",
+                "expected_answer": "Você já tentou todas as opções disponíveis para alterar a senha e recuperar a sua conta OPP e não deu certo? \n \nNesse caso, <b>solicite ajuda da nossa equipe</b> utilizando o <a href=\"https://portaldeservicos.economia.gov.br/atendimento/\" target=\"_blank\"><b>Formulário de Atendimento</b></a>.  \n\nFique atento: a recuperação de senha pelo Formulário de Atendimento pode levar <b>alguns dias</b>.",
+                "received_answer": "Você já tentou todas as opções disponíveis para alterar a senha e recuperar a sua conta OPP e não deu certo? \n \nNesse caso, <b>solicite ajuda da nossa equipe</b> utilizando o <a href=\"https://portaldeservicos.economia.gov.br/atendimento/\" target=\"_blank\">Formulário de Atendimento</a>.  \n\nFique atento: a recuperação de senha pelo Formulário de Atendimento pode levar <b>alguns dias</b>.",
+                "response_time": 1.0644309520721436
+            },
+            {
+                "id": "ebf958d8-e4ff-4411-b55d-1698af71fba2",
+                "type": 1,
+                "binding_intent": "AcessoOPP_NovaSenha_InternetBanking",
+                "simulated_message": "Qual é a função do internet banking?",
+                "expected_answer": "É possível trocar sua senha utilizando o <b>Internet Banking</b>. Vou explicar como fazer.  \n\nPrimeiro, você acessa o seu Internet Banking para gerar uma <b>senha temporária</b> que será utilizada no <b>gov.br</b>. Os bancos, de modo geral, disponibilizam essa opção no menu outros serviços.  \n\nEm seguida, utilize a senha gerada no Internet Banking como sua <b>senha</b> para entrar no OPP  \n\nAssim que você entrar na <b>sua conta OPP</b>, será solicitada a criação de uma nova senha.  \n\nVocê prefere seguir um passo a passo para gerar a senha temporária? \n\nEntão consulte  <a href=\"http://OPP/en/latest/_perguntasdafaq/comocadastrarsenhatemporariadosbancosconveniados.html\" target=\"_blank\">Como cadastrar uma senha temporária nos bancos conveniados</a>.('Senha temporária com problema', 'OPT - Senha temporária expirada')",
+                "received_answer": "<b>Internet Banking</b> é o <b>serviço digital</b> oferecido pelas <b>instituições financeiras</b>, por meio do qual você pode realizar operações bancárias via internet. \n\nSe o seu banco for conveniado com a Plataforma OPP, você pode usar o Internet Banking para <b>criar, recuperar</b> e <b>aumentar o nível</b> da <b>conta OPP</b>. ",
+                "response_time": 1.6348655223846436
+            },
+            {
+                "id": "9ec97375-14ef-4e04-b773-6b8451659b30",
+                "type": 1,
+                "binding_intent": "AcessoOPP_NovaSenha_InternetBanking",
+                "simulated_message": "Como posso alterar minha senha no internet banking?",
+                "expected_answer": "É possível trocar sua senha utilizando o <b>Internet Banking</b>. Vou explicar como fazer.  \n\nPrimeiro, você acessa o seu Internet Banking para gerar uma <b>senha temporária</b> que será utilizada no <b>gov.br</b>. Os bancos, de modo geral, disponibilizam essa opção no menu outros serviços.  \n\nEm seguida, utilize a senha gerada no Internet Banking como sua <b>senha</b> para entrar no OPP  \n\nAssim que você entrar na <b>sua conta OPP</b>, será solicitada a criação de uma nova senha.  \n\nVocê prefere seguir um passo a passo para gerar a senha temporária? \n\nEntão consulte  <a href=\"http://OPP/en/latest/_perguntasdafaq/comocadastrarsenhatemporariadosbancosconveniados.html\" target=\"_blank\">Como cadastrar uma senha temporária nos bancos conveniados</a>.('Senha temporária com problema', 'OPT - Senha temporária expirada')",
+                "received_answer": "('Trocar senha por meio Internet Banking', 'suggestion-watson|d:3b263fc4-c1c5-4d65-ad3d-b2150dd9693f'), ('Recadastrar conta', 'suggestion-watson|d:940dad4a-cae0-43c6-9cc7-be741d55e13e'), ('Nenhuma acima', 'suggestion-watson|d:9b2291be-3de0-42ff-af58-3eaa73af2f7e')",
+                "response_time": 2.188133716583252
+            },
+            {
+                "id": "bb481bef-dce1-43c0-9d3a-a0cc29b28dd2",
+                "type": 2,
+                "binding_intent": "AcessoOPP_NovaSenha_InternetBanking",
+                "simulated_message": "Como posso trocar minha senha no internet banking?",
+                "expected_answer": "É possível trocar sua senha utilizando o <b>Internet Banking</b>. Vou explicar como fazer.  \n\nPrimeiro, você acessa o seu Internet Banking para gerar uma <b>senha temporária</b> que será utilizada no <b>gov.br</b>. Os bancos, de modo geral, disponibilizam essa opção no menu outros serviços.  \n\nEm seguida, utilize a senha gerada no Internet Banking como sua <b>senha</b> para entrar no OPP  \n\nAssim que você entrar na <b>sua conta OPP</b>, será solicitada a criação de uma nova senha.  \n\nVocê prefere seguir um passo a passo para gerar a senha temporária? \n\nEntão consulte  <a href=\"http://OPP/en/latest/_perguntasdafaq/comocadastrarsenhatemporariadosbancosconveniados.html\" target=\"_blank\">Como cadastrar uma senha temporária nos bancos conveniados</a>.('Senha temporária com problema', 'OPT - Senha temporária expirada')",
+                "received_answer": "('Trocar senha por meio Internet Banking', 'suggestion-watson|d:9652e1d2-1fbe-40ff-b430-36fc3f307021'), ('Trocar senha por meio de bancos credenciados', 'suggestion-watson|d:743cfd7e-5e87-4e2a-b248-e84d0a92a7df'), ('Nenhuma acima', 'suggestion-watson|d:45391664-5ae6-4568-88d9-b82ad08f6f2d')",
+                "response_time": 2.8636209964752197
+            },
+            {
+                "id": "ff0cdb89-c516-4b96-a76b-0bbf402e3726",
+                "type": 2,
+                "binding_intent": "AcessoOPP_NovaSenha_InternetBanking",
+                "simulated_message": "Qual é o procedimento para redefinir minha senha via internet banking?",
+                "expected_answer": "É possível trocar sua senha utilizando o <b>Internet Banking</b>. Vou explicar como fazer.  \n\nPrimeiro, você acessa o seu Internet Banking para gerar uma <b>senha temporária</b> que será utilizada no <b>gov.br</b>. Os bancos, de modo geral, disponibilizam essa opção no menu outros serviços.  \n\nEm seguida, utilize a senha gerada no Internet Banking como sua <b>senha</b> para entrar no OPP  \n\nAssim que você entrar na <b>sua conta OPP</b>, será solicitada a criação de uma nova senha.  \n\nVocê prefere seguir um passo a passo para gerar a senha temporária? \n\nEntão consulte  <a href=\"http://OPP/en/latest/_perguntasdafaq/comocadastrarsenhatemporariadosbancosconveniados.html\" target=\"_blank\">Como cadastrar uma senha temporária nos bancos conveniados</a>.('Senha temporária com problema', 'OPT - Senha temporária expirada')",
+                "received_answer": "('Trocar senha por meio Internet Banking', 'suggestion-watson|d:758b2746-eb01-44b8-b477-188d0425afe3'), ('Trocar senha por meio de bancos credenciados', 'suggestion-watson|d:c25a5a5d-fb65-4804-9a0b-7e2c3cf48dd7'), ('Nenhuma acima', 'suggestion-watson|d:8d4890a7-e63f-4533-a80a-31e2614dd0a0')",
+                "response_time": 1.1408283710479736
+            },
+            {
+                "id": "4d2a2bbf-a2c4-496f-b324-6b0608a82550",
+                "type": 2,
+                "binding_intent": "AcessoOPP_PJ_AtualizarCNPJ",
+                "simulated_message": "Como posso mudar o CNG na governo.br?",
+                "expected_answer": "Para <b>alterar</b> o <b>CNPJ</b> vinculado à sua  conta,  primeiro é preciso <b>desativar</b> a vinculação da empresa e, em seguida, <b>vincular</b> o novo CNPJ.  \n\nNessa operação, não é possível manter os colaboradores. Será <b>necessário adicioná-los</b> novamente.('Vincular CNPJ', 'OPT - Vincular CNPJ na Conta'), ('Remover CNPJ', 'OPT - Desvincular CNPJ'), ('Cadastrar colaboradores', 'OPT - Cadastrar Colaborador')",
+                "received_answer": "('Atualizar CNPJ', 'suggestion-watson|d:1043649a-a461-40b5-b4cb-ee61dd189f3d'), ('Recadastrar conta', 'suggestion-watson|d:bcc3981a-07a8-4839-b53d-f18da10ca3d2'), ('Nenhuma acima', 'suggestion-watson|d:b9d7a0f1-897a-47b2-9eaa-addf3d030f87')",
+                "response_time": 1.1551764011383057
+            },
+            {
+                "id": "57ab95a4-0281-405c-baed-9b9536d716cf",
+                "type": 2,
+                "binding_intent": "AcessoOPP_PJ_AtualizarCNPJ",
+                "simulated_message": "Como posso atualisar a emprezas na conta OPP?",
+                "expected_answer": "Para <b>alterar</b> o <b>CNPJ</b> vinculado à sua  conta,  primeiro é preciso <b>desativar</b> a vinculação da empresa e, em seguida, <b>vincular</b> o novo CNPJ.  \n\nNessa operação, não é possível manter os colaboradores. Será <b>necessário adicioná-los</b> novamente.('Vincular CNPJ', 'OPT - Vincular CNPJ na Conta'), ('Remover CNPJ', 'OPT - Desvincular CNPJ'), ('Cadastrar colaboradores', 'OPT - Cadastrar Colaborador')",
+                "received_answer": "('Atualizar CNPJ', 'suggestion-watson|d:de52f7f8-c47c-4751-8043-f08db7df55fb'), ('Trocar senha por meio do formulário de atendimento', 'suggestion-watson|d:ec42207f-848a-4171-ae1e-efd82a8886ae'), ('Nenhuma acima', 'suggestion-watson|d:3669d70b-d129-4222-bcc1-a96204c5be25')",
+                "response_time": 1.1564195156097412
+            },
+            {
+                "id": "b640708e-ce14-4418-9a32-60043f60ca6a",
+                "type": 2,
+                "binding_intent": "AcessoOPP_PJ_CadastrarRemoverColaboradores",
+                "simulated_message": "Como posso cadastrar ou remover colaboradorez?",
+                "expected_answer": "Você pode <b>cadastrar</b> ou <b>remover</b> colaboradores nos <b>CNPJ</b> vinculados à sua <b>conta OPP</b>. \n\nPara isso, você deve utilizar o e-CNPJ (Certificado Digital de Pessoa Jurídica). ('Cadastrar colaborador', 'OPT - Cadastrar Colaborador'), ('Remover colaborador', 'OPT - Remover Colaborador')",
+                "received_answer": "No momento não sei falar sobre isso. Vamos falar de outra coisa?",
+                "response_time": 1.1414613723754883
+            },
+            {
+                "id": "606442c4-1956-4598-b528-9d4b7b6edd9b",
+                "type": 1,
+                "binding_intent": "AcessoOPP_PJ_CadastroPessoaJuridica",
+                "simulated_message": "Como realizar o cadastramento de uma pessoa jurídica?",
+                "expected_answer": "Com o OPP você terá facilidade para <b>vincular empresas</b> à sua conta, <b>adicionar colaboradores</b> e acessar <b>serviços públicos</b> específicos para pessoas jurídicas.\n\nPara isso, você deve utilizar o <b>e-CNPJ</b> (Certificado Digital de Pessoa Jurídica) da sua empresa.('Atualizar CNPJ', 'OPT - Atualizar CNPJ'), ('Incluir colaborador', 'OPT - Cadastrar Colaborador'), ('Saber o que é e-CNPJ', 'OPT - O que é e-CNPJ')",
+                "received_answer": "Vincular um <b>CNPJ</b> à conta OPP do titular da Empresa é simples. \n \nNa <a href=\"https://sso.acesso.gov.br/\" target=\"_blank\"><b>página de acesso do OPP</b></a> selecione a opção <b><i>Certificado Digital</i></b> e digite a <b>chave de acesso</b>(PIN). No momento, não são aceitos certificados em nuvem para vincular empresa.\n \nEm seguida, dentro da <b>Minha área OPP</b>, selecione a opção <b><i>Vincular Empresas via e-CNPJ</i></b>, abra a opção <b><i>gerenciar vínculos com Empresa</i></b> e informe o <b>CNPJ</b> a ser vinculado. \n \nConfira se as <b>informações</b> do Certificado Digital de Pessoa Jurídica <b>e-CNPJ</b> estão corretas  e depois pressione <b><i>vincular</i></b>. ('Erro de Certificado', 'OPT - Certificado não encontrado'), ('Falha ao vincular', 'OPT - Falha ao vincular CNPJ'), ('O que é e-CNPJ ', 'OPT - O que é e-CNPJ')",
+                "response_time": 1.5479130744934082
+            },
+            {
+                "id": "8afb5258-3abf-44ef-84fc-db7ae3d33584",
+                "type": 1,
+                "binding_intent": "AcessoOPP_PJ_CadastroPessoaJuridica",
+                "simulated_message": "Quais são os passos para cadastrar um CNPJ?",
+                "expected_answer": "Com o OPP você terá facilidade para <b>vincular empresas</b> à sua conta, <b>adicionar colaboradores</b> e acessar <b>serviços públicos</b> específicos para pessoas jurídicas.\n\nPara isso, você deve utilizar o <b>e-CNPJ</b> (Certificado Digital de Pessoa Jurídica) da sua empresa.('Atualizar CNPJ', 'OPT - Atualizar CNPJ'), ('Incluir colaborador', 'OPT - Cadastrar Colaborador'), ('Saber o que é e-CNPJ', 'OPT - O que é e-CNPJ')",
+                "received_answer": "Vincular um <b>CNPJ</b> à conta OPP do titular da Empresa é simples. \n \nNa <a href=\"https://sso.acesso.gov.br/\" target=\"_blank\"><b>página de acesso do OPP</b></a> selecione a opção <b><i>Certificado Digital</i></b> e digite a <b>chave de acesso</b>(PIN). No momento, não são aceitos certificados em nuvem para vincular empresa.\n \nEm seguida, dentro da <b>Minha área OPP</b>, selecione a opção <b><i>Vincular Empresas via e-CNPJ</i></b>, abra a opção <b><i>gerenciar vínculos com Empresa</i></b> e informe o <b>CNPJ</b> a ser vinculado. \n \nConfira se as <b>informações</b> do Certificado Digital de Pessoa Jurídica <b>e-CNPJ</b> estão corretas  e depois pressione <b><i>vincular</i></b>. ('Erro de Certificado', 'OPT - Certificado não encontrado'), ('Falha ao vincular', 'OPT - Falha ao vincular CNPJ'), ('O que é e-CNPJ ', 'OPT - O que é e-CNPJ')",
+                "response_time": 0.9766068458557129
+            },
+            {
+                "id": "df4b8539-17f3-4f94-a543-873ffacf86eb",
+                "type": 2,
+                "binding_intent": "AcessoOPP_PJ_CadastroPessoaJuridica",
+                "simulated_message": "Qual é o procedimento para fazer o cadastro de pessoa juridica?",
+                "expected_answer": "Com o OPP você terá facilidade para <b>vincular empresas</b> à sua conta, <b>adicionar colaboradores</b> e acessar <b>serviços públicos</b> específicos para pessoas jurídicas.\n\nPara isso, você deve utilizar o <b>e-CNPJ</b> (Certificado Digital de Pessoa Jurídica) da sua empresa.('Atualizar CNPJ', 'OPT - Atualizar CNPJ'), ('Incluir colaborador', 'OPT - Cadastrar Colaborador'), ('Saber o que é e-CNPJ', 'OPT - O que é e-CNPJ')",
+                "received_answer": "Vincular um <b>CNPJ</b> à conta OPP do titular da Empresa é simples. \n \nNa <a href=\"https://sso.acesso.gov.br/\" target=\"_blank\"><b>página de acesso do OPP</b></a> selecione a opção <b><i>Certificado Digital</i></b> e digite a <b>chave de acesso</b>(PIN). No momento, não são aceitos certificados em nuvem para vincular empresa.\n \nEm seguida, dentro da <b>Minha área OPP</b>, selecione a opção <b><i>Vincular Empresas via e-CNPJ</i></b>, abra a opção <b><i>gerenciar vínculos com Empresa</i></b> e informe o <b>CNPJ</b> a ser vinculado. \n \nConfira se as <b>informações</b> do Certificado Digital de Pessoa Jurídica <b>e-CNPJ</b> estão corretas  e depois pressione <b><i>vincular</i></b>. ('Erro de Certificado', 'OPT - Certificado não encontrado'), ('Falha ao vincular', 'OPT - Falha ao vincular CNPJ'), ('O que é e-CNPJ ', 'OPT - O que é e-CNPJ')",
+                "response_time": 1.1492784023284912
+            },
+            {
+                "id": "e287490f-de8b-4fd4-90fc-dd77729f8d3b",
+                "type": 2,
+                "binding_intent": "AcessoOPP_PJ_CadastroPessoaJuridica",
+                "simulated_message": "Quais são os passos necessários para realizar o cadastramento de um cnpj?",
+                "expected_answer": "Com o OPP você terá facilidade para <b>vincular empresas</b> à sua conta, <b>adicionar colaboradores</b> e acessar <b>serviços públicos</b> específicos para pessoas jurídicas.\n\nPara isso, você deve utilizar o <b>e-CNPJ</b> (Certificado Digital de Pessoa Jurídica) da sua empresa.('Atualizar CNPJ', 'OPT - Atualizar CNPJ'), ('Incluir colaborador', 'OPT - Cadastrar Colaborador'), ('Saber o que é e-CNPJ', 'OPT - O que é e-CNPJ')",
+                "received_answer": "('Vincular CNPJ', 'suggestion-watson|d:4ec88bd8-3ad6-4f42-aab3-db3440eefd59'), ('Foto com qualidade', 'suggestion-watson|d:05bd7cc5-8f43-4235-aaf2-4c092e9b763f'), ('Nenhuma acima', 'suggestion-watson|d:0d5a1bd0-937a-41ad-8f3b-2442b2604acd')",
+                "response_time": 1.3779942989349365
+            },
+            {
+                "id": "8ef671cb-8c3f-4326-b739-7028a3058640",
+                "type": 2,
+                "binding_intent": "AcessoOPP_PJ_DesativarEmpresaCadastrada",
+                "simulated_message": "Quais são os procedimentos para remucao de um CNPJ?",
+                "expected_answer": "Para desativar o CNPJ vinculado à sua conta OPP, primeiro entre na conta, localize <b>Minha área OPP</b>, selecione <i>Vincular Empresas via e-CNPJ</i> e, em seguida, a opção <i>Gerenciar vínculos com empresas</i>.\n\nMais informações em <a href=\"http://OPP/en/latest/_perguntasdafaq/comosubstituircnpjloginunico.html#\" target=\"_blank\"><b>Como atualizar CNPJ</b></a>.",
+                "received_answer": "Tivemos problemas no nosso sistema ao tentar responder sua pergunta. Pode tentar de novo?",
+                "response_time": 0.6542654037475586
+            },
+            {
+                "id": "439ec282-cefa-49c3-a6da-8cf8a75d7afc",
+                "type": 1,
+                "binding_intent": "AcessoOPP_PJ_RemoverColaborador",
+                "simulated_message": "Quais são os passos para excluir um colaborador da conta @cnpj?",
+                "expected_answer": "Se deseja <b>remover</b> colaboradores de um CNPJ, você deve ser o <b>titular</b> do <b>Certificado Digital e-CNPJ</b>. \n \n Dentro da <b>Minha área OPP</b>, selecione <b><i>Vincular Empresas via e-CNPJ</i></b> e abra a opção <b><i>Gerenciar Vínculos com Empresas</i></b>. \n \nLocalize o CNPJ que deseja remover e, nos <b>três pontinhos (...)</b> selecionar <b><i>gerenciar colaboradores</i></b>. \n \nLocalize o colaborador que deseja <b>remover</b> e pressione o ícone da <b>lixeira azul</b>. \n\nSe necessário, você encontrará mais detalhes em <a href=\"http://OPP/en/latest/_perguntasdafaq/retirarcolaboradordocnpj.html\" target=\"_blank\"><b>Retirar Colaborador do CNPJ</b></a>.",
+                "received_answer": "('Excluir colaborador', 'suggestion-watson|d:ff2263a6-74ae-4b60-a319-0ebd9cc72c16'), ('Desvincular CNPJ', 'suggestion-watson|d:beab539f-a010-4504-a193-1fc81e827eb1'), ('Nenhuma acima', 'suggestion-watson|d:fec3c930-5b76-4ec9-872a-b230a701c953')",
+                "response_time": 0.9638030529022217
+            },
+            {
+                "id": "2a737c7a-b6d2-43ae-bb73-f4ad40ed1ba1",
+                "type": 1,
+                "binding_intent": "AcessoOPP_PJ_RemoverColaborador",
+                "simulated_message": "Qual é a opção para remover um colaborador?",
+                "expected_answer": "Se deseja <b>remover</b> colaboradores de um CNPJ, você deve ser o <b>titular</b> do <b>Certificado Digital e-CNPJ</b>. \n \n Dentro da <b>Minha área OPP</b>, selecione <b><i>Vincular Empresas via e-CNPJ</i></b> e abra a opção <b><i>Gerenciar Vínculos com Empresas</i></b>. \n \nLocalize o CNPJ que deseja remover e, nos <b>três pontinhos (...)</b> selecionar <b><i>gerenciar colaboradores</i></b>. \n \nLocalize o colaborador que deseja <b>remover</b> e pressione o ícone da <b>lixeira azul</b>. \n\nSe necessário, você encontrará mais detalhes em <a href=\"http://OPP/en/latest/_perguntasdafaq/retirarcolaboradordocnpj.html\" target=\"_blank\"><b>Retirar Colaborador do CNPJ</b></a>.",
+                "received_answer": "('Excluir colaborador', 'suggestion-watson|d:77a34041-d1d2-40ef-b8f7-e9c2d8cb2356'), ('Cadastro bloqueado', 'suggestion-watson|d:0e28689b-5ed8-4507-8a90-15f4000e010c'), ('Nenhuma acima', 'suggestion-watson|d:fa319112-5b4a-4149-a355-3cdd8ee2748f')",
+                "response_time": 1.1173033714294434
+            },
+            {
+                "id": "95b091cc-c03b-47ec-80c5-ecf68dbe4695",
+                "type": 1,
+                "binding_intent": "AcessoOPP_PJ_VincularCNPJnaConta",
+                "simulated_message": "Quais são os passos para vincular um CNPJ à minha conta @OPP?",
+                "expected_answer": "Vincular um <b>CNPJ</b> à conta OPP do titular da Empresa é simples. \n \nNa página acesso.gov.br selecione a opção <b><i>Certificado Digital</i></b> e digite a <b>chave de acesso</b>(PIN). No momento, não são aceitos certificados em nuvem para vincular empresa.\n \nEm seguida, dentro da <b>Minha área OPP</b>, selecione a opção <b><i>Vincular Empresas via e-CNPJ</i></b>, abra a opção <b><i>gerenciar vínculos com Empresa</i></b> e informe o <b>CNPJ</b> a ser vinculado. \n \nConfira se as <b>informações</b> do Certificado Digital de Pessoa Jurídica <b>e-CNPJ</b> estão corretas  e depois pressione <b><i>vincular</i></b>. ('Erro de Certificado', 'OPT - Certificado não encontrado'), ('Falha ao vincular', 'OPT - Falha ao vincular CNPJ'), ('O que é e-CNPJ ', 'OPT - O que é e-CNPJ')",
+                "received_answer": "Vincular um <b>CNPJ</b> à conta OPP do titular da Empresa é simples. \n \nNa <a href=\"https://sso.acesso.gov.br/\" target=\"_blank\"><b>página de acesso do OPP</b></a> selecione a opção <b><i>Certificado Digital</i></b> e digite a <b>chave de acesso</b>(PIN). No momento, não são aceitos certificados em nuvem para vincular empresa.\n \nEm seguida, dentro da <b>Minha área OPP</b>, selecione a opção <b><i>Vincular Empresas via e-CNPJ</i></b>, abra a opção <b><i>gerenciar vínculos com Empresa</i></b> e informe o <b>CNPJ</b> a ser vinculado. \n \nConfira se as <b>informações</b> do Certificado Digital de Pessoa Jurídica <b>e-CNPJ</b> estão corretas  e depois pressione <b><i>vincular</i></b>. ('Erro de Certificado', 'OPT - Certificado não encontrado'), ('Falha ao vincular', 'OPT - Falha ao vincular CNPJ'), ('O que é e-CNPJ ', 'OPT - O que é e-CNPJ')",
+                "response_time": 5.886372804641724
+            },
+            {
+                "id": "3bfeff64-2cba-4508-8a96-bc53008111cf",
+                "type": 1,
+                "binding_intent": "AcessoOPP_PJ_VincularCNPJnaConta",
+                "simulated_message": "Qual é a forma de realizar o cadastramento de um CNPJ?",
+                "expected_answer": "Vincular um <b>CNPJ</b> à conta OPP do titular da Empresa é simples. \n \nNa página acesso.gov.br selecione a opção <b><i>Certificado Digital</i></b> e digite a <b>chave de acesso</b>(PIN). No momento, não são aceitos certificados em nuvem para vincular empresa.\n \nEm seguida, dentro da <b>Minha área OPP</b>, selecione a opção <b><i>Vincular Empresas via e-CNPJ</i></b>, abra a opção <b><i>gerenciar vínculos com Empresa</i></b> e informe o <b>CNPJ</b> a ser vinculado. \n \nConfira se as <b>informações</b> do Certificado Digital de Pessoa Jurídica <b>e-CNPJ</b> estão corretas  e depois pressione <b><i>vincular</i></b>. ('Erro de Certificado', 'OPT - Certificado não encontrado'), ('Falha ao vincular', 'OPT - Falha ao vincular CNPJ'), ('O que é e-CNPJ ', 'OPT - O que é e-CNPJ')",
+                "received_answer": "('Vincular CNPJ', 'suggestion-watson|d:b071faf4-0ed4-4d54-9743-762752031160'), ('Cadastro CNPJ', 'suggestion-watson|d:7d7157df-39da-4af2-ba91-676f792d6245'), ('Nenhuma acima', 'suggestion-watson|d:5ed17330-c0a5-41a3-9ee0-a7f3bc79b0a6')",
+                "response_time": 1.0501441955566406
+            },
+            {
+                "id": "3ed92404-4350-4e1e-b5f1-ba9d53af8278",
+                "type": 2,
+                "binding_intent": "AcessoOPP_PJ_VincularCNPJnaConta",
+                "simulated_message": "Quais são os procedimentos para vincularr um CNPJ à sua conta @OPP?",
+                "expected_answer": "Vincular um <b>CNPJ</b> à conta OPP do titular da Empresa é simples. \n \nNa página acesso.gov.br selecione a opção <b><i>Certificado Digital</i></b> e digite a <b>chave de acesso</b>(PIN). No momento, não são aceitos certificados em nuvem para vincular empresa.\n \nEm seguida, dentro da <b>Minha área OPP</b>, selecione a opção <b><i>Vincular Empresas via e-CNPJ</i></b>, abra a opção <b><i>gerenciar vínculos com Empresa</i></b> e informe o <b>CNPJ</b> a ser vinculado. \n \nConfira se as <b>informações</b> do Certificado Digital de Pessoa Jurídica <b>e-CNPJ</b> estão corretas  e depois pressione <b><i>vincular</i></b>. ('Erro de Certificado', 'OPT - Certificado não encontrado'), ('Falha ao vincular', 'OPT - Falha ao vincular CNPJ'), ('O que é e-CNPJ ', 'OPT - O que é e-CNPJ')",
+                "received_answer": "Vincular um <b>CNPJ</b> à conta OPP do titular da Empresa é simples. \n \nNa <a href=\"https://sso.acesso.gov.br/\" target=\"_blank\"><b>página de acesso do OPP</b></a> selecione a opção <b><i>Certificado Digital</i></b> e digite a <b>chave de acesso</b>(PIN). No momento, não são aceitos certificados em nuvem para vincular empresa.\n \nEm seguida, dentro da <b>Minha área OPP</b>, selecione a opção <b><i>Vincular Empresas via e-CNPJ</i></b>, abra a opção <b><i>gerenciar vínculos com Empresa</i></b> e informe o <b>CNPJ</b> a ser vinculado. \n \nConfira se as <b>informações</b> do Certificado Digital de Pessoa Jurídica <b>e-CNPJ</b> estão corretas  e depois pressione <b><i>vincular</i></b>. ('Erro de Certificado', 'OPT - Certificado não encontrado'), ('Falha ao vincular', 'OPT - Falha ao vincular CNPJ'), ('O que é e-CNPJ ', 'OPT - O que é e-CNPJ')",
+                "response_time": 0.8255221843719482
+            },
+            {
+                "id": "3c2a4c61-91a9-4f76-99ff-538e0b83f0c6",
+                "type": 2,
+                "binding_intent": "AcessoOPP_PJ_VincularCNPJnaConta",
+                "simulated_message": "Quais são os passas para vincular um CNPJ à sua conta?",
+                "expected_answer": "Vincular um <b>CNPJ</b> à conta OPP do titular da Empresa é simples. \n \nNa página acesso.gov.br selecione a opção <b><i>Certificado Digital</i></b> e digite a <b>chave de acesso</b>(PIN). No momento, não são aceitos certificados em nuvem para vincular empresa.\n \nEm seguida, dentro da <b>Minha área OPP</b>, selecione a opção <b><i>Vincular Empresas via e-CNPJ</i></b>, abra a opção <b><i>gerenciar vínculos com Empresa</i></b> e informe o <b>CNPJ</b> a ser vinculado. \n \nConfira se as <b>informações</b> do Certificado Digital de Pessoa Jurídica <b>e-CNPJ</b> estão corretas  e depois pressione <b><i>vincular</i></b>. ('Erro de Certificado', 'OPT - Certificado não encontrado'), ('Falha ao vincular', 'OPT - Falha ao vincular CNPJ'), ('O que é e-CNPJ ', 'OPT - O que é e-CNPJ')",
+                "received_answer": "Vincular um <b>CNPJ</b> à conta OPP do titular da Empresa é simples. \n \nNa <a href=\"https://sso.acesso.gov.br/\" target=\"_blank\"><b>página de acesso do OPP</b></a> selecione a opção <b><i>Certificado Digital</i></b> e digite a <b>chave de acesso</b>(PIN). No momento, não são aceitos certificados em nuvem para vincular empresa.\n \nEm seguida, dentro da <b>Minha área OPP</b>, selecione a opção <b><i>Vincular Empresas via e-CNPJ</i></b>, abra a opção <b><i>gerenciar vínculos com Empresa</i></b> e informe o <b>CNPJ</b> a ser vinculado. \n \nConfira se as <b>informações</b> do Certificado Digital de Pessoa Jurídica <b>e-CNPJ</b> estão corretas  e depois pressione <b><i>vincular</i></b>. ('Erro de Certificado', 'OPT - Certificado não encontrado'), ('Falha ao vincular', 'OPT - Falha ao vincular CNPJ'), ('O que é e-CNPJ ', 'OPT - O que é e-CNPJ')",
+                "response_time": 1.1049106121063232
+            },
+            {
+                "id": "b0753af9-76f3-43aa-bdcc-c02f34f37672",
+                "type": 1,
+                "binding_intent": "AcessoOPP_Problemas_AumentarNivelDeSegurancaDaConta",
+                "simulated_message": "Como posso melhorar a segurança da minha conta?",
+                "expected_answer": "Se sua conta é nível <b>Ouro</b>, está ótimo. Significa que ela já tem o nível mais alto de confiabilidade. Isso garante a você acesso a todos os serviços digitais disponíveis na plataforma OPP.\n\nCaso seja nível <b>Prata ou Bronze</b>, acesse sua conta OPP na página acesso.gov.br e selecione <b><i>Aumentar Nível de Conta</i></b>, e siga as orientações apresentadas.\n\nCaso tenha alguma dúvida, confira o passo a passo na página OPP/conta.('O que é?', 'OPT - Nivel de segurança')",
+                "received_answer": "('Como aumentar nível', 'suggestion-watson|d:75bdc475-a33f-49ef-8c44-d66c83f3a893'), ('Recadastrar conta', 'suggestion-watson|d:e78a23d0-7638-4c50-95ce-fbc7ea7e32bf'), ('Nenhuma acima', 'suggestion-watson|d:32191d0c-2e78-49f2-8719-c7966c5ae5b4')",
+                "response_time": 0.9997477531433105
+            },
+            {
+                "id": "0b5f5469-ede6-48d7-aee3-19cdd04d097a",
+                "type": 1,
+                "binding_intent": "AcessoOPP_Problemas_AumentarNivelDeSegurancaDaConta",
+                "simulated_message": "Quais são as formas de aumentar o nível de segurança da minha conta?",
+                "expected_answer": "Se sua conta é nível <b>Ouro</b>, está ótimo. Significa que ela já tem o nível mais alto de confiabilidade. Isso garante a você acesso a todos os serviços digitais disponíveis na plataforma OPP.\n\nCaso seja nível <b>Prata ou Bronze</b>, acesse sua conta OPP na página acesso.gov.br e selecione <b><i>Aumentar Nível de Conta</i></b>, e siga as orientações apresentadas.\n\nCaso tenha alguma dúvida, confira o passo a passo na página OPP/conta.('O que é?', 'OPT - Nivel de segurança')",
+                "received_answer": "Se sua conta é nível <b>Ouro</b>, está ótimo. Significa que ela já tem o nível mais alto de confiabilidade. Isso garante a você acesso a todos os serviços digitais disponíveis na plataforma OPP.\n\nCaso seja nível <b>Prata ou Bronze</b>, acesse sua conta OPP na <a href=\"https://sso.acesso.gov.br/\" target=\"_blank\"><b>página de acesso do OPP</b></a> e selecione <b><i>Aumentar Nível</i></b>, e siga as orientações apresentadas.\n\nCaso tenha alguma dúvida, confira o passo a passo na página <a href=\"https://www.gov.br/governodigital/pt-br/conta-gov-br\" target=\"_blank\"><b>gov.br/conta</b></a>.('O que é nível de segurança da conta?', 'OPT - Nivel de segurança')",
+                "response_time": 1.1095504760742188
+            },
+            {
+                "id": "9ba4bfc2-a348-4b6a-9ec7-476745e191fb",
+                "type": 2,
+                "binding_intent": "AcessoOPP_Problemas_AumentarNivelDeSegurancaDaConta",
+                "simulated_message": "Como posso aumentar minha seguranca da conta?",
+                "expected_answer": "Se sua conta é nível <b>Ouro</b>, está ótimo. Significa que ela já tem o nível mais alto de confiabilidade. Isso garante a você acesso a todos os serviços digitais disponíveis na plataforma OPP.\n\nCaso seja nível <b>Prata ou Bronze</b>, acesse sua conta OPP na página acesso.gov.br e selecione <b><i>Aumentar Nível de Conta</i></b>, e siga as orientações apresentadas.\n\nCaso tenha alguma dúvida, confira o passo a passo na página OPP/conta.('O que é?', 'OPT - Nivel de segurança')",
+                "received_answer": "Se sua conta é nível <b>Ouro</b>, está ótimo. Significa que ela já tem o nível mais alto de confiabilidade. Isso garante a você acesso a todos os serviços digitais disponíveis na plataforma OPP.\n\nCaso seja nível <b>Prata ou Bronze</b>, acesse sua conta OPP na <a href=\"https://sso.acesso.gov.br/\" target=\"_blank\"><b>página de acesso do OPP</b></a> e selecione <b><i>Aumentar Nível</i></b>, e siga as orientações apresentadas.\n\nCaso tenha alguma dúvida, confira o passo a passo na página <a href=\"https://www.gov.br/governodigital/pt-br/conta-gov-br\" target=\"_blank\"><b>gov.br/conta</b></a>.('O que é nível de segurança da conta?', 'OPT - Nivel de segurança')",
+                "response_time": 1.0640158653259277
+            },
+            {
+                "id": "48fe24da-23a8-4a42-b0a7-e463a036f199",
+                "type": 2,
+                "binding_intent": "AcessoOPP_Problemas_AumentarNivelDeSegurancaDaConta",
+                "simulated_message": "Como conseguir um selo de Nivel Prata ou Ouro?",
+                "expected_answer": "Se sua conta é nível <b>Ouro</b>, está ótimo. Significa que ela já tem o nível mais alto de confiabilidade. Isso garante a você acesso a todos os serviços digitais disponíveis na plataforma OPP.\n\nCaso seja nível <b>Prata ou Bronze</b>, acesse sua conta OPP na página acesso.gov.br e selecione <b><i>Aumentar Nível de Conta</i></b>, e siga as orientações apresentadas.\n\nCaso tenha alguma dúvida, confira o passo a passo na página OPP/conta.('O que é?', 'OPT - Nivel de segurança')",
+                "received_answer": "Se sua conta é nível <b>Ouro</b>, está ótimo. Significa que ela já tem o nível mais alto de confiabilidade. Isso garante a você acesso a todos os serviços digitais disponíveis na plataforma OPP.\n\nCaso seja nível <b>Prata ou Bronze</b>, acesse sua conta OPP na <a href=\"https://sso.acesso.gov.br/\" target=\"_blank\"><b>página de acesso do OPP</b></a> e selecione <b><i>Aumentar Nível</i></b>, e siga as orientações apresentadas.\n\nCaso tenha alguma dúvida, confira o passo a passo na página <a href=\"https://www.gov.br/governodigital/pt-br/conta-gov-br\" target=\"_blank\"><b>gov.br/conta</b></a>.('O que é nível de segurança da conta?', 'OPT - Nivel de segurança')",
+                "response_time": 0.9581608772277832
+            },
+            {
+                "id": "7c89f1c8-dff3-499b-99f2-e88d3d36b0e1",
+                "type": 2,
+                "binding_intent": "AcessoOPP_Problemas_AumentarNivelDeSegurancaDaConta",
+                "simulated_message": "Quero subir o nivel da minha conta?",
+                "expected_answer": "Se sua conta é nível <b>Ouro</b>, está ótimo. Significa que ela já tem o nível mais alto de confiabilidade. Isso garante a você acesso a todos os serviços digitais disponíveis na plataforma OPP.\n\nCaso seja nível <b>Prata ou Bronze</b>, acesse sua conta OPP na página acesso.gov.br e selecione <b><i>Aumentar Nível de Conta</i></b>, e siga as orientações apresentadas.\n\nCaso tenha alguma dúvida, confira o passo a passo na página OPP/conta.('O que é?', 'OPT - Nivel de segurança')",
+                "received_answer": "Se sua conta é nível <b>Ouro</b>, está ótimo. Significa que ela já tem o nível mais alto de confiabilidade. Isso garante a você acesso a todos os serviços digitais disponíveis na plataforma OPP.\n\nCaso seja nível <b>Prata ou Bronze</b>, acesse sua conta OPP na <a href=\"https://sso.acesso.gov.br/\" target=\"_blank\"><b>página de acesso do OPP</b></a> e selecione <b><i>Aumentar Nível</i></b>, e siga as orientações apresentadas.\n\nCaso tenha alguma dúvida, confira o passo a passo na página <a href=\"https://www.gov.br/governodigital/pt-br/conta-gov-br\" target=\"_blank\"><b>gov.br/conta</b></a>.('O que é nível de segurança da conta?', 'OPT - Nivel de segurança')",
+                "response_time": 0.9971427917480469
+            },
+            {
+                "id": "4f76bc46-d4a8-4e9d-b625-4326bba86c94",
+                "type": 1,
+                "binding_intent": "AcessoOPP_Problemas_CadastroSenhaBloqueados",
+                "simulated_message": "O que fazer quando a senha impede o acesso à minha conta?",
+                "expected_answer": "A sua conta OPP fica <b>bloqueada</b> se você fizer <b>três tentativas</b> seguidas de acesso com senha errada. \n \nPara <b>desbloquear</b>, você deve aguardar <b>4 horas</b> ou então gerar uma nova senha. ('Gerar nova senha', 'OPT - redefinir senha')",
+                "received_answer": "('Redefinir senha', 'suggestion-watson|d:347fa9e3-a39f-4533-8427-7e0abe8d766f'), ('Trocar senha por meio de bancos credenciados', 'suggestion-watson|d:1741df4d-1ae2-4eff-815f-d6d5e06d4892'), ('Nenhuma acima', 'suggestion-watson|d:7f3c5fdf-a7ca-46b1-a937-56ad13f75878')",
+                "response_time": 2.420905351638794
+            },
+            {
+                "id": "e8a8a111-e052-43f5-839f-be8416e76628",
+                "type": 2,
+                "binding_intent": "AcessoOPP_Problemas_ComoBaixarApp",
+                "simulated_message": "Cadê o ap?",
+                "expected_answer": "Antes de instalar o aplicativo, você precisa saber qual é o tipo do seu aparelho. \n\nSe for um iPhone ou iPad, ele será encontrado na plataforma <a href=\"https://play.google.com/store/apps/details?id=br.gov.meuOPP&hl=pt_BR&gl=US\" target=\"_blank\"><b>App Store</b></a>.\n\nSe for um aparelho com Android, o aplicativo estará disponível na plataforma <a href=\"https://play.google.com/store/apps/details?id=br.gov.meuOPP&hl=pt_BR&gl=US\" target=\"_blank\"><b>Play Store</b></a>.",
+                "received_answer": "No momento não sei falar sobre isso. Vamos falar de outra coisa?",
+                "response_time": 0.8352069854736328
+            },
+            {
+                "id": "597d4c34-1d06-40f0-a603-5f2fa8d2e459",
+                "type": 1,
+                "binding_intent": "AcessoOPP_Problemas_CPFInconsistente",
+                "simulated_message": "Quais são os problemas mais comuns relacionados ao CPF?",
+                "expected_answer": "Inicialmente, observe se você informou o número correto. Uma dica é conferir o número do seu CPF em algum documento. \n\nInformando o seu CPF corretamente, o OPP verifica se ele está válido junto à Receita Federal. Caso não esteja válido, você precisará <b>atualizar</b> suas <b>informações</b> na página da <b>Receita Federal</b> <a href=\"https://servicos.receita.fazenda.gov.br/Servicos/CPF/alterar/default.asp\" target=\"_blank\"><b>Alteração de Dados Cadastrais no CPF</b></a>. \n\nPois, para <b>criar</b> ou <b>acessar</b> sua <b>conta OPP</b>, é necessário possuir um <b>CPF válido</b>.",
+                "received_answer": "('Erro no CPF', 'suggestion-watson|d:a0f634af-540b-4e45-af03-da3e83421716'), ('O que é o CPF', 'suggestion-watson|d:55d25d22-8245-49fa-a765-6e7fa594a4d9'), ('Nenhuma acima', 'suggestion-watson|d:db636f8d-cba9-4ca9-8dc3-5ca8492c37ad')",
+                "response_time": 1.870382308959961
+            },
+            {
+                "id": "306fbe4c-2efa-48ae-ab64-78f202eb2c28",
+                "type": 2,
+                "binding_intent": "AcessoOPP_Problemas_NaoConseguiVincularEmpresa",
+                "simulated_message": "Qual foi o erro ao vinkular @cnpj na minha conta?",
+                "expected_answer": "Caso esteja com <b>dificuldade</b> para realizar a <b>vinculação de um CNPJ à sua conta OPP</b>, certifique-se do seguinte:\n\nQue o certificado utilizado é um <b>e-CNPJ registrado em seu CPF</b>, certificados de pessoa física não serão aceitos.\n\nQue o certificado é do tipo <b>A1 (máquina) ou A3 (token)</b>, certificados em nuvem não serão aceitos.\n\nQue caso o CNPJ tenha <b>filiais</b>, cada filial será tratada como uma <b>empresa individual</b> e deverá possuir um <b>e-CNPJ específico</b>.('Erro de certificado', 'OPT - Certificado não encontrado')('Sim', 'OPT-SimResolvido'), ('Não', 'OPT-NaoEmail')",
+                "received_answer": "('Erro no vínculo CNPJ', 'suggestion-watson|d:5c0cc777-f220-44eb-b67a-fc70b0e31f32'), ('Desvincular CNPJ', 'suggestion-watson|d:879cc880-d787-4dee-9a6a-5e32550be414'), ('Nenhuma acima', 'suggestion-watson|d:9b7e78ef-9864-4a1d-99f7-c81d1d328536')",
+                "response_time": 0.90285325050354
+            },
+            {
+                "id": "7a52a4f1-e6e4-482d-a2a3-a7625d7da7c1",
+                "type": 1,
+                "binding_intent": "AcessoOPP_Problemas_NaoConsigoRecuperarMinhaConta",
+                "simulated_message": "Como posso alterar minha senha usando os métodos disponíveis?",
+                "expected_answer": "Você deve utilizar a opção <b><i>Esqueci minha senha</i></b> também para <b>recuperar</b> ou <b>desbloquear</b> sua <b>conta</b>. \n\nPrimeiro, na <a href=\"https://sso.acesso.gov.br/\" target=\"_blank\"><b>página de acesso do OPP</b></a>, digite o <b>Número do CPF</b> e pressione <b><i>Continuar</i></b>. \n\nSe você já tiver feito isso, então é só clicar em <b><i>Esqueci minha senha</i></b> e seguir as instruções de recuperação de senha apresentadas na tela seguinte. ('Sim', 'OPT-SimResolvido'), ('Não', 'OPT-NaoFormulario')",
+                "received_answer": "Só pode existir uma <b>única conta OPP</b> para <b>cada CPF</b>, ou seja, uma conta por pessoa. \n\nSe você esqueceu a senha criada, solicite a <b>recuperação de senha OPP</b>  ou uma das <b>outras formas de acesso</b> do OPP. \n\nE caso <b>ainda não tenha</b> uma conta OPP, aproveite e crie a sua. Assim você terá acesso a diversos serviços digitais de governo de forma simplificada.('Recuperar senha', 'OPT - redefinir senha'), ('Criar conta', 'OPT - criar conta')",
+                "response_time": 1.0808334350585938
+            },
+            {
+                "id": "462c552b-0686-49a3-88e8-f2c4fa0b2e6f",
+                "type": 1,
+                "binding_intent": "AcessoOPP_Problemas_NaoConsigoRecuperarMinhaConta",
+                "simulated_message": "O que fazer em caso de erro ao recuperar a conta?",
+                "expected_answer": "Você deve utilizar a opção <b><i>Esqueci minha senha</i></b> também para <b>recuperar</b> ou <b>desbloquear</b> sua <b>conta</b>. \n\nPrimeiro, na <a href=\"https://sso.acesso.gov.br/\" target=\"_blank\"><b>página de acesso do OPP</b></a>, digite o <b>Número do CPF</b> e pressione <b><i>Continuar</i></b>. \n\nSe você já tiver feito isso, então é só clicar em <b><i>Esqueci minha senha</i></b> e seguir as instruções de recuperação de senha apresentadas na tela seguinte. ('Sim', 'OPT-SimResolvido'), ('Não', 'OPT-NaoFormulario')",
+                "received_answer": "No momento não sei falar sobre isso. Vamos falar de outra coisa?",
+                "response_time": 0.8530614376068115
+            },
+            {
+                "id": "e48e474e-2fb2-4463-9477-2078c884f930",
+                "type": 2,
+                "binding_intent": "AcessoOPP_Problemas_NaoConsigoRecuperarMinhaConta",
+                "simulated_message": "Como posso alterar minha @senha utilizando as opções disponíveis?",
+                "expected_answer": "Você deve utilizar a opção <b><i>Esqueci minha senha</i></b> também para <b>recuperar</b> ou <b>desbloquear</b> sua <b>conta</b>. \n\nPrimeiro, na <a href=\"https://sso.acesso.gov.br/\" target=\"_blank\"><b>página de acesso do OPP</b></a>, digite o <b>Número do CPF</b> e pressione <b><i>Continuar</i></b>. \n\nSe você já tiver feito isso, então é só clicar em <b><i>Esqueci minha senha</i></b> e seguir as instruções de recuperação de senha apresentadas na tela seguinte. ('Sim', 'OPT-SimResolvido'), ('Não', 'OPT-NaoFormulario')",
+                "received_answer": "('Recadastrar conta', 'suggestion-watson|d:945e70bf-fd2f-47a1-afe9-d7ae1fdbbad2'), ('Trocar senha por meio do formulário de atendimento', 'suggestion-watson|d:8828b9f8-576d-4154-8a64-729458a699dc'), ('Nenhuma acima', 'suggestion-watson|d:04762fa2-dfd7-4cf1-aeb8-ee77b94358f4')",
+                "response_time": 1.037503719329834
+            },
+            {
+                "id": "6a61960a-7633-4554-b20a-1d09058ed4b7",
+                "type": 2,
+                "binding_intent": "AcessoOPP_Problemas_NaoConsigoRecuperarMinhaConta",
+                "simulated_message": "Qual o motivo do erro ao tentar recuperar minha conta?",
+                "expected_answer": "Você deve utilizar a opção <b><i>Esqueci minha senha</i></b> também para <b>recuperar</b> ou <b>desbloquear</b> sua <b>conta</b>. \n\nPrimeiro, na <a href=\"https://sso.acesso.gov.br/\" target=\"_blank\"><b>página de acesso do OPP</b></a>, digite o <b>Número do CPF</b> e pressione <b><i>Continuar</i></b>. \n\nSe você já tiver feito isso, então é só clicar em <b><i>Esqueci minha senha</i></b> e seguir as instruções de recuperação de senha apresentadas na tela seguinte. ('Sim', 'OPT-SimResolvido'), ('Não', 'OPT-NaoFormulario')",
+                "received_answer": "('Erro na recuperação', 'suggestion-watson|d:ac0a132e-de3a-4ff8-bae2-be4748bebf56'), ('Cadastro bloqueado', 'suggestion-watson|d:826b6904-09f6-4cca-906b-71c5216b3977'), ('Nenhuma acima', 'suggestion-watson|d:5a9ace8a-83e3-4757-ac16-3d79d2259ce9')",
+                "response_time": 1.193965196609497
+            },
+            {
+                "id": "20a771e2-e0d3-4ffc-a9e8-b2dd39839ac7",
+                "type": 2,
+                "binding_intent": "AcessoOPP_Problemas_NaoConsigoRecuperarMinhaConta",
+                "simulated_message": "O que fazer se não tiver acesso ao telefone cadastrado?",
+                "expected_answer": "Você deve utilizar a opção <b><i>Esqueci minha senha</i></b> também para <b>recuperar</b> ou <b>desbloquear</b> sua <b>conta</b>. \n\nPrimeiro, na <a href=\"https://sso.acesso.gov.br/\" target=\"_blank\"><b>página de acesso do OPP</b></a>, digite o <b>Número do CPF</b> e pressione <b><i>Continuar</i></b>. \n\nSe você já tiver feito isso, então é só clicar em <b><i>Esqueci minha senha</i></b> e seguir as instruções de recuperação de senha apresentadas na tela seguinte. ('Sim', 'OPT-SimResolvido'), ('Não', 'OPT-NaoFormulario')",
+                "received_answer": "No momento não sei falar sobre isso. Vamos falar de outra coisa?",
+                "response_time": 0.9808371067047119
+            },
+            {
+                "id": "b82e898f-a8a3-4f90-bcdc-102ecd390da6",
+                "type": 1,
+                "binding_intent": "AcessoOPP_Problemas_naoEncontreiBanco",
+                "simulated_message": "A relação de bancos não contém meu banco, o que devo fazer?",
+                "expected_answer": "Seu banco não está lista de bancos credenciados?\n \nSignifica que ele ainda não foi credenciado.\n \nVocê deve tentar recuperar por </b>e-mail</b> ou <b>celular</b>.\n\nSe você estiver na página de recuperação de senha, pressione o botão \"Recuperar de outra forma\" que se encontra no final da página.\n('O que são bancos credenciados?', 'OPT - O que são Bancos Credenciados')",
+                "received_answer": "('Não achei meu banco', 'suggestion-watson|d:1ea7fc4e-0f03-4ff6-9867-a1162a203e10'), ('Criar conta utilizando bancos credenciados', 'suggestion-watson|d:5ac906ed-c531-475b-8d17-32c41b1cc045'), ('Nenhuma acima', 'suggestion-watson|d:06ec5bb0-1581-4bd3-9b84-3b74abd217fb')",
+                "response_time": 1.0465760231018066
+            },
+            {
+                "id": "05e0b9fa-c081-4d17-b727-0dcc48b3fed6",
+                "type": 1,
+                "binding_intent": "AcessoOPP_Problemas_NaoLembroDeJaTerMeCadastrado",
+                "simulated_message": "Como verificar se possuo cadastro no OPP?",
+                "expected_answer": "Você não se lembra de ter criado uma conta OPP?  \nTem alguma suspeita sobre a conta que está em seu nome? \n\nPode ser que você já tenha usado <b>serviços digitais do Governo</b>, e nesse caso, a conta continua válida, mesmo que tenha sido criada há <b>muito tempo</b>. \n \nOutra possibilidade é que você tenha <b>solicitado ajuda</b> a alguém para criar sua conta OPP, talvez a um contador, a um advogado ou, até mesmo, a um amigo. \n \nVocê pode <b>recuperar</b> sua <b>conta</b> criando uma <b>nova senha</b>. É importante, caso tenha dúvidas sobre a conta, que você crie uma <b>nova senha</b> e <b>atualize seus dados cadastrais</b>. ('Criar nova senha', 'OPT - redefinir senha'), ('Atualizar dados cadastrais', 'OPT - atualizar dados')",
+                "received_answer": "('Como criar conta', 'suggestion-watson|d:d7dc5617-6adb-4969-a8be-df5092203ef7'), ('Não criei uma conta', 'suggestion-watson|d:8e6022de-e94b-4d1e-9da1-e94fa7339ccb'), ('Nenhuma acima', 'suggestion-watson|d:c84a8c74-03e2-498f-bba5-b67d16cc0838')",
+                "response_time": 0.9482827186584473
+            },
+            {
+                "id": "934c892e-8e56-4f05-8637-e733342f335a",
+                "type": 1,
+                "binding_intent": "AcessoOPP_Problemas_NaoLembroDeJaTerMeCadastrado",
+                "simulated_message": "Quem é responsável pela criação da minha conta?",
+                "expected_answer": "Você não se lembra de ter criado uma conta OPP?  \nTem alguma suspeita sobre a conta que está em seu nome? \n\nPode ser que você já tenha usado <b>serviços digitais do Governo</b>, e nesse caso, a conta continua válida, mesmo que tenha sido criada há <b>muito tempo</b>. \n \nOutra possibilidade é que você tenha <b>solicitado ajuda</b> a alguém para criar sua conta OPP, talvez a um contador, a um advogado ou, até mesmo, a um amigo. \n \nVocê pode <b>recuperar</b> sua <b>conta</b> criando uma <b>nova senha</b>. É importante, caso tenha dúvidas sobre a conta, que você crie uma <b>nova senha</b> e <b>atualize seus dados cadastrais</b>. ('Criar nova senha', 'OPT - redefinir senha'), ('Atualizar dados cadastrais', 'OPT - atualizar dados')",
+                "received_answer": "No momento não sei falar sobre isso. Vamos falar de outra coisa?",
+                "response_time": 0.8615880012512207
+            },
+            {
+                "id": "242825fd-1710-4ccc-b359-93871e2a6225",
+                "type": 1,
+                "binding_intent": "AcessoOPP_Problemas_NaoLembroDeJaTerMeCadastrado",
+                "simulated_message": "Como identificar se o celular cadastrado é reconhecido por mim?",
+                "expected_answer": "Você não se lembra de ter criado uma conta OPP?  \nTem alguma suspeita sobre a conta que está em seu nome? \n\nPode ser que você já tenha usado <b>serviços digitais do Governo</b>, e nesse caso, a conta continua válida, mesmo que tenha sido criada há <b>muito tempo</b>. \n \nOutra possibilidade é que você tenha <b>solicitado ajuda</b> a alguém para criar sua conta OPP, talvez a um contador, a um advogado ou, até mesmo, a um amigo. \n \nVocê pode <b>recuperar</b> sua <b>conta</b> criando uma <b>nova senha</b>. É importante, caso tenha dúvidas sobre a conta, que você crie uma <b>nova senha</b> e <b>atualize seus dados cadastrais</b>. ('Criar nova senha', 'OPT - redefinir senha'), ('Atualizar dados cadastrais', 'OPT - atualizar dados')",
+                "received_answer": "('Não criei uma conta', 'suggestion-watson|d:d9670608-70f0-4060-a4b0-f2323bbfa7af'), ('Saber nível da conta', 'suggestion-watson|d:97ffa422-d64f-4787-bb85-02a099702b1c'), ('Nenhuma acima', 'suggestion-watson|d:fe4c5a52-0c84-483e-8d9d-2dae23338fc7')",
+                "response_time": 1.0542912483215332
+            },
+            {
+                "id": "b4d5b7e5-b7fe-449f-b335-54ce0b09468b",
+                "type": 2,
+                "binding_intent": "AcessoOPP_Problemas_NaoLembroDeJaTerMeCadastrado",
+                "simulated_message": "Você já verificou se tem cadastro no governo.br?",
+                "expected_answer": "Você não se lembra de ter criado uma conta OPP?  \nTem alguma suspeita sobre a conta que está em seu nome? \n\nPode ser que você já tenha usado <b>serviços digitais do Governo</b>, e nesse caso, a conta continua válida, mesmo que tenha sido criada há <b>muito tempo</b>. \n \nOutra possibilidade é que você tenha <b>solicitado ajuda</b> a alguém para criar sua conta OPP, talvez a um contador, a um advogado ou, até mesmo, a um amigo. \n \nVocê pode <b>recuperar</b> sua <b>conta</b> criando uma <b>nova senha</b>. É importante, caso tenha dúvidas sobre a conta, que você crie uma <b>nova senha</b> e <b>atualize seus dados cadastrais</b>. ('Criar nova senha', 'OPT - redefinir senha'), ('Atualizar dados cadastrais', 'OPT - atualizar dados')",
+                "received_answer": "No momento não sei falar sobre isso. Vamos falar de outra coisa?",
+                "response_time": 1.0272595882415771
+            },
+            {
+                "id": "72ceec59-080e-49ae-80a5-bdbb5fca6726",
+                "type": 1,
+                "binding_intent": "AcessoOPP_Problemas_NaoRecebiOCodigodeAcesso",
+                "simulated_message": "Por que não recebi o código de acesso?",
+                "expected_answer": "Entendi que o código de acesso <b>não chegou</b> até você.('Criar conta', 'OPT - Não recebi código alterações'), ('Alterar conta', 'OPT - Não recebi código alterações2'), ('Ativar 2 etapas', 'OPT - Não recebi codigo 2FA')",
+                "received_answer": "Você não recebeu o código de acesso na verificação em duas etapas?\n\nConfira se você já estava <b>logado</b> no <b>aplicativo</b> OPP quando o <b>código</b> foi <b>enviado</b>.  Se não estava logado, será preciso solicitar que um novo código seja gerado. \n\nSe mesmo assim, não recebeu o código, tente desativar a verificação em duas etapas e ativar novamente. ('Como desativar a verificação em duas etapas', 'OPT - Desativar 2FA')",
+                "response_time": 1.1353158950805664
+            },
+            {
+                "id": "b227c12f-a9f6-45ab-a136-8eaed24977e9",
+                "type": 1,
+                "binding_intent": "AcessoOPP_Problemas_NaoRecebiOCodigodeAcesso",
+                "simulated_message": "O que devo fazer se o código de acesso não apareceu?",
+                "expected_answer": "Entendi que o código de acesso <b>não chegou</b> até você.('Criar conta', 'OPT - Não recebi código alterações'), ('Alterar conta', 'OPT - Não recebi código alterações2'), ('Ativar 2 etapas', 'OPT - Não recebi codigo 2FA')",
+                "received_answer": "Você não recebeu o código de acesso na verificação em duas etapas?\n\nConfira se você já estava <b>logado</b> no <b>aplicativo</b> OPP quando o <b>código</b> foi <b>enviado</b>.  Se não estava logado, será preciso solicitar que um novo código seja gerado. \n\nSe mesmo assim, não recebeu o código, tente desativar a verificação em duas etapas e ativar novamente. ('Como desativar a verificação em duas etapas', 'OPT - Desativar 2FA')",
+                "response_time": 1.0622315406799316
+            },
+            {
+                "id": "aa23fce3-5bf4-438a-8570-c8cc16951095",
+                "type": 2,
+                "binding_intent": "AcessoOPP_Problemas_NaoRecebiOCodigodeAcesso",
+                "simulated_message": "Qual é o código que não chegou?",
+                "expected_answer": "Entendi que o código de acesso <b>não chegou</b> até você.('Criar conta', 'OPT - Não recebi código alterações'), ('Alterar conta', 'OPT - Não recebi código alterações2'), ('Ativar 2 etapas', 'OPT - Não recebi codigo 2FA')",
+                "received_answer": "Entendi que o código de acesso <b>não chegou</b> até você.('Criar conta', 'OPT - Não recebi código alterações'), ('Alterar conta', 'OPT - Não recebi código alterações2'), ('Verificação em 2 etapas', 'OPT - Não recebi codigo 2FA')",
+                "response_time": 1.6693806648254395
+            },
+            {
+                "id": "19424936-6572-41e1-badd-c47c354ce739",
+                "type": 2,
+                "binding_intent": "AcessoOPP_Problemas_NaoRecebiOCodigodeAcesso",
+                "simulated_message": "Por que o código de acesso não aparece?",
+                "expected_answer": "Entendi que o código de acesso <b>não chegou</b> até você.('Criar conta', 'OPT - Não recebi código alterações'), ('Alterar conta', 'OPT - Não recebi código alterações2'), ('Ativar 2 etapas', 'OPT - Não recebi codigo 2FA')",
+                "received_answer": "Você não recebeu o código de acesso na verificação em duas etapas?\n\nConfira se você já estava <b>logado</b> no <b>aplicativo</b> OPP quando o <b>código</b> foi <b>enviado</b>.  Se não estava logado, será preciso solicitar que um novo código seja gerado. \n\nSe mesmo assim, não recebeu o código, tente desativar a verificação em duas etapas e ativar novamente. ('Como desativar a verificação em duas etapas', 'OPT - Desativar 2FA')",
+                "response_time": 0.9757950305938721
+            },
+            {
+                "id": "677cc42c-eeeb-4f7c-b473-b078fbf99bc8",
+                "type": 2,
+                "binding_intent": "AcessoOPP_Problemas_NaoRecebiOCodigodeAcesso",
+                "simulated_message": "Onde você achou o código?",
+                "expected_answer": "Entendi que o código de acesso <b>não chegou</b> até você.('Criar conta', 'OPT - Não recebi código alterações'), ('Alterar conta', 'OPT - Não recebi código alterações2'), ('Ativar 2 etapas', 'OPT - Não recebi codigo 2FA')",
+                "received_answer": "Entendi que o código de acesso <b>não chegou</b> até você.('Criar conta', 'OPT - Não recebi código alterações'), ('Alterar conta', 'OPT - Não recebi código alterações2'), ('Verificação em 2 etapas', 'OPT - Não recebi codigo 2FA')",
+                "response_time": 0.899371862411499
+            },
+            {
+                "id": "2cfb0a2e-96ba-43de-92e1-dbec54661f2a",
+                "type": 1,
+                "binding_intent": "AcessoOPP_Problemas_NaoTenhoCPF",
+                "simulated_message": "Quais são os passos necessários para solicitar meu CPF?",
+                "expected_answer": "Para criar sua conta, você precisa ter um <b>CPF</b>. \nVocê pode obtê-lo seguindo as instruções no site: https://www.gov.br/pt-br/servicos/inscrever-no-cpf",
+                "received_answer": "Para criar sua conta, você precisa ter um <b>CPF</b>. \nVocê pode obtê-lo seguindo as instruções no site: <a href=\"https://www.gov.br/pt-br/servicos/inscrever-no-cpf\" target=\"_blank\"><b>https://www.gov.br/pt-br/servicos/inscrever-no-cpf</b></a>. ",
+                "response_time": 3.5554234981536865
+            },
+            {
+                "id": "1beda89b-d4bf-4ad7-8217-504d489f708f",
+                "type": 1,
+                "binding_intent": "AcessoOPP_Problemas_NaoTenhoCPF",
+                "simulated_message": "É possível adquirir o CPF utilizando o de outra pessoa?",
+                "expected_answer": "Para criar sua conta, você precisa ter um <b>CPF</b>. \nVocê pode obtê-lo seguindo as instruções no site: https://www.gov.br/pt-br/servicos/inscrever-no-cpf",
+                "received_answer": "Para criar sua conta, você precisa ter um <b>CPF</b>. \nVocê pode obtê-lo seguindo as instruções no site: <a href=\"https://www.gov.br/pt-br/servicos/inscrever-no-cpf\" target=\"_blank\"><b>https://www.gov.br/pt-br/servicos/inscrever-no-cpf</b></a>. ",
+                "response_time": 1.6289920806884766
+            },
+            {
+                "id": "6eb37628-fc8e-429b-988c-15a118ec9ad3",
+                "type": 1,
+                "binding_intent": "AcessoOPP_Problemas_NaoTenhoCPF",
+                "simulated_message": "Qual é o procedimento para tirar o CPF na Receita Federal?",
+                "expected_answer": "Para criar sua conta, você precisa ter um <b>CPF</b>. \nVocê pode obtê-lo seguindo as instruções no site: https://www.gov.br/pt-br/servicos/inscrever-no-cpf",
+                "received_answer": "Para criar sua conta, você precisa ter um <b>CPF</b>. \nVocê pode obtê-lo seguindo as instruções no site: <a href=\"https://www.gov.br/pt-br/servicos/inscrever-no-cpf\" target=\"_blank\"><b>https://www.gov.br/pt-br/servicos/inscrever-no-cpf</b></a>. ",
+                "response_time": 1.0206084251403809
+            },
+            {
+                "id": "97af6642-a2b9-4c53-b588-2f1a291ccd86",
+                "type": 2,
+                "binding_intent": "AcessoOPP_Problemas_NaoTenhoCPF",
+                "simulated_message": "Quais são as etapas para solicitar meu CPF?",
+                "expected_answer": "Para criar sua conta, você precisa ter um <b>CPF</b>. \nVocê pode obtê-lo seguindo as instruções no site: https://www.gov.br/pt-br/servicos/inscrever-no-cpf",
+                "received_answer": "Para criar sua conta, você precisa ter um <b>CPF</b>. \nVocê pode obtê-lo seguindo as instruções no site: <a href=\"https://www.gov.br/pt-br/servicos/inscrever-no-cpf\" target=\"_blank\"><b>https://www.gov.br/pt-br/servicos/inscrever-no-cpf</b></a>. ",
+                "response_time": 3.7552692890167236
+            },
+            {
+                "id": "dc58f73a-85f9-48d8-ae1a-5bd1e79deb28",
+                "type": 2,
+                "binding_intent": "AcessoOPP_Problemas_NaoTenhoCPF",
+                "simulated_message": "De que forma eu consigo obter o CPF?",
+                "expected_answer": "Para criar sua conta, você precisa ter um <b>CPF</b>. \nVocê pode obtê-lo seguindo as instruções no site: https://www.gov.br/pt-br/servicos/inscrever-no-cpf",
+                "received_answer": "Para criar sua conta, você precisa ter um <b>CPF</b>. \nVocê pode obtê-lo seguindo as instruções no site: <a href=\"https://www.gov.br/pt-br/servicos/inscrever-no-cpf\" target=\"_blank\"><b>https://www.gov.br/pt-br/servicos/inscrever-no-cpf</b></a>. ",
+                "response_time": 1.1142017841339111
+            },
+            {
+                "id": "9c733c4e-d372-4f47-a73f-102417ba21bb",
+                "type": 2,
+                "binding_intent": "AcessoOPP_Problemas_NaoTenhoCPF",
+                "simulated_message": "É possível solicitar o CPF utilizando o de outra pessoa?",
+                "expected_answer": "Para criar sua conta, você precisa ter um <b>CPF</b>. \nVocê pode obtê-lo seguindo as instruções no site: https://www.gov.br/pt-br/servicos/inscrever-no-cpf",
+                "received_answer": "Para criar sua conta, você precisa ter um <b>CPF</b>. \nVocê pode obtê-lo seguindo as instruções no site: <a href=\"https://www.gov.br/pt-br/servicos/inscrever-no-cpf\" target=\"_blank\"><b>https://www.gov.br/pt-br/servicos/inscrever-no-cpf</b></a>. ",
+                "response_time": 0.919123649597168
+            },
+            {
+                "id": "52632182-ec4e-452e-af6a-5bbff764e4c0",
+                "type": 1,
+                "binding_intent": "AcessoOPP_Problemas_PorqueNaoEhOuro",
+                "simulated_message": "Como eu posso ser promovido para a categoria Ouro?",
+                "expected_answer": "Entenda agora por que sua conta OPP é <b>Ouro, Prata</b> ou <b>Bronze</b>. \n\nSerá nível <b>Ouro</b> quando criada ou recuperada utilizando: \n<ul><li>Reconhecimento Facial com dados biométricos validados no TSE (Tribunal Superior Eleitoral)</li>\n<li>Certificado digital ou Certificado digital em nuvem</li></ul> \nSerá nível <b>Prata</b> quando criada ou recuperada utilizando: \n<ul><li>Bancos Credenciados</li>\n<li>Senha temporária gerada via Internet Banking</li>\n<li>Reconhecimento Facial com dados biométricos da CNH (Carteira Nacional de Habilitação) digital.</li></ul>  \nSerá nível <b>Bronze</b> se for criada ou recuperada utilizando validação de informações pessoais.('Como aumentar', 'OPT - aumentar o nível de segurança')",
+                "received_answer": "No momento não sei falar sobre isso. Vamos falar de outra coisa?",
+                "response_time": 0.9379866123199463
+            },
+            {
+                "id": "806f3bda-8a25-43df-9e98-894016996ca0",
+                "type": 2,
+                "binding_intent": "AcessoOPP_Problemas_PorqueNaoEhOuro",
+                "simulated_message": "Quando posso ser um ouro?",
+                "expected_answer": "Entenda agora por que sua conta OPP é <b>Ouro, Prata</b> ou <b>Bronze</b>. \n\nSerá nível <b>Ouro</b> quando criada ou recuperada utilizando: \n<ul><li>Reconhecimento Facial com dados biométricos validados no TSE (Tribunal Superior Eleitoral)</li>\n<li>Certificado digital ou Certificado digital em nuvem</li></ul> \nSerá nível <b>Prata</b> quando criada ou recuperada utilizando: \n<ul><li>Bancos Credenciados</li>\n<li>Senha temporária gerada via Internet Banking</li>\n<li>Reconhecimento Facial com dados biométricos da CNH (Carteira Nacional de Habilitação) digital.</li></ul>  \nSerá nível <b>Bronze</b> se for criada ou recuperada utilizando validação de informações pessoais.('Como aumentar', 'OPT - aumentar o nível de segurança')",
+                "received_answer": "No momento não sei falar sobre isso. Vamos falar de outra coisa?",
+                "response_time": 0.9266831874847412
+            },
+            {
+                "id": "6a9e27dc-86de-49cc-8032-418cf84ee0eb",
+                "type": 2,
+                "binding_intent": "AcessoOPP_Problemas_PorqueNaoEhOuro",
+                "simulated_message": "Por que minha conta não é prata?",
+                "expected_answer": "Entenda agora por que sua conta OPP é <b>Ouro, Prata</b> ou <b>Bronze</b>. \n\nSerá nível <b>Ouro</b> quando criada ou recuperada utilizando: \n<ul><li>Reconhecimento Facial com dados biométricos validados no TSE (Tribunal Superior Eleitoral)</li>\n<li>Certificado digital ou Certificado digital em nuvem</li></ul> \nSerá nível <b>Prata</b> quando criada ou recuperada utilizando: \n<ul><li>Bancos Credenciados</li>\n<li>Senha temporária gerada via Internet Banking</li>\n<li>Reconhecimento Facial com dados biométricos da CNH (Carteira Nacional de Habilitação) digital.</li></ul>  \nSerá nível <b>Bronze</b> se for criada ou recuperada utilizando validação de informações pessoais.('Como aumentar', 'OPT - aumentar o nível de segurança')",
+                "received_answer": "No momento não sei falar sobre isso. Vamos falar de outra coisa?",
+                "response_time": 1.0861523151397705
+            },
+            {
+                "id": "98386bd7-add4-43e0-8c23-10e6746708bc",
+                "type": 2,
+                "binding_intent": "AcessoOPP_Problemas_PorqueNaoEhOuro",
+                "simulated_message": "Quando quero ser um diamante?",
+                "expected_answer": "Entenda agora por que sua conta OPP é <b>Ouro, Prata</b> ou <b>Bronze</b>. \n\nSerá nível <b>Ouro</b> quando criada ou recuperada utilizando: \n<ul><li>Reconhecimento Facial com dados biométricos validados no TSE (Tribunal Superior Eleitoral)</li>\n<li>Certificado digital ou Certificado digital em nuvem</li></ul> \nSerá nível <b>Prata</b> quando criada ou recuperada utilizando: \n<ul><li>Bancos Credenciados</li>\n<li>Senha temporária gerada via Internet Banking</li>\n<li>Reconhecimento Facial com dados biométricos da CNH (Carteira Nacional de Habilitação) digital.</li></ul>  \nSerá nível <b>Bronze</b> se for criada ou recuperada utilizando validação de informações pessoais.('Como aumentar', 'OPT - aumentar o nível de segurança')",
+                "received_answer": "No momento não sei falar sobre isso. Vamos falar de outra coisa?",
+                "response_time": 0.9202373027801514
+            },
+            {
+                "id": "41d3efa2-8958-4b9b-9ebd-49b379649072",
+                "type": 1,
+                "binding_intent": "AcessoOPP_Problemas_ReconhecimentoFacialInvalido",
+                "simulated_message": "Qual o problema com o reconhecimento facial?",
+                "expected_answer": "O reconhecimento facial pode eventualmente não funcionar quando a <b>foto enviada</b> estiver com <b>qualidade insuficiente</b>. Neste caso, confira as orientações para registrar a foto do seu rosto e tente novamente. \n \nPode ser também que sua biometria facial coletada para a emissão do Título de Eleitor ainda não foi validada pela <b>Justiça Eleitoral</b>.('Orientações para registrar foto', 'OPT - Obter foto com qualidade'), ('O que é Reconhecimento Facial', 'OPT - O que é Reconhecimento Facial')",
+                "received_answer": "('Reconhecimento facial inválido', 'suggestion-watson|d:3aff8c54-0a87-4ac4-8ed4-c4ec65be49b5'), ('Bronze ou prata', 'suggestion-watson|d:82dd9c4d-015c-4a00-b308-abeb50e3decb'), ('Nenhuma acima', 'suggestion-watson|d:1927e28c-d7bd-4af8-aefd-195e892e4276')",
+                "response_time": 0.957608699798584
+            },
+            {
+                "id": "5576689f-f5d7-44ce-8e5a-480eb747f7b0",
+                "type": 1,
+                "binding_intent": "AcessoOPP_Problemas_VerificacaoDuasEtapasComoAtivar",
+                "simulated_message": "Existe algum problema encontrado no segundo fator de verificação?",
+                "expected_answer": "Para ativar a verificação em duas etapas, siga os passos: \n<ol><li>No <b>aplicativo</b> OPP, você deve entrar na sua conta.</il>\n<li>No <b>navegador</b> de internet, entre na sua conta OPP e acesse: <i>Minha conta --> Segurança da Conta --> <b>Habilitar a verificação em duas etapas</b> --> Enviar código</i>.</li><li>No <b>aplicativo OPP</b> você receberá um código de seis dígitos.</li><li>No navegador de internet, em sua conta OPP, informe esse código e pressione na opção <b>Habilitar.</b></li></ol>Pronto. A verificação em duas etapas estará habilitada.('Como desativar a verificação em duas etapas ', 'OPT - Desativar 2FA'), ('Não recebi o código da verificação em duas etapas ', 'OPT - Não recebi codigo 2FA')",
+                "received_answer": "('Ativar 2 etapas', 'suggestion-watson|d:80f7ad8d-d998-4a04-a5e0-38f5e39d0c87'), ('O que é a verificação em duas etapas', 'suggestion-watson|d:5643a44d-a326-4b31-b2b2-6c906ed94065'), ('Nenhuma acima', 'suggestion-watson|d:40253db2-69b3-4548-89eb-92aaeab3d9f0')",
+                "response_time": 1.7411537170410156
+            },
+            {
+                "id": "326661cb-4a68-4955-80d3-77405f1226f6",
+                "type": 2,
+                "binding_intent": "AcessoOPP_Problemas_VerificacaoDuasEtapasComoAtivar",
+                "simulated_message": "Quais são as etapas necessárias para ativar a autentificação em dois passos?",
+                "expected_answer": "Para ativar a verificação em duas etapas, siga os passos: \n<ol><li>No <b>aplicativo</b> OPP, você deve entrar na sua conta.</il>\n<li>No <b>navegador</b> de internet, entre na sua conta OPP e acesse: <i>Minha conta --> Segurança da Conta --> <b>Habilitar a verificação em duas etapas</b> --> Enviar código</i>.</li><li>No <b>aplicativo OPP</b> você receberá um código de seis dígitos.</li><li>No navegador de internet, em sua conta OPP, informe esse código e pressione na opção <b>Habilitar.</b></li></ol>Pronto. A verificação em duas etapas estará habilitada.('Como desativar a verificação em duas etapas ', 'OPT - Desativar 2FA'), ('Não recebi o código da verificação em duas etapas ', 'OPT - Não recebi codigo 2FA')",
+                "received_answer": "No momento não sei falar sobre isso. Vamos falar de outra coisa?",
+                "response_time": 1.8663582801818848
+            },
+            {
+                "id": "6fae079c-de54-4ad3-b05b-712e2922291a",
+                "type": 1,
+                "binding_intent": "AcessoOPP_Problemas_VerificacaoDuasEtapasComoDesativar",
+                "simulated_message": "Como posso cancelar o duplo fator de verificação?",
+                "expected_answer": "A verificação em duas etapas é <b>desativada</b> de diferentes maneiras, você pode escolher uma delas:\n<ul><li>Entrar em sua conta OPP e acessar <i>Minha conta --> Segurança da Conta --> <b>Desabilitar a verificação em duas etapas</b></i>.</li>\n<li><b>Sair</b> da sua sessão logada no <b>aplicativo OPP</b>.</li>\n<li>Criar <b>nova senha</b> utilizando <b>Reconhecimento Facial</b>.</li>\n<li>Entrar em sua conta OPP com o seu banco ou com certificado digital e desabilitar a verificação em duas etapas</li></ul>('Sim', 'OPT-SimResolvido'), ('Não', 'OPT-NaoEmail')",
+                "received_answer": "A verificação em duas etapas é <b>desativada</b> de diferentes maneiras, você pode escolher uma delas:\n<ul><li>Entrar em sua conta OPP e acessar <i>Minha conta --> Segurança da Conta --> <b>Desabilitar a verificação em duas etapas</b></i>.</li><li><b>Sair</b> da sua sessão logada no <b>aplicativo OPP</b>.</li><li>Criar <b>nova senha</b> utilizando <b>Reconhecimento Facial</b>.</li><li>Entrar em sua conta OPP com o seu banco ou com certificado digital e desabilitar a verificação em duas etapas</li></ul>('Sim', 'OPT-SimResolvido'), ('Não', 'OPT-NaoEmail')",
+                "response_time": 1.326791524887085
+            },
+            {
+                "id": "4a2862bd-b1fa-4b2c-be78-a8ac3ea9a1e1",
+                "type": 1,
+                "binding_intent": "AcessoOPP_Problemas_VerificacaoDuasEtapasComoDesativar",
+                "simulated_message": "É possível desabilitar a verificação em duas etapas?",
+                "expected_answer": "A verificação em duas etapas é <b>desativada</b> de diferentes maneiras, você pode escolher uma delas:\n<ul><li>Entrar em sua conta OPP e acessar <i>Minha conta --> Segurança da Conta --> <b>Desabilitar a verificação em duas etapas</b></i>.</li>\n<li><b>Sair</b> da sua sessão logada no <b>aplicativo OPP</b>.</li>\n<li>Criar <b>nova senha</b> utilizando <b>Reconhecimento Facial</b>.</li>\n<li>Entrar em sua conta OPP com o seu banco ou com certificado digital e desabilitar a verificação em duas etapas</li></ul>('Sim', 'OPT-SimResolvido'), ('Não', 'OPT-NaoEmail')",
+                "received_answer": "A verificação em duas etapas é <b>desativada</b> de diferentes maneiras, você pode escolher uma delas:\n<ul><li>Entrar em sua conta OPP e acessar <i>Minha conta --> Segurança da Conta --> <b>Desabilitar a verificação em duas etapas</b></i>.</li><li><b>Sair</b> da sua sessão logada no <b>aplicativo OPP</b>.</li><li>Criar <b>nova senha</b> utilizando <b>Reconhecimento Facial</b>.</li><li>Entrar em sua conta OPP com o seu banco ou com certificado digital e desabilitar a verificação em duas etapas</li></ul>('Sim', 'OPT-SimResolvido'), ('Não', 'OPT-NaoEmail')",
+                "response_time": 1.6656901836395264
+            },
+            {
+                "id": "e6487477-eeaf-4e39-a43c-77cc67d8ec4b",
+                "type": 2,
+                "binding_intent": "AcessoOPP_Problemas_VerificacaoDuasEtapasComoDesativar",
+                "simulated_message": "Como posso cancelar o duplo fator de verificação?",
+                "expected_answer": "A verificação em duas etapas é <b>desativada</b> de diferentes maneiras, você pode escolher uma delas:\n<ul><li>Entrar em sua conta OPP e acessar <i>Minha conta --> Segurança da Conta --> <b>Desabilitar a verificação em duas etapas</b></i>.</li>\n<li><b>Sair</b> da sua sessão logada no <b>aplicativo OPP</b>.</li>\n<li>Criar <b>nova senha</b> utilizando <b>Reconhecimento Facial</b>.</li>\n<li>Entrar em sua conta OPP com o seu banco ou com certificado digital e desabilitar a verificação em duas etapas</li></ul>('Sim', 'OPT-SimResolvido'), ('Não', 'OPT-NaoEmail')",
+                "received_answer": "A verificação em duas etapas é <b>desativada</b> de diferentes maneiras, você pode escolher uma delas:\n<ul><li>Entrar em sua conta OPP e acessar <i>Minha conta --> Segurança da Conta --> <b>Desabilitar a verificação em duas etapas</b></i>.</li><li><b>Sair</b> da sua sessão logada no <b>aplicativo OPP</b>.</li><li>Criar <b>nova senha</b> utilizando <b>Reconhecimento Facial</b>.</li><li>Entrar em sua conta OPP com o seu banco ou com certificado digital e desabilitar a verificação em duas etapas</li></ul>('Sim', 'OPT-SimResolvido'), ('Não', 'OPT-NaoEmail')",
+                "response_time": 1.6844594478607178
+            },
+            {
+                "id": "a18cfe2e-420a-4a93-974c-6f021805de38",
+                "type": 2,
+                "binding_intent": "AcessoOPP_Problemas_VerificacaoDuasEtapasComoDesativar",
+                "simulated_message": "É possível desabilitar a verificação em duas etapas?",
+                "expected_answer": "A verificação em duas etapas é <b>desativada</b> de diferentes maneiras, você pode escolher uma delas:\n<ul><li>Entrar em sua conta OPP e acessar <i>Minha conta --> Segurança da Conta --> <b>Desabilitar a verificação em duas etapas</b></i>.</li>\n<li><b>Sair</b> da sua sessão logada no <b>aplicativo OPP</b>.</li>\n<li>Criar <b>nova senha</b> utilizando <b>Reconhecimento Facial</b>.</li>\n<li>Entrar em sua conta OPP com o seu banco ou com certificado digital e desabilitar a verificação em duas etapas</li></ul>('Sim', 'OPT-SimResolvido'), ('Não', 'OPT-NaoEmail')",
+                "received_answer": "A verificação em duas etapas é <b>desativada</b> de diferentes maneiras, você pode escolher uma delas:\n<ul><li>Entrar em sua conta OPP e acessar <i>Minha conta --> Segurança da Conta --> <b>Desabilitar a verificação em duas etapas</b></i>.</li><li><b>Sair</b> da sua sessão logada no <b>aplicativo OPP</b>.</li><li>Criar <b>nova senha</b> utilizando <b>Reconhecimento Facial</b>.</li><li>Entrar em sua conta OPP com o seu banco ou com certificado digital e desabilitar a verificação em duas etapas</li></ul>('Sim', 'OPT-SimResolvido'), ('Não', 'OPT-NaoEmail')",
+                "response_time": 1.6075844764709473
+            },
+            {
+                "id": "1467c5fa-8f9e-4612-aa95-302e76ddc07c",
+                "type": 1,
+                "binding_intent": "AcessoOPP_Vocabulario_BancosCredenciados",
+                "simulated_message": "Quais são as vantagens de utilizar um banco credenciado?",
+                "expected_answer": "<b>Bancos credenciados</b> são instituições financeiras <b>autorizadas</b> a utilizar suas informações de cadastro no banco para criar sua <b>conta OPP</b> ou uma <b>nova senha</b>.",
+                "received_answer": "('Bancos credenciados', 'suggestion-watson|d:3a2c95af-8b1d-4083-aa7b-7927a19eda96'), ('Criar conta utilizando bancos credenciados', 'suggestion-watson|d:f97e3d92-e418-4d88-a4e4-02e70360e58e'), ('Nenhuma acima', 'suggestion-watson|d:b66c9a76-5ec0-4e59-bbbd-10cc8744242c')",
+                "response_time": 2.0955729484558105
+            },
+            {
+                "id": "c2ba4d88-19b5-4001-855c-fdd2c1305cae",
+                "type": 1,
+                "binding_intent": "AcessoOPP_Vocabulario_CertificadoDigital",
+                "simulated_message": "Como ocorre a autenticação por certificado digital?",
+                "expected_answer": "O <b>Certificado Digital</b> funciona como uma identidade eletrônica e proporciona <b>segurança</b> na troca de informações entre duas partes.  \n\nGarante identidade do emissor, integridade da mensagem e confidencialidade.  \n \nAo utilizar seu certificado digital, sua <b>conta OPP</b> é automaticamente nível <b>Ouro</b>. \n\nVocê pode adquirir seu certificado em uma <a href=\"https://www.gov.br/iti/pt-br/assuntos/icp-brasil/autoridades-certificadoras\" target=\"_blank\"><b>Autoridade Certificadora</b></a>. ('Certificado em nuvem', 'OPT - Certificado em nuvem')",
+                "received_answer": "O <b>Certificado Digital</b> funciona como uma identidade eletrônica e proporciona <b>segurança</b> na troca de informações entre duas partes.  \n\nGarante identidade do emissor, integridade da mensagem e confidencialidade.  \n \nAo utilizar seu certificado digital, sua <b>conta OPP</b> é automaticamente nível <b>Ouro</b>. \n\nVocê pode adquirir seu certificado em uma <a href=\"https://www.gov.br/iti/pt-br/assuntos/icp-brasil/autoridades-certificadoras\" target=\"_blank\"><b>Autoridade Certificadora</b></a>. ('Certificado digital em nuvem', 'OPT - Certificado em nuvem')",
+                "response_time": 1.20805025100708
+            },
+            {
+                "id": "e9d19938-87bc-4248-a79b-832ef0b0c07c",
+                "type": 1,
+                "binding_intent": "AcessoOPP_Vocabulario_CertificadoEmNuvem",
+                "simulated_message": "Qual é a definição de certificado em nuvem?",
+                "expected_answer": "No <b>certificado digital em nuvem</b> sua identidade eletrônica está guardada de forma segura em um software remoto, chamado de servidor em nuvem.  \n\nVocê pode acessar o seu certificado de qualquer lugar do mundo, <b>24h por dia, nos 7 dias da semana</b>, sem a necessidade de <b>portar</b> um dispositivo (token, Smartcard) de armazenamento do certificado. ('Benefícios', 'OPT - Beneficios Certificado nuvem')",
+                "received_answer": "No <b>certificado digital em nuvem</b> sua identidade eletrônica está guardada de forma segura em um software remoto, chamado de servidor em nuvem.  \n\nVocê pode acessar o seu certificado de qualquer lugar do mundo, <b>24h por dia, nos 7 dias da semana</b>, sem a necessidade de <b>portar</b> um dispositivo (token, Smartcard) de armazenamento do certificado. ('   Por que usar o certificado digital em nuvem?', 'OPT - Beneficios Certificado nuvem')",
+                "response_time": 5.944430828094482
+            },
+            {
+                "id": "436b5f1f-a079-4d56-b529-7d2fc5d8ed2a",
+                "type": 1,
+                "binding_intent": "AcessoOPP_Vocabulario_CertificadoEmNuvem",
+                "simulated_message": "O que significa certificado digital armazenado na nuvem?",
+                "expected_answer": "No <b>certificado digital em nuvem</b> sua identidade eletrônica está guardada de forma segura em um software remoto, chamado de servidor em nuvem.  \n\nVocê pode acessar o seu certificado de qualquer lugar do mundo, <b>24h por dia, nos 7 dias da semana</b>, sem a necessidade de <b>portar</b> um dispositivo (token, Smartcard) de armazenamento do certificado. ('Benefícios', 'OPT - Beneficios Certificado nuvem')",
+                "received_answer": "No <b>certificado digital em nuvem</b> sua identidade eletrônica está guardada de forma segura em um software remoto, chamado de servidor em nuvem.  \n\nVocê pode acessar o seu certificado de qualquer lugar do mundo, <b>24h por dia, nos 7 dias da semana</b>, sem a necessidade de <b>portar</b> um dispositivo (token, Smartcard) de armazenamento do certificado. ('   Por que usar o certificado digital em nuvem?', 'OPT - Beneficios Certificado nuvem')",
+                "response_time": 1.086423635482788
+            },
+            {
+                "id": "eae4ca4e-f44c-4263-a095-433359fbc7b7",
+                "type": 1,
+                "binding_intent": "AcessoOPP_Vocabulario_CertificadoEmNuvem",
+                "simulated_message": "O que é certificado digital armazenado na nuvem?",
+                "expected_answer": "No <b>certificado digital em nuvem</b> sua identidade eletrônica está guardada de forma segura em um software remoto, chamado de servidor em nuvem.  \n\nVocê pode acessar o seu certificado de qualquer lugar do mundo, <b>24h por dia, nos 7 dias da semana</b>, sem a necessidade de <b>portar</b> um dispositivo (token, Smartcard) de armazenamento do certificado. ('Benefícios', 'OPT - Beneficios Certificado nuvem')",
+                "received_answer": "No <b>certificado digital em nuvem</b> sua identidade eletrônica está guardada de forma segura em um software remoto, chamado de servidor em nuvem.  \n\nVocê pode acessar o seu certificado de qualquer lugar do mundo, <b>24h por dia, nos 7 dias da semana</b>, sem a necessidade de <b>portar</b> um dispositivo (token, Smartcard) de armazenamento do certificado. ('   Por que usar o certificado digital em nuvem?', 'OPT - Beneficios Certificado nuvem')",
+                "response_time": 1.2786328792572021
+            },
+            {
+                "id": "f00dc7aa-b3c7-44fd-92a1-3944470f3f1b",
+                "type": 2,
+                "binding_intent": "AcessoOPP_Vocabulario_CertificadoEmNuvem",
+                "simulated_message": "Qual a definição de certificado em neblum?",
+                "expected_answer": "No <b>certificado digital em nuvem</b> sua identidade eletrônica está guardada de forma segura em um software remoto, chamado de servidor em nuvem.  \n\nVocê pode acessar o seu certificado de qualquer lugar do mundo, <b>24h por dia, nos 7 dias da semana</b>, sem a necessidade de <b>portar</b> um dispositivo (token, Smartcard) de armazenamento do certificado. ('Benefícios', 'OPT - Beneficios Certificado nuvem')",
+                "received_answer": "No momento não sei falar sobre isso. Vamos falar de outra coisa?",
+                "response_time": 1.4709429740905762
+            },
+            {
+                "id": "bf8b10a2-f9d2-4902-96d4-6aa426bc2078",
+                "type": 2,
+                "binding_intent": "AcessoOPP_Vocabulario_CertificadoEmNuvem",
+                "simulated_message": "Certificado digital em nuvem é o quê?",
+                "expected_answer": "No <b>certificado digital em nuvem</b> sua identidade eletrônica está guardada de forma segura em um software remoto, chamado de servidor em nuvem.  \n\nVocê pode acessar o seu certificado de qualquer lugar do mundo, <b>24h por dia, nos 7 dias da semana</b>, sem a necessidade de <b>portar</b> um dispositivo (token, Smartcard) de armazenamento do certificado. ('Benefícios', 'OPT - Beneficios Certificado nuvem')",
+                "received_answer": "No <b>certificado digital em nuvem</b> sua identidade eletrônica está guardada de forma segura em um software remoto, chamado de servidor em nuvem.  \n\nVocê pode acessar o seu certificado de qualquer lugar do mundo, <b>24h por dia, nos 7 dias da semana</b>, sem a necessidade de <b>portar</b> um dispositivo (token, Smartcard) de armazenamento do certificado. ('   Por que usar o certificado digital em nuvem?', 'OPT - Beneficios Certificado nuvem')",
+                "response_time": 0.8183069229125977
+            },
+            {
+                "id": "c544cc5a-10ce-4828-acb3-bddd78693bc9",
+                "type": 1,
+                "binding_intent": "AcessoOPP_Vocabulario_ContaOPP",
+                "simulated_message": "Qual é o conceito de conta única no portal?",
+                "expected_answer": "A conta OPP é uma <b>identificação</b> que comprova em meios digitais que você é você. Com ela, você se identifica <b>com segurança</b> na hora de acessar os diversos serviços digitais disponibilizados pelo governo. \n\n<b>Gratuita</b> e disponível para todos os cidadãos brasileiros, com ela você pode, por exemplo, se inscrever no ENEM, verificar sua Carteira de Trabalho Digital, simular aposentadoria ou realizar sua prova de vida no aplicativo Meu INSS. ",
+                "received_answer": "A conta <a href=\"https://www.gov.br\" target=\"_blank\"><b>gov.br</b></a> é uma <b>identificação</b> que comprova em meios digitais que você é você. Com ela, você se identifica <b>com segurança</b> na hora de acessar os diversos serviços digitais disponibilizados pelo governo. \n\n<b>Gratuita</b> e disponível para todos os cidadãos brasileiros, com ela você pode, por exemplo, se inscrever no ENEM, verificar sua Carteira de Trabalho Digital, simular aposentadoria ou realizar sua prova de vida no aplicativo Meu INSS. ",
+                "response_time": 1.6594812870025635
+            },
+            {
+                "id": "d9450a44-287b-4227-969d-1ef5ff3014b3",
+                "type": 1,
+                "binding_intent": "AcessoOPP_Vocabulario_ContaOPP",
+                "simulated_message": "Como posso fazer login do @OPP?",
+                "expected_answer": "A conta OPP é uma <b>identificação</b> que comprova em meios digitais que você é você. Com ela, você se identifica <b>com segurança</b> na hora de acessar os diversos serviços digitais disponibilizados pelo governo. \n\n<b>Gratuita</b> e disponível para todos os cidadãos brasileiros, com ela você pode, por exemplo, se inscrever no ENEM, verificar sua Carteira de Trabalho Digital, simular aposentadoria ou realizar sua prova de vida no aplicativo Meu INSS. ",
+                "received_answer": "A conta <a href=\"https://www.gov.br\" target=\"_blank\"><b>gov.br</b></a> é uma <b>identificação</b> que comprova em meios digitais que você é você. Com ela, você se identifica <b>com segurança</b> na hora de acessar os diversos serviços digitais disponibilizados pelo governo. \n\n<b>Gratuita</b> e disponível para todos os cidadãos brasileiros, com ela você pode, por exemplo, se inscrever no ENEM, verificar sua Carteira de Trabalho Digital, simular aposentadoria ou realizar sua prova de vida no aplicativo Meu INSS. ",
+                "response_time": 1.231614589691162
+            },
+            {
+                "id": "1f894797-1d47-4e77-aaf2-fd252c82a581",
+                "type": 1,
+                "binding_intent": "AcessoOPP_Vocabulario_ContaOPP",
+                "simulated_message": "Por que a conta única é tão importante?",
+                "expected_answer": "A conta OPP é uma <b>identificação</b> que comprova em meios digitais que você é você. Com ela, você se identifica <b>com segurança</b> na hora de acessar os diversos serviços digitais disponibilizados pelo governo. \n\n<b>Gratuita</b> e disponível para todos os cidadãos brasileiros, com ela você pode, por exemplo, se inscrever no ENEM, verificar sua Carteira de Trabalho Digital, simular aposentadoria ou realizar sua prova de vida no aplicativo Meu INSS. ",
+                "received_answer": "A conta <a href=\"https://www.gov.br\" target=\"_blank\"><b>gov.br</b></a> é uma <b>identificação</b> que comprova em meios digitais que você é você. Com ela, você se identifica <b>com segurança</b> na hora de acessar os diversos serviços digitais disponibilizados pelo governo. \n\n<b>Gratuita</b> e disponível para todos os cidadãos brasileiros, com ela você pode, por exemplo, se inscrever no ENEM, verificar sua Carteira de Trabalho Digital, simular aposentadoria ou realizar sua prova de vida no aplicativo Meu INSS. ",
+                "response_time": 0.8558211326599121
+            },
+            {
+                "id": "20da6579-c694-48fc-9545-c6d25d6b3eec",
+                "type": 2,
+                "binding_intent": "AcessoOPP_Vocabulario_ContaOPP",
+                "simulated_message": "Como logar no @OPP?",
+                "expected_answer": "A conta OPP é uma <b>identificação</b> que comprova em meios digitais que você é você. Com ela, você se identifica <b>com segurança</b> na hora de acessar os diversos serviços digitais disponibilizados pelo governo. \n\n<b>Gratuita</b> e disponível para todos os cidadãos brasileiros, com ela você pode, por exemplo, se inscrever no ENEM, verificar sua Carteira de Trabalho Digital, simular aposentadoria ou realizar sua prova de vida no aplicativo Meu INSS. ",
+                "received_answer": "A conta <a href=\"https://www.gov.br\" target=\"_blank\"><b>gov.br</b></a> é uma <b>identificação</b> que comprova em meios digitais que você é você. Com ela, você se identifica <b>com segurança</b> na hora de acessar os diversos serviços digitais disponibilizados pelo governo. \n\n<b>Gratuita</b> e disponível para todos os cidadãos brasileiros, com ela você pode, por exemplo, se inscrever no ENEM, verificar sua Carteira de Trabalho Digital, simular aposentadoria ou realizar sua prova de vida no aplicativo Meu INSS. ",
+                "response_time": 1.2770113945007324
+            },
+            {
+                "id": "dcd467c8-3d44-4d08-9b72-d74433412301",
+                "type": 2,
+                "binding_intent": "AcessoOPP_Vocabulario_ContaOPP",
+                "simulated_message": "O que significa a conta @OPP?",
+                "expected_answer": "A conta OPP é uma <b>identificação</b> que comprova em meios digitais que você é você. Com ela, você se identifica <b>com segurança</b> na hora de acessar os diversos serviços digitais disponibilizados pelo governo. \n\n<b>Gratuita</b> e disponível para todos os cidadãos brasileiros, com ela você pode, por exemplo, se inscrever no ENEM, verificar sua Carteira de Trabalho Digital, simular aposentadoria ou realizar sua prova de vida no aplicativo Meu INSS. ",
+                "received_answer": "A conta <a href=\"https://www.gov.br\" target=\"_blank\"><b>gov.br</b></a> é uma <b>identificação</b> que comprova em meios digitais que você é você. Com ela, você se identifica <b>com segurança</b> na hora de acessar os diversos serviços digitais disponibilizados pelo governo. \n\n<b>Gratuita</b> e disponível para todos os cidadãos brasileiros, com ela você pode, por exemplo, se inscrever no ENEM, verificar sua Carteira de Trabalho Digital, simular aposentadoria ou realizar sua prova de vida no aplicativo Meu INSS. ",
+                "response_time": 1.1667194366455078
+            },
+            {
+                "id": "9f4bdfff-768c-4798-93b0-7c3d2af60ed6",
+                "type": 2,
+                "binding_intent": "AcessoOPP_Vocabulario_ContaInternetBanking",
+                "simulated_message": "É necessário solicitar ao gerente a conta no internte banking.",
+                "expected_answer": "<b>Internet Banking</b> é o <b>serviço digital</b> oferecido pelas <b>instituições financeiras</b>, por meio do qual você pode realizar operações bancárias via internet. \n\nSe o seu banco for conveniado com a Plataforma OPP, você pode usar o Internet Banking para <b>criar, recuperar</b> e <b>aumentar o nível</b> da <b>conta OPP</b>. ",
+                "received_answer": "No momento não sei falar sobre isso. Vamos falar de outra coisa?",
+                "response_time": 0.8820905685424805
+            },
+            {
+                "id": "ab158328-2c29-4192-a341-85822906335c",
+                "type": 1,
+                "binding_intent": "AcessoOPP_Vocabulario_NivelSegurançaConta",
+                "simulated_message": "O que significa o @selo de segurança da conta?",
+                "expected_answer": "A conta OPP pode ter <b>três níveis de segurança</b>: Ouro, Prata e Bronze.  \n\nA diferença entre os três níveis é a <b>segurança</b> e a <b>quantidade</b> de serviços que você pode acessar e utilizar.  \n\nO nível <b>Ouro</b> oferece a máxima segurança disponível e acesso a <b>todos os serviços digitais</b> que estão na plataforma OPP.  \n\nO nível <b>Prata</b> oferece segurança elevada e possibilita acesso a <b>alguns serviços digitais</b>, mas não todos. \n\nE o nível <b>Bronze</b> oferece apenas acesso a alguns <b>serviços e segurança básicos</b>. ('Aumentar o nível', 'OPT - aumentar o nível de segurança'), ('Descobrir o nível', 'OPT - Como ver o nivel da conta')",
+                "received_answer": "A conta OPP pode ter <b>três níveis de segurança</b>: Ouro, Prata e Bronze.  \n\nA diferença entre os três níveis é a <b>segurança</b> e a <b>quantidade</b> de serviços que você pode acessar e utilizar.  \n\nO nível <b>Ouro</b> oferece a máxima segurança disponível e acesso a <b>todos os serviços digitais</b> que estão na plataforma OPP.  \n\nO nível <b>Prata</b> oferece segurança elevada e possibilita acesso a <b>alguns serviços digitais</b>, mas não todos. \n\nE o nível <b>Bronze</b> oferece apenas acesso a alguns <b>serviços e segurança básicos</b>. ('Aumentar o nível da conta', 'OPT - aumentar o nível de segurança'), ('Descobrir o nível da conta', 'OPT - Como ver o nivel da conta')",
+                "response_time": 0.9187424182891846
+            },
+            {
+                "id": "8e83bd67-a987-460e-a6b3-224c22be4f36",
+                "type": 1,
+                "binding_intent": "AcessoOPP_Vocabulario_NivelSegurançaConta",
+                "simulated_message": "Pode me explicar melhor sobre o @selo de qualificação?",
+                "expected_answer": "A conta OPP pode ter <b>três níveis de segurança</b>: Ouro, Prata e Bronze.  \n\nA diferença entre os três níveis é a <b>segurança</b> e a <b>quantidade</b> de serviços que você pode acessar e utilizar.  \n\nO nível <b>Ouro</b> oferece a máxima segurança disponível e acesso a <b>todos os serviços digitais</b> que estão na plataforma OPP.  \n\nO nível <b>Prata</b> oferece segurança elevada e possibilita acesso a <b>alguns serviços digitais</b>, mas não todos. \n\nE o nível <b>Bronze</b> oferece apenas acesso a alguns <b>serviços e segurança básicos</b>. ('Aumentar o nível', 'OPT - aumentar o nível de segurança'), ('Descobrir o nível', 'OPT - Como ver o nivel da conta')",
+                "received_answer": "A conta OPP pode ter <b>três níveis de segurança</b>: Ouro, Prata e Bronze.  \n\nA diferença entre os três níveis é a <b>segurança</b> e a <b>quantidade</b> de serviços que você pode acessar e utilizar.  \n\nO nível <b>Ouro</b> oferece a máxima segurança disponível e acesso a <b>todos os serviços digitais</b> que estão na plataforma OPP.  \n\nO nível <b>Prata</b> oferece segurança elevada e possibilita acesso a <b>alguns serviços digitais</b>, mas não todos. \n\nE o nível <b>Bronze</b> oferece apenas acesso a alguns <b>serviços e segurança básicos</b>. ('Aumentar o nível da conta', 'OPT - aumentar o nível de segurança'), ('Descobrir o nível da conta', 'OPT - Como ver o nivel da conta')",
+                "response_time": 1.036400318145752
+            },
+            {
+                "id": "459587a6-883f-4e27-b1d4-ad5b0391c6ff",
+                "type": 2,
+                "binding_intent": "AcessoOPP_Vocabulario_NivelSegurançaConta",
+                "simulated_message": "O @selo é equivalente ao nível de segurança da conta?",
+                "expected_answer": "A conta OPP pode ter <b>três níveis de segurança</b>: Ouro, Prata e Bronze.  \n\nA diferença entre os três níveis é a <b>segurança</b> e a <b>quantidade</b> de serviços que você pode acessar e utilizar.  \n\nO nível <b>Ouro</b> oferece a máxima segurança disponível e acesso a <b>todos os serviços digitais</b> que estão na plataforma OPP.  \n\nO nível <b>Prata</b> oferece segurança elevada e possibilita acesso a <b>alguns serviços digitais</b>, mas não todos. \n\nE o nível <b>Bronze</b> oferece apenas acesso a alguns <b>serviços e segurança básicos</b>. ('Aumentar o nível', 'OPT - aumentar o nível de segurança'), ('Descobrir o nível', 'OPT - Como ver o nivel da conta')",
+                "received_answer": "A conta OPP pode ter <b>três níveis de segurança</b>: Ouro, Prata e Bronze.  \n\nA diferença entre os três níveis é a <b>segurança</b> e a <b>quantidade</b> de serviços que você pode acessar e utilizar.  \n\nO nível <b>Ouro</b> oferece a máxima segurança disponível e acesso a <b>todos os serviços digitais</b> que estão na plataforma OPP.  \n\nO nível <b>Prata</b> oferece segurança elevada e possibilita acesso a <b>alguns serviços digitais</b>, mas não todos. \n\nE o nível <b>Bronze</b> oferece apenas acesso a alguns <b>serviços e segurança básicos</b>. ('Aumentar o nível da conta', 'OPT - aumentar o nível de segurança'), ('Descobrir o nível da conta', 'OPT - Como ver o nivel da conta')",
+                "response_time": 0.86519455909729
+            },
+            {
+                "id": "b89323ee-198c-4bfa-b332-2ad3cb22990b",
+                "type": 2,
+                "binding_intent": "AcessoOPP_Vocabulario_NivelSegurançaConta",
+                "simulated_message": "Qual é a definição do @selo de qualificação?",
+                "expected_answer": "A conta OPP pode ter <b>três níveis de segurança</b>: Ouro, Prata e Bronze.  \n\nA diferença entre os três níveis é a <b>segurança</b> e a <b>quantidade</b> de serviços que você pode acessar e utilizar.  \n\nO nível <b>Ouro</b> oferece a máxima segurança disponível e acesso a <b>todos os serviços digitais</b> que estão na plataforma OPP.  \n\nO nível <b>Prata</b> oferece segurança elevada e possibilita acesso a <b>alguns serviços digitais</b>, mas não todos. \n\nE o nível <b>Bronze</b> oferece apenas acesso a alguns <b>serviços e segurança básicos</b>. ('Aumentar o nível', 'OPT - aumentar o nível de segurança'), ('Descobrir o nível', 'OPT - Como ver o nivel da conta')",
+                "received_answer": "A conta OPP pode ter <b>três níveis de segurança</b>: Ouro, Prata e Bronze.  \n\nA diferença entre os três níveis é a <b>segurança</b> e a <b>quantidade</b> de serviços que você pode acessar e utilizar.  \n\nO nível <b>Ouro</b> oferece a máxima segurança disponível e acesso a <b>todos os serviços digitais</b> que estão na plataforma OPP.  \n\nO nível <b>Prata</b> oferece segurança elevada e possibilita acesso a <b>alguns serviços digitais</b>, mas não todos. \n\nE o nível <b>Bronze</b> oferece apenas acesso a alguns <b>serviços e segurança básicos</b>. ('Aumentar o nível da conta', 'OPT - aumentar o nível de segurança'), ('Descobrir o nível da conta', 'OPT - Como ver o nivel da conta')",
+                "response_time": 0.8720157146453857
+            },
+            {
+                "id": "32577c50-b893-4b34-8e74-1f68a4e21761",
+                "type": 1,
+                "binding_intent": "AcessoOPP_Vocabulario_OqueEhOPP",
+                "simulated_message": "O que significa a credencial @OPP?",
+                "expected_answer": "A  <b>plataforma OPP</b> é um meio fácil para você ter acesso a serviços públicos em um único lugar, no seu computador ou celular, sem enfrentar filas.  \n\nNo <b>gov.br</b>, você pode solicitar e acompanhar diversos serviços, com transparência, por meio da ação integrada entre os órgãos envolvidos na prestação desses serviços. ",
+                "received_answer": "A  <b>plataforma</b> <a href=\"https://www.gov.br\" target=\"_blank\"><b>gov.br</b></a> é um meio fácil para você ter acesso a serviços públicos em um único lugar, no seu computador ou celular, sem enfrentar filas.  \n\nNo <b>gov.br</b>, você pode solicitar e acompanhar diversos serviços, com transparência, por meio da ação integrada entre os órgãos envolvidos na prestação desses serviços. ",
+                "response_time": 0.8658552169799805
+            },
+            {
+                "id": "52632f49-2a07-42ec-b041-118e22a7ac28",
+                "type": 1,
+                "binding_intent": "AcessoOPP_Vocabulario_OqueEhOPP",
+                "simulated_message": "O que é o login único?",
+                "expected_answer": "A  <b>plataforma OPP</b> é um meio fácil para você ter acesso a serviços públicos em um único lugar, no seu computador ou celular, sem enfrentar filas.  \n\nNo <b>gov.br</b>, você pode solicitar e acompanhar diversos serviços, com transparência, por meio da ação integrada entre os órgãos envolvidos na prestação desses serviços. ",
+                "received_answer": "A  <b>plataforma</b> <a href=\"https://www.gov.br\" target=\"_blank\"><b>gov.br</b></a> é um meio fácil para você ter acesso a serviços públicos em um único lugar, no seu computador ou celular, sem enfrentar filas.  \n\nNo <b>gov.br</b>, você pode solicitar e acompanhar diversos serviços, com transparência, por meio da ação integrada entre os órgãos envolvidos na prestação desses serviços. ",
+                "response_time": 0.9017460346221924
+            },
+            {
+                "id": "06a07a58-8aed-4465-a77c-8a3d1114e299",
+                "type": 2,
+                "binding_intent": "AcessoOPP_Vocabulario_OqueEhOPP",
+                "simulated_message": "O que é o @OPP?",
+                "expected_answer": "A  <b>plataforma OPP</b> é um meio fácil para você ter acesso a serviços públicos em um único lugar, no seu computador ou celular, sem enfrentar filas.  \n\nNo <b>gov.br</b>, você pode solicitar e acompanhar diversos serviços, com transparência, por meio da ação integrada entre os órgãos envolvidos na prestação desses serviços. ",
+                "received_answer": "A  <b>plataforma</b> <a href=\"https://www.gov.br\" target=\"_blank\"><b>gov.br</b></a> é um meio fácil para você ter acesso a serviços públicos em um único lugar, no seu computador ou celular, sem enfrentar filas.  \n\nNo <b>gov.br</b>, você pode solicitar e acompanhar diversos serviços, com transparência, por meio da ação integrada entre os órgãos envolvidos na prestação desses serviços. ",
+                "response_time": 0.9428136348724365
+            },
+            {
+                "id": "5d94c568-a451-4697-a5da-c5e8cb6e7234",
+                "type": 1,
+                "binding_intent": "AcessoOPP_Vocabulario_ValidacaoFacial",
+                "simulated_message": "Como funciona o reconhecimento da fisionomia?",
+                "expected_answer": "<b>Reconhecimento facial</b> é uma técnica de <b>identificação</b> que analisa e compara características do seu <b>rosto</b> com a base de dados biométricos coletados no momento de tirar o Título de Eleitor ou a Carteira Nacional de Habilitação - CNH. ('O que são?', 'OPT - Dados Biométricos')",
+                "received_answer": "<b>Reconhecimento facial</b> é uma técnica de <b>identificação</b> que analisa e compara características do seu <b>rosto</b> com a base de dados biométricos coletados no momento de tirar o Título de Eleitor ou a Carteira Nacional de Habilitação - CNH. ('O que são dados biométricos?', 'OPT - Dados Biométricos')",
+                "response_time": 0.8395981788635254
+            },
+            {
+                "id": "13279bc7-a9bb-4c98-b3e7-37e46a71d794",
+                "type": 1,
+                "binding_intent": "AcessoOPP_Vocabulario_ValidacaoFacial",
+                "simulated_message": "Qual a definição de validação por foto da face?",
+                "expected_answer": "<b>Reconhecimento facial</b> é uma técnica de <b>identificação</b> que analisa e compara características do seu <b>rosto</b> com a base de dados biométricos coletados no momento de tirar o Título de Eleitor ou a Carteira Nacional de Habilitação - CNH. ('O que são?', 'OPT - Dados Biométricos')",
+                "received_answer": "<b>Reconhecimento facial</b> é uma técnica de <b>identificação</b> que analisa e compara características do seu <b>rosto</b> com a base de dados biométricos coletados no momento de tirar o Título de Eleitor ou a Carteira Nacional de Habilitação - CNH. ('O que são dados biométricos?', 'OPT - Dados Biométricos')",
+                "response_time": 1.203432321548462
+            },
+            {
+                "id": "7480a946-8a21-4ddc-a301-9237a6a8221f",
+                "type": 1,
+                "binding_intent": "AcessoOPP_Vocabulario_ValidacaoFacial",
+                "simulated_message": "Quais são os benefícios da biometria facial?",
+                "expected_answer": "<b>Reconhecimento facial</b> é uma técnica de <b>identificação</b> que analisa e compara características do seu <b>rosto</b> com a base de dados biométricos coletados no momento de tirar o Título de Eleitor ou a Carteira Nacional de Habilitação - CNH. ('O que são?', 'OPT - Dados Biométricos')",
+                "received_answer": "<b>Reconhecimento facial</b> é uma técnica de <b>identificação</b> que analisa e compara características do seu <b>rosto</b> com a base de dados biométricos coletados no momento de tirar o Título de Eleitor ou a Carteira Nacional de Habilitação - CNH. ('O que são dados biométricos?', 'OPT - Dados Biométricos')",
+                "response_time": 2.4862570762634277
+            },
+            {
+                "id": "5adcb209-8a79-4e5f-a358-adfbc44e0d65",
+                "type": 2,
+                "binding_intent": "AcessoOPP_Vocabulario_ValidacaoFacial",
+                "simulated_message": "Qual a importância do reconhecimento da fisionomia?",
+                "expected_answer": "<b>Reconhecimento facial</b> é uma técnica de <b>identificação</b> que analisa e compara características do seu <b>rosto</b> com a base de dados biométricos coletados no momento de tirar o Título de Eleitor ou a Carteira Nacional de Habilitação - CNH. ('O que são?', 'OPT - Dados Biométricos')",
+                "received_answer": "<b>Reconhecimento facial</b> é uma técnica de <b>identificação</b> que analisa e compara características do seu <b>rosto</b> com a base de dados biométricos coletados no momento de tirar o Título de Eleitor ou a Carteira Nacional de Habilitação - CNH. ('O que são dados biométricos?', 'OPT - Dados Biométricos')",
+                "response_time": 2.014582633972168
+            },
+            {
+                "id": "b13bee4c-c8fa-4e72-8f8b-47351f7ae797",
+                "type": 1,
+                "binding_intent": "AcessoOPP_Vocabulario_VerificacaoDuasEtapas",
+                "simulated_message": "Explique como funciona o processo de verificação em duas etapas.",
+                "expected_answer": "<b>Verificação em duas etapas</b> é um recurso que adiciona um segundo fator de <b>segurança</b> no acesso à <b>conta OPP</b>.\n\nO que acontece quando você ativa esse recurso? \n \nNa <b>primeira etapa</b>, você informa <b>CPF</b> e <b>senha</b>. \n \nNa <b>segunda etapa</b>, é necessário informar o <b>código</b> gerado no <b>aplicativo OPP</b>.\n\nDesta forma, mesmo que alguém saiba o seu CPF e sua senha, não conseguirá acessar a conta porque o código estará no seu celular. Se você quiser aumentar a segurança com a Verificação em duas etapas, posso mostrar o que você deve fazer: ('Como ativar', 'OPT - Como Ativar 2FA')",
+                "received_answer": "<b>Verificação em duas etapas</b> é um recurso que adiciona um segundo fator de <b>segurança</b> no acesso à <b>conta OPP</b>.\n\nO que acontece quando você ativa esse recurso? \n \nNa <b>primeira etapa</b>, você informa <b>CPF</b> e <b>senha</b>. \n \nNa <b>segunda etapa</b>, é necessário informar o <b>código</b> gerado no <b>aplicativo OPP</b>.\n\nDesta forma, mesmo que alguém saiba o seu CPF e sua senha, não conseguirá acessar a conta porque o código estará no seu celular. ('Como ativar verificação em duas etapas ', 'OPT - Como Ativar 2FA')",
+                "response_time": 0.8667778968811035
+            },
+            {
+                "id": "e396b7a2-4ea0-44c6-8f6e-2dd683483ec6",
+                "type": 1,
+                "binding_intent": "AcessoOPP_Vocabulario_VerificacaoDuasEtapas",
+                "simulated_message": "Qual é o conceito por trás da autenticação em duas etapas?",
+                "expected_answer": "<b>Verificação em duas etapas</b> é um recurso que adiciona um segundo fator de <b>segurança</b> no acesso à <b>conta OPP</b>.\n\nO que acontece quando você ativa esse recurso? \n \nNa <b>primeira etapa</b>, você informa <b>CPF</b> e <b>senha</b>. \n \nNa <b>segunda etapa</b>, é necessário informar o <b>código</b> gerado no <b>aplicativo OPP</b>.\n\nDesta forma, mesmo que alguém saiba o seu CPF e sua senha, não conseguirá acessar a conta porque o código estará no seu celular. Se você quiser aumentar a segurança com a Verificação em duas etapas, posso mostrar o que você deve fazer: ('Como ativar', 'OPT - Como Ativar 2FA')",
+                "received_answer": "Se você quiser aumentar a segurança com a Verificação em duas etapas, posso mostrar o que você deve fazer: ('Como ativar verificação em duas etapas ', 'OPT - Como Ativar 2FA')",
+                "response_time": 0.9476654529571533
+            },
+            {
+                "id": "0e023194-a0a5-4ca3-887f-bee2d53fe07b",
+                "type": 2,
+                "binding_intent": "AcessoOPP_Vocabulario_VerificacaoDuasEtapas",
+                "simulated_message": "Como é que funciona a verificação de duas etapas?",
+                "expected_answer": "<b>Verificação em duas etapas</b> é um recurso que adiciona um segundo fator de <b>segurança</b> no acesso à <b>conta OPP</b>.\n\nO que acontece quando você ativa esse recurso? \n \nNa <b>primeira etapa</b>, você informa <b>CPF</b> e <b>senha</b>. \n \nNa <b>segunda etapa</b>, é necessário informar o <b>código</b> gerado no <b>aplicativo OPP</b>.\n\nDesta forma, mesmo que alguém saiba o seu CPF e sua senha, não conseguirá acessar a conta porque o código estará no seu celular. Se você quiser aumentar a segurança com a Verificação em duas etapas, posso mostrar o que você deve fazer: ('Como ativar', 'OPT - Como Ativar 2FA')",
+                "received_answer": "<b>Verificação em duas etapas</b> é um recurso que adiciona um segundo fator de <b>segurança</b> no acesso à <b>conta OPP</b>.\n\nO que acontece quando você ativa esse recurso? \n \nNa <b>primeira etapa</b>, você informa <b>CPF</b> e <b>senha</b>. \n \nNa <b>segunda etapa</b>, é necessário informar o <b>código</b> gerado no <b>aplicativo OPP</b>.\n\nDesta forma, mesmo que alguém saiba o seu CPF e sua senha, não conseguirá acessar a conta porque o código estará no seu celular. ('Como ativar verificação em duas etapas ', 'OPT - Como Ativar 2FA')",
+                "response_time": 3.482844591140747
+            },
+            {
+                "id": "91cbcde2-83cd-40ac-8626-9cd2fe0d475b",
+                "type": 2,
+                "binding_intent": "AcessoOPP_Vocabulario_VerificacaoDuasEtapas",
+                "simulated_message": "Quais são as orientações para a autenticação em duas etapas?",
+                "expected_answer": "<b>Verificação em duas etapas</b> é um recurso que adiciona um segundo fator de <b>segurança</b> no acesso à <b>conta OPP</b>.\n\nO que acontece quando você ativa esse recurso? \n \nNa <b>primeira etapa</b>, você informa <b>CPF</b> e <b>senha</b>. \n \nNa <b>segunda etapa</b>, é necessário informar o <b>código</b> gerado no <b>aplicativo OPP</b>.\n\nDesta forma, mesmo que alguém saiba o seu CPF e sua senha, não conseguirá acessar a conta porque o código estará no seu celular. Se você quiser aumentar a segurança com a Verificação em duas etapas, posso mostrar o que você deve fazer: ('Como ativar', 'OPT - Como Ativar 2FA')",
+                "received_answer": "Se você quiser aumentar a segurança com a Verificação em duas etapas, posso mostrar o que você deve fazer: ('Como ativar verificação em duas etapas ', 'OPT - Como Ativar 2FA')",
+                "response_time": 1.232682704925537
+            },
+            {
+                "id": "52c1c56c-5cc6-4d7f-ae05-8be63f4f0bf4",
+                "type": 1,
+                "binding_intent": "COMP_Agradecimento",
+                "simulated_message": "O show foi incrível?",
+                "expected_answer": "Continuo à disposição. Se não precisar mais de ajuda, por favor, <b>avalie o atendimento</b>. ('Gostei 👍 ', ':like:'), ('Não gostei 👎 ', ':dislike:')",
+                "received_answer": "No momento não sei falar sobre isso. Vamos falar de outra coisa?",
+                "response_time": 4.289727210998535
+            },
+            {
+                "id": "f64921f8-eeea-4ebc-80da-7a2aa1832c53",
+                "type": 1,
+                "binding_intent": "COMP_Agradecimento",
+                "simulated_message": "Como foi a performance no show de bola?",
+                "expected_answer": "Continuo à disposição. Se não precisar mais de ajuda, por favor, <b>avalie o atendimento</b>. ('Gostei 👍 ', ':like:'), ('Não gostei 👎 ', ':dislike:')",
+                "received_answer": "No momento não sei falar sobre isso. Vamos falar de outra coisa?",
+                "response_time": 1.1451189517974854
+            },
+            {
+                "id": "a7b77866-ac0e-4a74-8b9a-e54ea29a29dc",
+                "type": 2,
+                "binding_intent": "COMP_Agradecimento",
+                "simulated_message": "Como é que foi o show de bola que você assistiu?",
+                "expected_answer": "Continuo à disposição. Se não precisar mais de ajuda, por favor, <b>avalie o atendimento</b>. ('Gostei 👍 ', ':like:'), ('Não gostei 👎 ', ':dislike:')",
+                "received_answer": "No momento não sei falar sobre isso. Vamos falar de outra coisa?",
+                "response_time": 0.8220133781433105
+            },
+            {
+                "id": "51147f57-1f27-47ab-ab46-3d125f09acac",
+                "type": 1,
+                "binding_intent": "COMP_Avaliacao",
+                "simulated_message": "Como posso avaliar o atendimento de forma adequada?",
+                "expected_answer": "('Gostei 👍 ', ':like:'), ('Não gostei 👎 ', ':dislike:')",
+                "received_answer": "Para avaliar o atendimento, pressione o botão <b><i>Avaliar o atendimento</i></b> que se encontra no canto inferior direito.",
+                "response_time": 1.3133089542388916
+            },
+            {
+                "id": "2235aa66-7450-4142-bb33-7c7fe3a7380a",
+                "type": 2,
+                "binding_intent": "COMP_Avaliacao",
+                "simulated_message": "Qual é a maneira correta de avaliar o atendimento?",
+                "expected_answer": "('Gostei 👍 ', ':like:'), ('Não gostei 👎 ', ':dislike:')",
+                "received_answer": "Para avaliar o atendimento, pressione o botão <b><i>Avaliar o atendimento</i></b> que se encontra no canto inferior direito.",
+                "response_time": 1.0460362434387207
+            },
+            {
+                "id": "404ca89a-094a-4919-b991-f33cbf1b2477",
+                "type": 2,
+                "binding_intent": "COMP_Avaliacao",
+                "simulated_message": "Como que eu faço pra fazer a avaliação do atendimento?",
+                "expected_answer": "('Gostei 👍 ', ':like:'), ('Não gostei 👎 ', ':dislike:')",
+                "received_answer": "Para avaliar o atendimento, pressione o botão <b><i>Avaliar o atendimento</i></b> que se encontra no canto inferior direito.",
+                "response_time": 0.8833532333374023
+            },
+            {
+                "id": "60e2457a-278c-405f-9404-02f65a7c836e",
+                "type": 2,
+                "binding_intent": "COMP_Encerramento",
+                "simulated_message": "Qual é o significado de \"era só isso msm\"?",
+                "expected_answer": "OK. Peço que avalie o atendimento. Sua avaliação é muito importante para melhoria constante das minhas respostas.('Gostei 👍 ', ':like:'), ('Não gostei 👎 ', ':dislike:')",
+                "received_answer": "OK. Peço que avalie o atendimento. Sua avaliação é muito importante para melhoria constante das minhas respostas.",
+                "response_time": 0.7967860698699951
+            },
+            {
+                "id": "55af72d6-556e-4a07-9360-ad1652016c3c",
+                "type": 2,
+                "binding_intent": "COMP_Encerramento",
+                "simulated_message": "Quais são os efeitos de encerrar a conversa?",
+                "expected_answer": "OK. Peço que avalie o atendimento. Sua avaliação é muito importante para melhoria constante das minhas respostas.('Gostei 👍 ', ':like:'), ('Não gostei 👎 ', ':dislike:')",
+                "received_answer": "No momento não sei falar sobre isso. Vamos falar de outra coisa?",
+                "response_time": 1.0880093574523926
+            },
+            {
+                "id": "e08b5b67-49c7-4eda-bc9f-806516782a86",
+                "type": 1,
+                "binding_intent": "COMP_NaoQueroAvaliar",
+                "simulated_message": "Quando posso fazer a avaliação?",
+                "expected_answer": "Que pena, a sua avaliação é muito importante para melhorar o meu atendimento.\n\nSe você mudar de ideia, escreva no assistente a frase <b><i>Avaliar o atendimento</i></b>.",
+                "received_answer": "Para avaliar o atendimento, pressione o botão <b><i>Avaliar o atendimento</i></b> que se encontra no canto inferior direito.",
+                "response_time": 1.2041974067687988
+            },
+            {
+                "id": "a974f375-3ca8-43cd-97a7-f6e15a1aff7d",
+                "type": 1,
+                "binding_intent": "COMP_NaoQueroAvaliar",
+                "simulated_message": "Por que você não tem interesse em avaliar?",
+                "expected_answer": "Que pena, a sua avaliação é muito importante para melhorar o meu atendimento.\n\nSe você mudar de ideia, escreva no assistente a frase <b><i>Avaliar o atendimento</i></b>.",
+                "received_answer": "Que pena, a sua avaliação é muito importante para melhorar o meu atendimento.\n\nSe você mudar de ideia, pressione o botão <b><i>Avaliar o atendimento</i></b> que se encontra no canto inferior direito.",
+                "response_time": 0.8285284042358398
+            },
+            {
+                "id": "18822581-e07e-4497-ad3b-236dffdace8a",
+                "type": 2,
+                "binding_intent": "COMP_NaoQueroAvaliar",
+                "simulated_message": "Quando você tem tempo, avalie.",
+                "expected_answer": "Que pena, a sua avaliação é muito importante para melhorar o meu atendimento.\n\nSe você mudar de ideia, escreva no assistente a frase <b><i>Avaliar o atendimento</i></b>.",
+                "received_answer": "Que pena, a sua avaliação é muito importante para melhorar o meu atendimento.\n\nSe você mudar de ideia, pressione o botão <b><i>Avaliar o atendimento</i></b> que se encontra no canto inferior direito.",
+                "response_time": 0.8638777732849121
+            },
+            {
+                "id": "eaa30421-065f-4c1f-ae4f-6265a858ee7f",
+                "type": 2,
+                "binding_intent": "COMP_NaoQueroAvaliar",
+                "simulated_message": "Ninguém me obriga a avaliar.",
+                "expected_answer": "Que pena, a sua avaliação é muito importante para melhorar o meu atendimento.\n\nSe você mudar de ideia, escreva no assistente a frase <b><i>Avaliar o atendimento</i></b>.",
+                "received_answer": "Que pena, a sua avaliação é muito importante para melhorar o meu atendimento.\n\nSe você mudar de ideia, pressione o botão <b><i>Avaliar o atendimento</i></b> que se encontra no canto inferior direito.",
+                "response_time": 0.9328083992004395
+            }
+        ]
+    }
+}

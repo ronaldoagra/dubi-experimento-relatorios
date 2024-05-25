@@ -1,0 +1,81 @@
+{
+    "chatbot": "dubi-OPP-bot-2",
+    "performance_metrics": {
+        "accuracy": 0.9268,
+        "precision": 0.9367,
+        "recall": 0.9867,
+        "f1score": 0.961
+    },
+    "dialog_metrics": {
+        "tmR": 1.2368,
+        "tf": 0.0366,
+        "tc": 0.9231,
+        "tcr": 0.9259,
+        "tamb": 0.061
+    },
+    "test_coverage": {
+        "intents": 0.9259,
+        "dialog_nodes": 0.8889
+    },
+    "test_case": {
+        "id": "ebc74d73-f1b5-4fc0-ae0c-c28f0c7bf13e",
+        "total_interactions": 82,
+        "total_failed_interactions": 6,
+        "failed_interactions": [
+            {
+                "id": "4bc32997-a075-41db-b127-0aced6523d11",
+                "type": 2,
+                "binding_intent": "Consulta_Publica_Carga_Maritima",
+                "simulated_message": "Onde encontar a documetação da API de cosulta púlica sobre carga maritima?",
+                "expected_answer": "Os serviços relacionados à carga marítima possibilitam consultar informações sobre as datas das últimas atualizações das escalas e manifestos. Se deseja consultar essas informações, utilize os seguintes endpoints:\n<br>\n- /ce/data-ultima-atualizacao: consultar a data da última atualização de uma CE específica.<br>\n- /escala/data-ultima-atualizacao: serviço para verificar a última atualização de uma determinada escala.<br>\n- /manifesto/data-ultima-atualizacao: permite consultar a data da última modificação de um manifesto.<br><br>\n\nConsulte nossa documentação para mais detalhes: <a href=\"\"https://sisOPP-carga.OPP.gov.br/siscarga-api/\"\" target=\"\"_blank\"\">Consulta Carga Marítima</a>.",
+                "received_answer": "('Consulta Publica Carga Maritima', 'suggestion-watson|d:337a9c24-f916-4ebc-8c2b-1663490ab148'), ('Carga Marítima', 'suggestion-watson|d:4f90a1bf-0514-4c12-9ed5-2427ecc9a70b'), ('Nenhuma das anteriores', 'suggestion-watson|d:30643dd6-4f3e-4281-9d7b-84b5e9ff0a53')",
+                "response_time": 2.192126512527466
+            },
+            {
+                "id": "c89e9d46-25e2-4c0c-a0d7-a0bc84106b7e",
+                "type": 1,
+                "binding_intent": "SERVICO_Consultas_Permitidas",
+                "simulated_message": "Quais informações posso consultar no OPP?",
+                "expected_answer": " Para realizar as consultas é necessário, eCPF ou eCNPJ:\n<br>- eCPF: no caso de Operadores de OPP, para os serviços de acesso às informações de um conhecimento de embarque, DI e LI ou que verificam perfil e representação SisOPP.\n<br>- eCNPJ: no caso das demais empresas, para o(s) serviço(s) de Consulta Declaração de Importação Avulsa (DI), de acesso às informações de LPCO por chave de acesso",
+                "received_answer": "('Consultas Permitidas pelo Serviço', 'suggestion-watson|d:f4425f04-285e-44e7-a0d1-617c8fc420b5'), ('Serviços candidatos', 'suggestion-watson|d:0f28b96d-2ab0-42dc-9130-c706c39af3d3'), ('Nenhuma das anteriores', 'suggestion-watson|d:549c8094-5cbe-4030-b527-53325e1f6608')",
+                "response_time": 0.8070404529571533
+            },
+            {
+                "id": "597d1e70-6794-48cd-b7db-bd7ea98cd9c8",
+                "type": 1,
+                "binding_intent": "SERVICO_Custo_Mensal",
+                "simulated_message": "Qual é o preço do produto?",
+                "expected_answer": "O custo de utilização a plataforma OPP é de 999 consultas por R$ 1.000,00 / mês. Não possui taxa de instalação ou de cancelamento e o acesso é liberado imediatamente.<br>\n\nSe você fizer mais de 999 consultas no mês, o valor unitário da consulta ainda pode cair. Verifique a franquia no link abaixo:\n<a href=\"https://www.loja.OPP.gov.br/OPP\" target=\"_blank\">Custos</a>",
+                "received_answer": "('Definição do Produto', 'suggestion-watson|d:0699da73-134f-43b4-8f1c-53052779d95a'), ('Custos dos serviços', 'suggestion-watson|d:3cc221fa-8300-4636-92f1-13606e888954'), ('Nenhuma das anteriores', 'suggestion-watson|d:c5de0b50-534d-4e87-b239-0c1c15312414')",
+                "response_time": 0.8288037776947021
+            },
+            {
+                "id": "65e99642-9f71-4851-a977-74bb48d3ba8e",
+                "type": 2,
+                "binding_intent": "SERVICO_Custo_Mensal",
+                "simulated_message": "Qual é o preço do produto?",
+                "expected_answer": "O custo de utilização a plataforma OPP é de 999 consultas por R$ 1.000,00 / mês. Não possui taxa de instalação ou de cancelamento e o acesso é liberado imediatamente.<br>\n\nSe você fizer mais de 999 consultas no mês, o valor unitário da consulta ainda pode cair. Verifique a franquia no link abaixo:\n<a href=\"https://www.loja.OPP.gov.br/OPP\" target=\"_blank\">Custos</a>",
+                "received_answer": "('Definição do Produto', 'suggestion-watson|d:bfa1af55-9d59-4de4-bfc6-95260b969cbd'), ('Custos dos serviços', 'suggestion-watson|d:b8e57a5b-f38d-4c9b-8965-c20bc8668f2e'), ('Nenhuma das anteriores', 'suggestion-watson|d:36c68206-9085-4b7a-b284-84288c341382')",
+                "response_time": 1.2469162940979004
+            },
+            {
+                "id": "0698f592-1335-42bc-8703-5c991604fa14",
+                "type": 1,
+                "binding_intent": "Testar_DI",
+                "simulated_message": "Onde posso encontrar a documentação para testar a DI?",
+                "expected_answer": "Para testar os serviços do tema Declaração de Importação - DI, dê uma olhada nas páginas com as documentações:\n\n<a href=\"https://doc-OPP.gov.br/OPP/documentacao/declaracao-importacao/\" target=\"_blank\">Testar Declaração de Importação - DI</a>\n\n<a href=\"https://doc-OPP.gov.br/OPP/documentacao/declaracao-importacao-avulsa/\" target=\"_blank\">Testar Declaração de Importação - DI Avulsa</a>",
+                "received_answer": "No momento não sei falar sobre isso. Vamos falar de outra coisa?",
+                "response_time": 0.81846022605896
+            },
+            {
+                "id": "0d19575f-eeea-4c0f-b849-122471cef6c3",
+                "type": 2,
+                "binding_intent": "Testar_LPCO",
+                "simulated_message": "Como testar a API de lincença?",
+                "expected_answer": "Para testar os serviços do tema LPCO, dê uma olhada na página com a documentação:\n\n<a href=\"https://doc-OPP.gov.br/OPP/documentacao/lpco/consulta-avulsa.html\" target=\"_blank\">Testar LPCO</a>",
+                "received_answer": "('LPCO', 'suggestion-watson|d:20286838-baea-4cc4-99ba-d800c93c0815'), ('Licenciamento de Importação LI', 'suggestion-watson|d:e6d6fa6a-32fb-4804-94a3-13a6c9d31223'), ('Carga Marítima', 'suggestion-watson|d:f288c0f2-c368-448d-821c-64f440a545fe'), ('Nenhuma das anteriores', 'suggestion-watson|d:55e3ac3c-bd4d-4d52-829a-3dd5df35fe34')",
+                "response_time": 0.8117156028747559
+            }
+        ]
+    }
+}

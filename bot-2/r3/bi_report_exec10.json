@@ -1,0 +1,153 @@
+{
+    "chatbot": "dubi-OPP-bot-2",
+    "performance_metrics": {
+        "accuracy": 0.8462,
+        "precision": 0.8721,
+        "recall": 0.9615,
+        "f1score": 0.9146
+    },
+    "dialog_metrics": {
+        "tmR": 1.1957,
+        "tf": 0.0549,
+        "tc": 0.8333,
+        "tcr": 0.8444,
+        "tamb": 0.0989
+    },
+    "test_coverage": {
+        "intents": 0.963,
+        "dialog_nodes": 0.9259
+    },
+    "test_case": {
+        "id": "82871c8c-d52b-48a6-b4f7-0c2ee3fe5e49",
+        "total_interactions": 91,
+        "total_failed_interactions": 14,
+        "failed_interactions": [
+            {
+                "id": "30a7dedc-25bd-46ff-82c4-798d507b4d28",
+                "type": 1,
+                "binding_intent": "Acessar_API_DI",
+                "simulated_message": "Como consultar os dados da DI?",
+                "expected_answer": "Para acessar os serviços relacionados à Declaração de Importação (DI), utilize os seguintes endpoints para autenticação via eCPF:<br>\n\n- GET /declaracao-importacao/{numeroDI}/adicoes/ <br>\n- GET /declaracao-importacao/{numeroDI}/adicoes/{numeroAdicao} <br>\n- GET /declaracao-importacao/{numero} <br><br>\n\nPara mais detalhes, consulte a <a href=\"https://doc-OPP.gov.br/OPP/documentacao/declaracao-importacao/\" target=\"_blank\">documentação API Declaração de Importação</a>.<br><br>\n\nPara autenticação via eCNPJ, utilize os seguintes endereços:<br>\n\n- POST /declaracao-importacao/consulta-avulsa/adicoes <br>\n- POST /declaracao-importacao/consulta-avulsa <br><br>\n\nConsulte a <a href=\"https://doc-OPP.gov.br/OPP/documentacao/declaracao-importacao-avulsa/\" target=\"_blank\">documentação API Declaração de Importação Avulsa</a> para mais detalhes.",
+                "received_answer": "('Acessar DI', 'suggestion-watson|d:44080f0f-acae-4a6e-9fd4-a04c3e4e4e23'), ('Consulta Publica Declaração de Importação', 'suggestion-watson|d:0ab364e2-abd1-4b26-91a5-4163f7aadb77'), ('Nenhuma das anteriores', 'suggestion-watson|d:928cd6b5-8340-4839-be5d-ee83a644f984')",
+                "response_time": 1.1441586017608643
+            },
+            {
+                "id": "ab510121-0cff-445b-8abb-52e9586b9e79",
+                "type": 2,
+                "binding_intent": "Acessar_API_DI",
+                "simulated_message": "Como posso consultar dados da DI na API?",
+                "expected_answer": "Para acessar os serviços relacionados à Declaração de Importação (DI), utilize os seguintes endpoints para autenticação via eCPF:<br>\n\n- GET /declaracao-importacao/{numeroDI}/adicoes/ <br>\n- GET /declaracao-importacao/{numeroDI}/adicoes/{numeroAdicao} <br>\n- GET /declaracao-importacao/{numero} <br><br>\n\nPara mais detalhes, consulte a <a href=\"https://doc-OPP.gov.br/OPP/documentacao/declaracao-importacao/\" target=\"_blank\">documentação API Declaração de Importação</a>.<br><br>\n\nPara autenticação via eCNPJ, utilize os seguintes endereços:<br>\n\n- POST /declaracao-importacao/consulta-avulsa/adicoes <br>\n- POST /declaracao-importacao/consulta-avulsa <br><br>\n\nConsulte a <a href=\"https://doc-OPP.gov.br/OPP/documentacao/declaracao-importacao-avulsa/\" target=\"_blank\">documentação API Declaração de Importação Avulsa</a> para mais detalhes.",
+                "received_answer": "('Acessar DI', 'suggestion-watson|d:013c01dd-e457-41ac-b7ae-71f2ffe3ef05'), ('Consulta Publica Declaração de Importação', 'suggestion-watson|d:c7ad46f1-36e0-4a19-8e07-9975d35c2b4e'), ('Nenhuma das anteriores', 'suggestion-watson|d:528b1393-3ea0-486e-b1a2-79865f8a3e0a')",
+                "response_time": 1.1361711025238037
+            },
+            {
+                "id": "e8c36508-a831-4c3b-8d89-bf8f172d958d",
+                "type": 2,
+                "binding_intent": "Acessar_API_LI",
+                "simulated_message": "Qual é o caminhos para verificar detalhes minuciosos de uma lincensa via sistemma?",
+                "expected_answer": "Para acessar o serviço de Licenciamento de Importação (LI), utilize o seguinte endereço:<br>\n\n- GET /licencas-importacao/{numero} <br><br>\n\nConsulte nossa documentação para mais detalhes: <a href=\"https://doc-OPP.gov.br/OPP/documentacao/licenca-importacao/\" target=\"_blank\">Documentação API Licenciamento de Importação</a>.",
+                "received_answer": "No momento não sei falar sobre isso. Vamos falar de outra coisa?",
+                "response_time": 0.8533318042755127
+            },
+            {
+                "id": "54074519-a316-4129-9561-f87ab2a40981",
+                "type": 2,
+                "binding_intent": "Consulta_Publica_Carga_Maritima",
+                "simulated_message": "Como faço para acessar a API de consuta publica da carga maritma?",
+                "expected_answer": "Para acessar os serviços relacionados à carga marítima, utilize os seguintes endpoints:\n<br>\n- GET /ce/data-ultima-atualizacao <br>\n- GET /escala/data-ultima-atualizacao <br>\n- GET /manifesto/data-ultima-atualizacao <br> <br>\n\nConsulte nossa documentação para mais detalhes: <a href=\"\"https://sisOPP-carga.OPP.gov.br/siscarga-api/\"\" target=\"\"_blank\"\">Consulta Carga Marítima</a>.",
+                "received_answer": "('Consulta Publica Carga Maritima', 'suggestion-watson|d:6c3d6fb9-0606-452a-9fbb-ff803168e264'), ('Carga Aquaviária', 'suggestion-watson|d:dc55834c-4596-41b6-ab94-ab141a79b63a'), ('Nenhuma das anteriores', 'suggestion-watson|d:010224a7-e07d-4cbf-b996-2b0a86732122')",
+                "response_time": 0.8159968852996826
+            },
+            {
+                "id": "5626e7b6-d3bd-4317-83c6-fda1ea3cafb4",
+                "type": 2,
+                "binding_intent": "Consulta_Publica_LI",
+                "simulated_message": "Onde encontro informações detalhadas sobre a documentação da Consulta Pública de LI?",
+                "expected_answer": "Para obter informações sobre a última atualização do Licenciamento de Importação (LI), utilize o endpoint:<br>\n- GET \n/licencas-importacao/data-ultima-atualizacao <br><br>\n\nConsulte nossa documentação para mais detalhes: <a href=\"https://sisOPP-li.OPP.gov.br/sisOPP-li-api/\" target=\"_blank\">Consulta LI</a>",
+                "received_answer": "('Consulta Publica Licenciamento de Importação', 'suggestion-watson|d:fe144cb1-afc2-4ec2-9a45-7c1245d51c28'), ('Consulta Publica Declaração de Importação', 'suggestion-watson|d:533545e3-34af-4703-ade8-8dd47f3101d5'), ('Consulta Publica Carga Maritima', 'suggestion-watson|d:cf09241c-6d47-4700-aad5-41adecb35730'), ('Nenhuma das anteriores', 'suggestion-watson|d:be616fba-fecb-4b53-be36-f77a4c9fce35')",
+                "response_time": 0.7317869663238525
+            },
+            {
+                "id": "bef03fb2-1314-4abd-99dc-8f26ff05bc24",
+                "type": 2,
+                "binding_intent": "EMPATIA",
+                "simulated_message": "O que é Maia, chatbote?",
+                "expected_answer": "Eu sou a Maia, o chatbot do OPP. Estou aqui para te ajudar e tirar suas dúvidas sobre contratação e utilização do nosso produto. Que tipo de ajuda você precisa?",
+                "received_answer": "('Empatia', 'suggestion-watson|d:0bd0ae7d-56de-4fdd-ab4e-2ceabeab5fac'), ('Definição do Produto', 'suggestion-watson|d:99231a16-f179-4dc1-922f-09a8c764d7c0'), ('Nenhuma das anteriores', 'suggestion-watson|d:e865b9b7-bc0c-4c4e-9493-45d636028b13')",
+                "response_time": 0.86525559425354
+            },
+            {
+                "id": "c67ca9a8-54b2-44e7-a164-04a3d5280980",
+                "type": 1,
+                "binding_intent": "SERVICO_Acessar_API",
+                "simulated_message": "Quais dados são retornados?",
+                "expected_answer": "('Autenticação', 'Fazer Autenticação'), (' Carga Aquaviária', 'Acessar API Carga Aquaviária'), (' Declarações de Importação - DI', 'Acessar API Declaração de Importação'), ('Licenciamento de Importação - LI', 'Acessar API Licenciamento de Importação'), ('LPCO', 'Acessar API LPCO')",
+                "received_answer": "Erro na requisição.",
+                "response_time": 9.679541110992432
+            },
+            {
+                "id": "35f3465a-a2c2-4fb9-8772-c6e8d26d1a12",
+                "type": 1,
+                "binding_intent": "SERVICO_Canditado",
+                "simulated_message": "Como verificar os serviços disponíveis no sistema?",
+                "expected_answer": "Na documentação do OPP, há um espaço para você consultar os serviços candidatos que estão em análise pelo setor privado. Acesse: <a href= \"https://OPP.gov.br/documentacao/OPP/servicos_candidatos/\" target=\"_blank\">Serviços candidatos</a>",
+                "received_answer": "No momento não sei falar sobre isso. Vamos falar de outra coisa?",
+                "response_time": 0.8771374225616455
+            },
+            {
+                "id": "c2871e0d-7132-4afb-87c8-10f3de61b021",
+                "type": 2,
+                "binding_intent": "SERVICO_Consultas_Publicas",
+                "simulated_message": "É preciso gasta para utilizar o produto?",
+                "expected_answer": "('Carga Marítima', 'Consulta Pública Carga Marítima'), ('Declaração de Importação - DI', 'Consulta Pública Declaração de Importação'), ('Licenciamento de Importação - LI', 'Consulta Pública Licenciamento de Importação')",
+                "received_answer": "No momento não sei falar sobre isso. Vamos falar de outra coisa?",
+                "response_time": 0.7669322490692139
+            },
+            {
+                "id": "a9fb06b0-d706-4254-93b3-7f3bd35cc75c",
+                "type": 1,
+                "binding_intent": "SERVICO_Custo_Mensal",
+                "simulated_message": "Qual é o preço do OPP?",
+                "expected_answer": "O custo de utilização a plataforma OPP é de 999 consultas por R$ 1.000,00 / mês. Não possui taxa de instalação ou de cancelamento e o acesso é liberado imediatamente.<br>\n\nSe você fizer mais de 999 consultas no mês, o valor unitário da consulta ainda pode cair. Verifique a franquia no link abaixo:\n<a href=\"https://www.loja.OPP.gov.br/OPP\" target=\"_blank\">Custos</a>",
+                "received_answer": "('Custos dos serviços', 'suggestion-watson|d:915d8f49-6d8e-4ef1-9d23-3009c336c3b2'), ('Definição do Produto', 'suggestion-watson|d:a5bedca4-25bb-4a11-bfd9-07ce8977459e'), ('Nenhuma das anteriores', 'suggestion-watson|d:358fff40-3eb6-4c97-b292-e3912468aab1')",
+                "response_time": 0.7473776340484619
+            },
+            {
+                "id": "c9defaaf-0243-4f89-a208-ff01e8a1a705",
+                "type": 2,
+                "binding_intent": "SERVICO_Custo_Mensal",
+                "simulated_message": "Qual é o preço do OPP?",
+                "expected_answer": "O custo de utilização a plataforma OPP é de 999 consultas por R$ 1.000,00 / mês. Não possui taxa de instalação ou de cancelamento e o acesso é liberado imediatamente.<br>\n\nSe você fizer mais de 999 consultas no mês, o valor unitário da consulta ainda pode cair. Verifique a franquia no link abaixo:\n<a href=\"https://www.loja.OPP.gov.br/OPP\" target=\"_blank\">Custos</a>",
+                "received_answer": "('Custos dos serviços', 'suggestion-watson|d:5482d96d-d8fc-4f7b-92a1-c9542f557f0a'), ('Definição do Produto', 'suggestion-watson|d:f5d59153-f7f4-47f2-96b1-b7119c905684'), ('Nenhuma das anteriores', 'suggestion-watson|d:19d6aacc-1a8e-4f53-9119-9fc72eb19c31')",
+                "response_time": 0.8404011726379395
+            },
+            {
+                "id": "f06f2b63-5e5e-416b-8ba6-a32143b1fa97",
+                "type": 1,
+                "binding_intent": "SERVICO_Disponibilidade",
+                "simulated_message": "Qual é a taxa de disponibilidade do serviço?",
+                "expected_answer": "Todos os serviços do OPP ficam disponíveis durante todo o dia com uma parada entre 1h e 3h da manhã para manutenção em nossos servidores. <br>\n\nVocê pode buscar mais informações sobre a contratação do OPP no link abaixo:\n<a href=\"https://www.loja.OPP.gov.br/OPP\" target=\"_blank\">Disponibilidade dos serviços</a>",
+                "received_answer": "('Disponibilidade dos serviços', 'suggestion-watson|d:4ca33b7a-f503-4623-b089-f10e0a9419ca'), ('Custos dos serviços', 'suggestion-watson|d:00b65039-c0bb-4296-93d4-41ca534ff7b2'), ('Nenhuma das anteriores', 'suggestion-watson|d:b247f29c-c478-4634-b7b2-1fe461f6fe77')",
+                "response_time": 0.8574891090393066
+            },
+            {
+                "id": "55c58c0c-e4c3-44e5-9139-3a4b670316da",
+                "type": 1,
+                "binding_intent": "SERVICO_Disponibilidade",
+                "simulated_message": "As APIs estão sempre funcionando?",
+                "expected_answer": "Todos os serviços do OPP ficam disponíveis durante todo o dia com uma parada entre 1h e 3h da manhã para manutenção em nossos servidores. <br>\n\nVocê pode buscar mais informações sobre a contratação do OPP no link abaixo:\n<a href=\"https://www.loja.OPP.gov.br/OPP\" target=\"_blank\">Disponibilidade dos serviços</a>",
+                "received_answer": "('Disponibilidade dos serviços', 'suggestion-watson|d:abeda936-9c95-4021-acda-65db6a8b8089'), ('Acessar Serviços da API', 'suggestion-watson|d:bc901c4e-278d-4e56-8d77-d4d20e2da1d6'), ('Nenhuma das anteriores', 'suggestion-watson|d:645d5132-61a9-4273-a480-8904a42c8b98')",
+                "response_time": 0.9379026889801025
+            },
+            {
+                "id": "e8be0780-6bb2-418e-8046-92ba20fa5b63",
+                "type": 1,
+                "binding_intent": "SERVICO_Modelo_Pagamento",
+                "simulated_message": "Quais são as opções de pagamento para o serviço?",
+                "expected_answer": "É muito fácil realizar o pagamento do OPP! Para realizar a compra basta possuir um certificado Digital e-CNPJ e um cartão de crédito e acessar o link abaixo: <br>\n<a href=\"https://cliente.OPP.gov.br/#!/e-commerce/OPP/inicio\" target=\"_blank\">Pagamento</a>",
+                "received_answer": "Erro na requisição.",
+                "response_time": 9.564693689346313
+            }
+        ]
+    }
+}

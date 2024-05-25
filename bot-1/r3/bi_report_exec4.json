@@ -1,0 +1,306 @@
+{
+    "chatbot": "dubi-OPP-bot-1",
+    "performance_metrics": {
+        "accuracy": 0.8402,
+        "precision": 0.8757,
+        "recall": 0.9529,
+        "f1score": 0.9127
+    },
+    "dialog_metrics": {
+        "tmR": 1.3277,
+        "tf": 0.0464,
+        "tc": 0.8687,
+        "tcr": 0.8429,
+        "tamb": 0.0825
+    },
+    "test_coverage": {
+        "intents": 0.96,
+        "dialog_nodes": 0.8511
+    },
+    "test_case": {
+        "id": "d4b93da1-19e3-4ae1-8b08-92bab5758335",
+        "total_interactions": 194,
+        "total_failed_interactions": 31,
+        "failed_interactions": [
+            {
+                "id": "d1ed86cf-318b-4c2a-941e-3660c4e4b68f",
+                "type": 1,
+                "binding_intent": "COMP_Agradecimento",
+                "simulated_message": "Qual é a opinião das pessoas sobre o show de bola?",
+                "expected_answer": "Continuo à disposição. Se não precisar mais de ajuda, por favor, <b>avalie o atendimento</b>. ('Gostei 👍 ', ':like:'), ('Não gostei 👎 ', ':dislike:')",
+                "received_answer": "No momento não sei falar sobre isso. Vamos falar de outra coisa?",
+                "response_time": 0.9537608623504639
+            },
+            {
+                "id": "42e9a05e-f6d6-45e8-8d91-bc88a9fed0d0",
+                "type": 1,
+                "binding_intent": "COMP_Agradecimento",
+                "simulated_message": "Quais são os aspectos mais importantes do show de bola?",
+                "expected_answer": "Continuo à disposição. Se não precisar mais de ajuda, por favor, <b>avalie o atendimento</b>. ('Gostei 👍 ', ':like:'), ('Não gostei 👎 ', ':dislike:')",
+                "received_answer": "('Avaliação', 'suggestion-watson|d:a56906ed-bb1b-4d5a-a577-349b6cda3fd2'), ('Lotes ou terrenos', 'suggestion-watson|d:3ad31c03-b2c6-4862-b542-b38467a3f660'), ('Nenhuma das opções', 'suggestion-watson|d:105b95ed-a01d-4f15-a90c-33760f783fe9')",
+                "response_time": 0.7862582206726074
+            },
+            {
+                "id": "aded9dbe-d68e-4142-a007-24f32a146b78",
+                "type": 2,
+                "binding_intent": "COMP_Agradecimento",
+                "simulated_message": "Qual é a definição de \"show de bola\"?",
+                "expected_answer": "Continuo à disposição. Se não precisar mais de ajuda, por favor, <b>avalie o atendimento</b>. ('Gostei 👍 ', ':like:'), ('Não gostei 👎 ', ':dislike:')",
+                "received_answer": "('Avaliação', 'suggestion-watson|d:eb25ba7f-b867-4f44-bea1-13314ab6b204'), ('Descontos pessoais', 'suggestion-watson|d:46b1ce74-8989-4969-aa54-d3aa2e92e0de'), ('Nenhuma das opções', 'suggestion-watson|d:4fad08ce-b3cd-4921-8a0b-cbf48273a3b5')",
+                "response_time": 1.1612260341644287
+            },
+            {
+                "id": "c8624be9-2484-475c-8182-dcf76b8edc92",
+                "type": 2,
+                "binding_intent": "COMP_Agradecimento",
+                "simulated_message": "Quais são os efeitos de um \"show de bola\"?",
+                "expected_answer": "Continuo à disposição. Se não precisar mais de ajuda, por favor, <b>avalie o atendimento</b>. ('Gostei 👍 ', ':like:'), ('Não gostei 👎 ', ':dislike:')",
+                "received_answer": "No momento não sei falar sobre isso. Vamos falar de outra coisa?",
+                "response_time": 0.966503381729126
+            },
+            {
+                "id": "2261380b-e7d0-4ea4-b58b-805c6f3597b4",
+                "type": 1,
+                "binding_intent": "COMP_NaoQueroAvaliar",
+                "simulated_message": "Por que você não quer avaliar o atendimento?",
+                "expected_answer": "Que pena, a sua avaliação é muito importante para melhorar o meu atendimento.\n\nSe você mudar de ideia, escreva no assistente a frase <b><i>Avaliar o atendimento</i></b>.",
+                "received_answer": "('Não Quero Avaliar', 'suggestion-watson|d:d0ec9e89-5482-4a84-bd5a-5b815ae1494d'), ('Conteúdo', 'suggestion-watson|d:f5f31ee7-a8e6-4649-8b01-8134cdeaadf6'), ('Nenhuma das opções', 'suggestion-watson|d:b2ae2d61-c0c1-44d6-81fc-ec22006d7103')",
+                "response_time": 1.0317866802215576
+            },
+            {
+                "id": "0cab4058-a5a4-4d99-bcef-fdcf1d72e7b7",
+                "type": 1,
+                "binding_intent": "IPTU_DESCONTOS",
+                "simulated_message": "Quais são as formas de obter desconto no IPTU?",
+                "expected_answer": "O desconto para <b>pagamento</b> do IPTU <b>à vista</b> até 28 de fevereiro é de <b>10%</b>. \n\nO pagamento <b>parcelado</b> pode ser em até 9 vezes, com descontos proporcionais: \n\n<b>7%</b> = 2 parcelas  \n<b>6%</b> = 3 parcelas  \n<b>5%</b> = 4 parcelas \n<b>4%</b> = 5 parcelas \n<b>3%</b> = 6 parcelas \n<b>2%</b> = 7 parcelas \n<b>1%</b> = 8 parcelas \n<b>0%</b> = 9 parcelas \n\nQuem pagou o <b>IPTU do ano anterior em dia</b>, tem <b>mais 10%</b> de desconto! ('Pessoais', 'OPT-descontos-pessoais'), ('Imóveis', 'OPT-descontos-imoveis'), ('Lotes ou terrenos', 'OPT-descontos-lotes-terrenos')",
+                "received_answer": "('Descontos IPTU', 'suggestion-watson|d:fa9b7204-ec95-45f8-bb29-27f80c20678f'), ('Solicitação', 'suggestion-watson|d:095c3c4a-6db1-4df4-9270-7e10b9a4dc74'), ('Nenhuma das opções', 'suggestion-watson|d:af3af621-eb6c-48f9-b328-dfbaaf27c8b8')",
+                "response_time": 1.1461248397827148
+            },
+            {
+                "id": "7ce27a02-64c7-41b5-9216-73c10f8597a0",
+                "type": 1,
+                "binding_intent": "IPTU_DESCONTOS",
+                "simulated_message": "Existe algum benefício para reduzir o valor do IPTU?",
+                "expected_answer": "O desconto para <b>pagamento</b> do IPTU <b>à vista</b> até 28 de fevereiro é de <b>10%</b>. \n\nO pagamento <b>parcelado</b> pode ser em até 9 vezes, com descontos proporcionais: \n\n<b>7%</b> = 2 parcelas  \n<b>6%</b> = 3 parcelas  \n<b>5%</b> = 4 parcelas \n<b>4%</b> = 5 parcelas \n<b>3%</b> = 6 parcelas \n<b>2%</b> = 7 parcelas \n<b>1%</b> = 8 parcelas \n<b>0%</b> = 9 parcelas \n\nQuem pagou o <b>IPTU do ano anterior em dia</b>, tem <b>mais 10%</b> de desconto! ('Pessoais', 'OPT-descontos-pessoais'), ('Imóveis', 'OPT-descontos-imoveis'), ('Lotes ou terrenos', 'OPT-descontos-lotes-terrenos')",
+                "received_answer": "('Descontos IPTU', 'suggestion-watson|d:f34e6e5a-ab77-4558-be12-b950b611842d'), ('Descontos pessoais', 'suggestion-watson|d:070ae34a-ccb0-4480-906f-df4ff28b52c6'), ('Nenhuma das opções', 'suggestion-watson|d:b4795a45-7c84-446b-8b98-e04e470fab1c')",
+                "response_time": 0.9756214618682861
+            },
+            {
+                "id": "a0503340-743f-4ede-b2c7-f53b6dfaf428",
+                "type": 1,
+                "binding_intent": "IPTU_DESCONTOS_IMOVEIS",
+                "simulated_message": "Quais são as características de um imóvel que fica de frente para feira livres?",
+                "expected_answer": "Para <b>imóvel</b>, você tem direito a desconto de: \n\n<b>50%</b><ul><li><b>Imóvel residencial</b> de <b>frente</b> para feira livre</b></li></ul>\n<b>10%</b><ul><li>Calçada com <b>acessibilidade</b></li><li><b>Imóvel</b> com mínimo de 20% da área total de <b>permeabilidade do solo</b></li><li><b>Imóvel comercial</b> com <b>recuo</b> igual ou superior a <b>5 metros</b></li></ul>\n<b>5%</b><ul><li>Sistema de <b>captação</b> de <b>água</b> da <b>chuva</b></li><li>Imóvel com sistema de <b>geração</b> de <b>energia elétrica</b> fotovoltaica</li><li>Imóvel com <b>arborização</b></li></ul>\n<b>100% no primeiro ano</b> após o término de <b>obra nova</b>, se devidamente <b>licenciada</b>.\n('Solicitação desconto', 'OPT-solicitacao-desconto')('Captação de Água', 'OPT-documentos-captacao-agua'), ('Geração de Energia', 'OPT-documentos-geracao-energia'), ('Arborização', 'OPT-documentos-arborizacao')('Outros descontos', 'OPT_descontos')",
+                "received_answer": "Erro na requisição.",
+                "response_time": 9.224753618240356
+            },
+            {
+                "id": "4b5da368-8ed1-49c5-bed2-674a41d16265",
+                "type": 2,
+                "binding_intent": "IPTU_DESCONTOS_PESSOAIS",
+                "simulated_message": "O pagamento do IPTU tem algum desconto para doador de sangue?",
+                "expected_answer": "Você tem direito a <b>descontos</b> no IPTU de: \n<ul><li><b>50%</b> - se possui <b>guarda provisória</b> de criança ou adolescente</li>\n<li><b>10%</b> - se possui <b>cadastro</b> imobiliário <b>atualizado</b></li> \n<li><b>2%</b> - se é <b>doador</b> de sangue ou medula</li></ul>('Solicitação desconto', 'OPT-solicitacao-deconto')('Doador de Sangue', 'OPT-documentos-doador-sangue'), ('Doador de Medula', 'OPT-documentos-doador-medula')('Outros descontos', 'OPT_descontos')",
+                "received_answer": "('Descontos pessoais', 'suggestion-watson|d:3fac95e9-135d-4eb0-bd46-789efcb4b9a4'), ('Doador de sangue', 'suggestion-watson|d:dc98bbb8-7110-4d67-ba54-47366cb9ca76'), ('Nenhuma das opções', 'suggestion-watson|d:f777d367-464f-4d5f-b8c2-34bb4c38113b')",
+                "response_time": 0.8322677612304688
+            },
+            {
+                "id": "79480d6a-3ad3-479e-b753-439b7766fb28",
+                "type": 1,
+                "binding_intent": "IPTU_DOCUMENTOS-ARBORIZACAO",
+                "simulated_message": "É possível solicitar um desconto no valor do imóvel por conta da arborização?",
+                "expected_answer": "Os <b>documentos</b> necessários para obter o desconto do IPTU por <b>arborização</b> no imóvel são: \n<ol><li><b><a target=\"_blank\" href=\"https://OPP-bot-1.OPP.gov.br/portal/pdf/RequerimentoDescontoIPTUOPP-bot-1.pdf\">Formulário de Solicitação de Desconto</a></b></li>\n<li>Inscrição Imobiliária - <b>CCI</b> ou espelho do imóvel</li>\n<li>pessoas <b>físicas</b>: cópia do <b>documento</b> pessoal oficial <b>com foto</b> \n\npessoas <b>jurídicas</b>: cópia do <b>CNPJ</b>, respectivo <b>ato constitutivo</b> e do <b>documento</b> pessoal do <b>responsável lega</b>l</li>\n<li><b>fotografias coloridas e nítidas</b> de modo que possibilite analisar a <b>espécie arbórea</b> contida no imóvel, com as seguintes especificações: \n \n a) <b>data, hora, local e coordenadas geográficas</b>\n \n b) no mínimo <b>2 (duas) fotografias</b> amplas que abranjam a <b>árvore toda</b> \n \nc) no mínimo <b>1 (uma) fotografia</b> do <b>caule</b> da árvore ( <b>tronco</b> ) \n \nd) no mínimo <b>1 (uma) fotografia</b> da <b>copa</b> da árvore ( <b>galhos e folhagem</b> ).</li></ol>('Árvores', 'OPT-especies-arvores')",
+                "received_answer": "No momento não sei falar sobre isso. Vamos falar de outra coisa?",
+                "response_time": 1.084205150604248
+            },
+            {
+                "id": "b63231b3-3755-454c-8f3b-901a458ba31d",
+                "type": 2,
+                "binding_intent": "IPTU_DOCUMENTOS-DOADORES-MEDULA",
+                "simulated_message": "Qual o benefício de obter desconto ao ser um doador de medula?",
+                "expected_answer": "Os <b>documentos</b> necessários para <b>doador de medula</b> óssea obter o desconto do IPTU são: \n<ol><li><b><a target=\"_blank\" href=\"https://OPP-bot-1.OPP.gov.br/portal/pdf/RequerimentoDescontoIPTUOPP-bot-1.pdf\">Formulário de Solicitação de Desconto</a></b></li>\n<li>Inscrição Imobiliária - <b>CCI</b> ou <b>espelho</b> do imóvel</li>\n<li>Cópia do <b>documento</b> pessoal oficial <b>com foto</b></li>\n<li>Documento de instituição de saúde que <b>comprove</b> a efetiva <b>doação da medula óssea</b>.</li></ol>",
+                "received_answer": "('Descontos pessoais', 'suggestion-watson|d:db4fbed3-5a4e-4f0d-aca8-059406e4d2d6'), ('Doador de medula', 'suggestion-watson|d:185d2efa-a264-4d22-9f03-bdc12eaad244'), ('Nenhuma das opções', 'suggestion-watson|d:ae11eebe-c725-40e3-84fa-003983fec058')",
+                "response_time": 1.0361220836639404
+            },
+            {
+                "id": "6fc92d2d-e04a-40c0-828e-ca278d4764b2",
+                "type": 1,
+                "binding_intent": "IPTU_DOCUMENTOS-DOADORES-SANGUE",
+                "simulated_message": "Quais são os documentos necessários para se tornar um doador de sangue?",
+                "expected_answer": "Os <b>documentos</b> necessários para <b>doador de sangue e/ou plaquetas sanguíneas</b> obter o desconto do IPTU são: \n<ol><li><b><a target=\"_blank\" href=\"https://OPP-bot-1.OPP.gov.br/portal/pdf/RequerimentoDescontoIPTUOPP-bot-1.pdf\">Formulário de Solicitação de Desconto</a></b></li>\n<li>Inscrição Imobiliária - <b>CCI</b> ou <b>espelho</b> do imóvel</li> \n<li>Cópia do <b>documento</b> pessoal oficial <b>com foto</b></li>\n<li>Documento do Hemocentro de OPP que <b>comprove</b> a realização de <b>2 (duas) doações de sangue e/ou plaquetas sanguíneas</b> no <b>ano anterior</b> ao do requerimento.</li></ol> ",
+                "received_answer": "('Doador de sangue', 'suggestion-watson|d:1e14eb09-f7e3-4d8a-a5ae-f05dc24bd7b5'), ('Solicitação DIU', 'suggestion-watson|d:d9716cb2-ed44-4f4d-aae8-8fd28d631683'), ('Nenhuma das opções', 'suggestion-watson|d:10f7cf5d-15ef-4dba-80c2-3c3ef3655c70')",
+                "response_time": 1.0234975814819336
+            },
+            {
+                "id": "c08a2eca-4856-4439-a411-dfdbcf4c493b",
+                "type": 1,
+                "binding_intent": "IPTU_DOCUMENTOS-ENERGIA-FOTOVOLTAICA",
+                "simulated_message": "Como funciona o gerador de energia solar?",
+                "expected_answer": "Os <b>documentos</b> necessários para obter o desconto do IPTU por <b>geração de energia elétrica fotovoltaica</b> são: \n<ol><li><b><a target=\"_blank\" href=\"https://OPP-bot-1.OPP.gov.br/portal/pdf/RequerimentoDescontoIPTUOPP-bot-1.pdf\">Formulário de Solicitação de Desconto</a></b></li>\n<li>Inscrição Imobiliária - <b>CCI</b> ou <b>espelho</b> do imóvel</li>\n<li>pessoas <b>físicas</b>: cópia do <b>documento</b> pessoal oficial <b>com foto</b>\n\npessoas <b>jurídicas</b>: cópia do <b>CNPJ</b>, respectivo ato constitutivo e do <b>documento</b> pessoal do <b>responsável legal</b></li>\n<li>cópia da fatura atual da conta de energia elétrica contendo a <b>informação</b> de que a Unidade Consumidora do imóvel é <b>geradora de energia elétrica fotovoltaica</b>.</li></ol>",
+                "received_answer": "('Geração de energia', 'suggestion-watson|d:478cc5f3-4a34-4c8c-88f9-bc6533ebce59'), ('Valor venal', 'suggestion-watson|d:55fd3f4a-3c21-4f29-ad8b-d86b5fdbe69f'), ('Nenhuma das opções', 'suggestion-watson|d:eabad271-c68e-46ce-981d-d8b2b88e8be4')",
+                "response_time": 0.9697756767272949
+            },
+            {
+                "id": "88c97c93-6754-4b5b-8a95-2eb3db3329c5",
+                "type": 1,
+                "binding_intent": "IPTU_EMISSAO",
+                "simulated_message": "Qual é a forma de pagamento do IPTU?",
+                "expected_answer": "Para <b>emitir</b> o seu <b>IPTU</b>, acesse <b><a target=\"_blank\" href=\"https://sig.OPP-bot-1.OPP.gov.br/sig/app.html#/servicosonline/debito-imovel\">Emissão de IPTU OPP</a></b>.  \n \nSe desejar <b>orientações</b>, envie mensagens <b>WhatsApp</b> para <b>(63) 99935-7789</b>.",
+                "received_answer": "No momento não sei falar sobre isso. Vamos falar de outra coisa?",
+                "response_time": 1.0220253467559814
+            },
+            {
+                "id": "401449a2-b010-45c9-a4c7-0c1e56f30da4",
+                "type": 1,
+                "binding_intent": "IPTU_EMISSAO",
+                "simulated_message": "Existe algum prazo para pagar o boleto do IPTU?",
+                "expected_answer": "Para <b>emitir</b> o seu <b>IPTU</b>, acesse <b><a target=\"_blank\" href=\"https://sig.OPP-bot-1.OPP.gov.br/sig/app.html#/servicosonline/debito-imovel\">Emissão de IPTU OPP</a></b>.  \n \nSe desejar <b>orientações</b>, envie mensagens <b>WhatsApp</b> para <b>(63) 99935-7789</b>.",
+                "received_answer": "No momento não sei falar sobre isso. Vamos falar de outra coisa?",
+                "response_time": 1.013740062713623
+            },
+            {
+                "id": "f3572e32-9aab-40d6-9dd5-e6ce0b57407a",
+                "type": 2,
+                "binding_intent": "IPTU_EMISSAO",
+                "simulated_message": "Qual é a orientação para efetuar o pagamento do IPTU?",
+                "expected_answer": "Para <b>emitir</b> o seu <b>IPTU</b>, acesse <b><a target=\"_blank\" href=\"https://sig.OPP-bot-1.OPP.gov.br/sig/app.html#/servicosonline/debito-imovel\">Emissão de IPTU OPP</a></b>.  \n \nSe desejar <b>orientações</b>, envie mensagens <b>WhatsApp</b> para <b>(63) 99935-7789</b>.",
+                "received_answer": "No momento não sei falar sobre isso. Vamos falar de outra coisa?",
+                "response_time": 0.9310462474822998
+            },
+            {
+                "id": "d38c1d81-3eab-4034-bdcd-70e544150c76",
+                "type": 1,
+                "binding_intent": "IPTU_REQUERIMENTO-DESCONTO",
+                "simulated_message": "Quais são os procedimentos para solicitar uma redução no valor do IPTU?",
+                "expected_answer": "Acesse o <b><a target=\"_blank\" href=\"https://OPP-bot-1.OPP.gov.br/portal/pdf/RequerimentoDescontoIPTUOPP-bot-1.pdf\">Formulário de Solicitação de Desconto</a></b>.",
+                "received_answer": "('Solicitação', 'suggestion-watson|d:715a1fe7-5d2e-4c40-b0ce-145c2257b99a'), ('Descontos IPTU', 'suggestion-watson|d:f06d3c0a-b957-4e02-8cc7-b316014a4ead'), ('Nenhuma das opções', 'suggestion-watson|d:fbc89da5-5193-4afa-b353-ebfc85b1a0ac')",
+                "response_time": 0.8012385368347168
+            },
+            {
+                "id": "100dd119-10bb-49c3-8d67-debdfe4a8afd",
+                "type": 2,
+                "binding_intent": "MENU_IPTU",
+                "simulated_message": "O que é o IPTU?",
+                "expected_answer": "('Isenção', 'OPT_isencao-iptu-taxa-lixo'), ('Descontos', 'OPT_descontos'), ('Emissão', 'OPT_emissao')",
+                "received_answer": "('IPTU', 'suggestion-watson|d:8b382b78-4840-42cb-90d7-f42db281ddcc'), ('Saúde', 'suggestion-watson|d:3dd4c5f2-636a-4056-8ffa-0d1ddf4db0ed'), ('Nenhuma das opções', 'suggestion-watson|d:24a5dbbf-bd56-4cce-b64d-36b158c55a94')",
+                "response_time": 0.8332335948944092
+            },
+            {
+                "id": "a738aaf6-abc8-497f-ac1e-3ed115e28ec9",
+                "type": 1,
+                "binding_intent": "SAUDE_ATENCAO-BASICA",
+                "simulated_message": "Quais são os serviços disponibilizados na atenção primária?",
+                "expected_answer": "('Solicitação DIU', 'OPT-solicitacao-DIU'), ('Solicitação Implanon', 'OPT-solicitacao-implanon')",
+                "received_answer": "('Atenção básica', 'suggestion-watson|d:ebb84fe9-d8bc-4db8-94c2-4b831bd98827'), ('Agendamento Consulta', 'suggestion-watson|d:191ba3a6-1ffd-40b9-8ef5-97f7d64e3e39'), ('Nenhuma das opções', 'suggestion-watson|d:c717fb9b-650b-44ad-ae08-9a35816d470a')",
+                "response_time": 0.9331891536712646
+            },
+            {
+                "id": "4695564c-96eb-4ca9-8493-30959145e5cc",
+                "type": 1,
+                "binding_intent": "SAUDE_ATENCAO-BASICA",
+                "simulated_message": "Quais são os cuidados essenciais oferecidos na atenção básica?",
+                "expected_answer": "('Solicitação DIU', 'OPT-solicitacao-DIU'), ('Solicitação Implanon', 'OPT-solicitacao-implanon')",
+                "received_answer": "('Saúde da mulher', 'OPT-saude-da-mulher'), ('Fórmulas infantis', 'OPT-formulas-infantis'), ('Fibromialgia', 'OPT-fibromialgia')",
+                "response_time": 1.1193203926086426
+            },
+            {
+                "id": "225875b1-aaa1-4f47-9f46-06c6e95b6fb7",
+                "type": 2,
+                "binding_intent": "SAUDE_ATENCAO-BASICA",
+                "simulated_message": "Quais são os principais cuidados oferecidos na atenção básica?",
+                "expected_answer": "('Solicitação DIU', 'OPT-solicitacao-DIU'), ('Solicitação Implanon', 'OPT-solicitacao-implanon')",
+                "received_answer": "('Saúde da mulher', 'OPT-saude-da-mulher'), ('Fórmulas infantis', 'OPT-formulas-infantis'), ('Fibromialgia', 'OPT-fibromialgia')",
+                "response_time": 0.8359429836273193
+            },
+            {
+                "id": "97ce599f-926e-43ef-8976-3b75085a1455",
+                "type": 2,
+                "binding_intent": "SAUDE_ATENCAO-BASICA",
+                "simulated_message": "Quais são as principais cuidados prestados na atenção básica?",
+                "expected_answer": "('Solicitação DIU', 'OPT-solicitacao-DIU'), ('Solicitação Implanon', 'OPT-solicitacao-implanon')",
+                "received_answer": "Tivemos problemas no nosso sistema ao tentar responder sua pergunta. Pode tentar de novo?",
+                "response_time": 0.6117944717407227
+            },
+            {
+                "id": "af1f6d27-b595-4cef-a931-75442a63a84c",
+                "type": 1,
+                "binding_intent": "SAUDE_ATENCAO-BASICA_SAUDE-DA-MULHER",
+                "simulated_message": "Quais são os métodos contraceptivos disponíveis?",
+                "expected_answer": "('Solicitação DIU', 'OPT-solicitacao-DIU'), ('Solicitação Implanon', 'OPT-solicitacao-implanon')",
+                "received_answer": "('Saúde da mulher', 'suggestion-watson|d:877c3a78-aa6a-4c48-a141-cd8a95ead371'), ('O que é DIU', 'suggestion-watson|d:5046a581-7ba8-4f46-bddb-5d97a730b052'), ('Nenhuma das opções', 'suggestion-watson|d:0d3cf150-2b8e-4735-9275-d95db69764a2')",
+                "response_time": 0.8271322250366211
+            },
+            {
+                "id": "cfe99b5e-0152-4933-bbe3-21bc7fc81240",
+                "type": 2,
+                "binding_intent": "SAUDE_ENDERECO-SECRETARIA-SAUDE",
+                "simulated_message": "Qual é o endereço da Secretaria Municipal de Saúde?",
+                "expected_answer": "<b>Secretaria Municipal de Saúde</b>\n\n<a target=\"_blank\" href=\"https://goo.gl/maps/taK7r6tAxPp8SdSM6\">Rua 07 de Setembro, 555, Centro, OPP - TO</a>",
+                "received_answer": "Tivemos problemas no nosso sistema ao tentar responder sua pergunta. Pode tentar de novo?",
+                "response_time": 0.5761053562164307
+            },
+            {
+                "id": "d0c6f01d-5401-401e-93d2-fe1200025d23",
+                "type": 2,
+                "binding_intent": "SAUDE_ENDERECO-SECRETARIA-SAUDE",
+                "simulated_message": "Qual é o endereço da Secretaria Municipal de Saúde?",
+                "expected_answer": "<b>Secretaria Municipal de Saúde</b>\n\n<a target=\"_blank\" href=\"https://goo.gl/maps/taK7r6tAxPp8SdSM6\">Rua 07 de Setembro, 555, Centro, OPP - TO</a>",
+                "received_answer": "Tivemos problemas no nosso sistema ao tentar responder sua pergunta. Pode tentar de novo?",
+                "response_time": 0.4686284065246582
+            },
+            {
+                "id": "9ca03560-ae3d-4154-84dc-37dc71721eef",
+                "type": 2,
+                "binding_intent": "SAUDE_TFD-AJUDA-CUSTO",
+                "simulated_message": "Qual é o montante da aojudade custo para o tratamento médico fora?",
+                "expected_answer": "Para <b>ajuda de custo</b> com o transporte para tratamento fora de OPP, a documentação necessária são <b>2 (duas) cópias de cada</b> item: \n<ul><li><b>Extrato bancário</b> do paciente ou do acompanhante</li>\n<li><b>Agendamento da consulta</b> com identificação da Unidade de Tratamento</li>\n<li><b>CPF</b>, <b>RG</b> (CNH/CDN) e <b>cartão do SUS</b> do paciente</li>\n<li><b>Comprovante de residência</b> do mês atual</li>\n<li>Se precisar de acompanhante, <b>CPF</b>, <b>RG</b> e <b>cartão do SUS</b> do acompanhante</li></ul>",
+                "received_answer": "('Ajuda de custo', 'suggestion-watson|d:0d4756e4-dd08-4eea-ac61-eabf95d70817'), ('Tratamento Fora', 'suggestion-watson|d:f9cf6cd2-217a-4709-8a66-98b00dd68eae'), ('Nenhuma das opções', 'suggestion-watson|d:cc1e20cc-741f-4dc1-862e-d1067250555e')",
+                "response_time": 0.8309388160705566
+            },
+            {
+                "id": "1857af70-cfe2-4b0f-984f-d92110b27af4",
+                "type": 1,
+                "binding_intent": "SAUDE_TFD-PASSAGENS",
+                "simulated_message": "Como fazer a solicitação de um pedido de passagem?",
+                "expected_answer": "O pedido de <b>passagens</b> para <b>dentro</b> do estado do <b>OPP</b> deve ser feito <b>presencialmente</b> na <a target=\"_blank\" href=\"https://goo.gl/maps/ugdvg9KSo5CsPGCB9\">Central de Regulação Municipal</a> em <b>até 10 (dez) dias úteis antes</b> da data do atendimento.\n\nVocê precisa entregar <b>2 (duas) cópias</b> dos seguintes documentos: \n<ul><li><b>Agendamento da consulta</b> com identificação da Unidade de Tratamento</li>\n<li><b>CPF</b>, <b>RG</b> (CNH/CDN) e <b>cartão do SUS</b> do paciente</li> \n<li><b>Comprovante de residência</b> do mês atual</li> \n<li>Se precisar de acompanhante, <b>CPF</b>, <b>RG</b> e <b>cartão do SUS</b> do acompanhante</li></ul>('Regulação Municipal', 'OPT-endereco-central-regulacao-municipal'), ('Outro estado', 'OPT-outro-estado')",
+                "received_answer": "('OPP ', 'OPT-OPP'), ('Outro estado', 'OPT-outro-estado')",
+                "response_time": 0.876333475112915
+            },
+            {
+                "id": "e4e77f96-f2fc-499e-9b45-c1c2ebaa61ef",
+                "type": 2,
+                "binding_intent": "SAUDE_TFD-PASSAGENS",
+                "simulated_message": "posso ter ingresso",
+                "expected_answer": "O pedido de <b>passagens</b> para <b>dentro</b> do estado do <b>OPP</b> deve ser feito <b>presencialmente</b> na <a target=\"_blank\" href=\"https://goo.gl/maps/ugdvg9KSo5CsPGCB9\">Central de Regulação Municipal</a> em <b>até 10 (dez) dias úteis antes</b> da data do atendimento.\n\nVocê precisa entregar <b>2 (duas) cópias</b> dos seguintes documentos: \n<ul><li><b>Agendamento da consulta</b> com identificação da Unidade de Tratamento</li>\n<li><b>CPF</b>, <b>RG</b> (CNH/CDN) e <b>cartão do SUS</b> do paciente</li> \n<li><b>Comprovante de residência</b> do mês atual</li> \n<li>Se precisar de acompanhante, <b>CPF</b>, <b>RG</b> e <b>cartão do SUS</b> do acompanhante</li></ul>('Regulação Municipal', 'OPT-endereco-central-regulacao-municipal'), ('Outro estado', 'OPT-outro-estado')",
+                "received_answer": "No momento não sei falar sobre isso. Vamos falar de outra coisa?",
+                "response_time": 0.7859628200531006
+            },
+            {
+                "id": "cc59ed91-8e0c-4ff5-a2ee-69879fc94110",
+                "type": 1,
+                "binding_intent": "SAUDE_TFD-PASSAGENS-OUTRO-ESTADO",
+                "simulated_message": "É possível solicitar a liberação de uma passagem para atendimento em outro estado?",
+                "expected_answer": "O pedido de <b>passagens</b> para <b>fora</b> do estado do <b>OPP</b> deve ser feito <b>presencialmente</b> na <a target=\"_blank\" href=\"https://goo.gl/maps/ugdvg9KSo5CsPGCB9\">Central de Regulação Municipal</a> em <b>até 15 (quinze) dias úteis antes</b> da data do atendimento.\n\nVocê precisa entregar <b>2 (duas) cópias</b> dos seguintes documentos: \n<ul><li><b>Laudo Médico</b> original preenchido pelo médico especialista</li>\n<li><b>Exames</b> que comprovem a patologia (não obrigatório)</li>\n<li><b>Extrato bancário</b> do paciente ou do acompanhante</li>\n<li><b>Agendamento da consulta</b> com identificação da Unidade de Tratamento</li>\n<li><b>CPF</b>, <b>RG</b> (CNH/CDN) e <b>cartão do SUS</b> do paciente</li> \n<li><b>Comprovante de residência</b> do mês atual</li> \n<li>Se precisar de acompanhante, <b>CPF</b>, <b>RG</b> e <b>cartão do SUS</b> do acompanhante</li></ul>('Regulação Municipal', 'OPT-endereco-central-regulacao-municipal'), ('Dentro OPP', 'OPT-OPP')",
+                "received_answer": "('Passagem fora estado', 'suggestion-watson|d:359ad5de-c516-49ec-97a2-5aa1cb8a6bc9'), ('Falar com Humano', 'suggestion-watson|d:a54440b5-c93c-4ff3-8e3c-f7b34437b5c9'), ('Nenhuma das opções', 'suggestion-watson|d:ec5de9e9-525b-442a-8c3c-d786929ef5c2')",
+                "response_time": 0.7793264389038086
+            },
+            {
+                "id": "07a214e7-82fe-4997-b66a-9f55d314dbed",
+                "type": 1,
+                "binding_intent": "VOCABULARIO_IMPLANON",
+                "simulated_message": "Como é realizado o implante do Implanon no braço?",
+                "expected_answer": "O <b>implante contraceptivo intradérmico</b> é um método contraceptivo hormonal (Etonogestrel), disponível de graça nas Unidades Básicas de Saúde. É inserido na parte interna do braço não dominante (aquele que não é usado para escrever) sob anestesia local, com eficácia superior a 99% e duração de 3 anos. Pode ser colocado desde a adolescência e retirado a qualquer momento na UBS, com retorno imediato da fertilidade.",
+                "received_answer": "('Solicitação Implanon', 'suggestion-watson|d:b55c7272-bcb2-4179-b0b1-36ce0c4e3481'), ('O que é Implanon', 'suggestion-watson|d:d834bc27-e99c-479e-9e08-40a2acb17162'), ('Nenhuma das opções', 'suggestion-watson|d:3cc87bf0-f7e7-485e-8765-ab5bff224bbf')",
+                "response_time": 0.8713955879211426
+            },
+            {
+                "id": "4bcb202a-4b12-4852-aa10-4efe89508be4",
+                "type": 2,
+                "binding_intent": "VOCABULARIO_VALOR-VENAL",
+                "simulated_message": "Qual é o valor de mercado de um produto e quais são as coisas que causam impacto nele?",
+                "expected_answer": "O <b>valor venal</b> de um imóvel não é o valor de mercado, é o valor calculado <b> reduzindo-se em 25%</b> (vinte por cento) <b>o valor de mercado</b>, por meio de uma <b>avaliação</b> normalmente feita pela <b>prefeitura</b> do município. ",
+                "received_answer": "No momento não sei falar sobre isso. Vamos falar de outra coisa?",
+                "response_time": 0.7702205181121826
+            }
+        ]
+    }
+}

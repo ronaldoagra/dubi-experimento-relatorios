@@ -1,0 +1,126 @@
+{
+    "chatbot": "dubi-OPP-bot-2",
+    "performance_metrics": {
+        "accuracy": 0.883,
+        "precision": 0.8913,
+        "recall": 0.988,
+        "f1score": 0.9371
+    },
+    "dialog_metrics": {
+        "tmR": 1.2866,
+        "tf": 0.0213,
+        "tc": 0.8824,
+        "tcr": 0.8901,
+        "tamb": 0.0957
+    },
+    "test_coverage": {
+        "intents": 1.0,
+        "dialog_nodes": 0.9259
+    },
+    "test_case": {
+        "id": "1fc6b37d-c5bd-44b2-aea2-c26de81f03ee",
+        "total_interactions": 94,
+        "total_failed_interactions": 11,
+        "failed_interactions": [
+            {
+                "id": "e2a4b576-59df-4b26-b35f-2c3aef9e45a7",
+                "type": 1,
+                "binding_intent": "Consulta_Publica_DI",
+                "simulated_message": "Como posso verificar a data mais recente de atualização na consulta pública de Declaração de Importação?",
+                "expected_answer": "Quer saber quando foi a última atualização da Declaração de Importação (DI)? Use o serviço:<br>\n\n- GET \n/declaracoes-importacao/data-ultima-atualizacao <br><br>\n\nVeja mais detalhes na nossa documentação:\n<a href=\"https://sisOPP-di.OPP.gov.br/sisOPP-di-api/#/declaracoes-importacao/obterUsingGET\" target=\"_blank\">Consulta DI</a>",
+                "received_answer": "('Consulta Publica Declaração de Importação', 'suggestion-watson|d:a710ef25-a66d-4be9-a3d0-66200cc5e1fc'), ('Consulta Publica Licenciamento de Importação', 'suggestion-watson|d:56a6e232-6aed-445d-82e8-2fa7ddb18023'), ('Nenhuma das anteriores', 'suggestion-watson|d:2700d119-2c77-4bbb-981c-fd0f3c1e63eb')",
+                "response_time": 0.9165942668914795
+            },
+            {
+                "id": "4ea07d56-7dd1-4f1d-80e2-5c8d5748ed30",
+                "type": 1,
+                "binding_intent": "Consulta_Publica_DI",
+                "simulated_message": "Onde posso encontrar informações sobre a documentação da consulta pública de DI?",
+                "expected_answer": "Quer saber quando foi a última atualização da Declaração de Importação (DI)? Use o serviço:<br>\n\n- GET \n/declaracoes-importacao/data-ultima-atualizacao <br><br>\n\nVeja mais detalhes na nossa documentação:\n<a href=\"https://sisOPP-di.OPP.gov.br/sisOPP-di-api/#/declaracoes-importacao/obterUsingGET\" target=\"_blank\">Consulta DI</a>",
+                "received_answer": "('Consulta Publica Declaração de Importação', 'suggestion-watson|d:0ea772d3-edb2-4062-86a9-eb1659a9f3ce'), ('Consulta Publica Licenciamento de Importação', 'suggestion-watson|d:a7929baf-287f-4b23-a4c5-328295e8d8c8'), ('Empatia', 'suggestion-watson|d:58740d42-e738-4caf-bc33-af6d8be23ccc'), ('Nenhuma das anteriores', 'suggestion-watson|d:5e82d763-6513-4228-82dc-698bed6a047d')",
+                "response_time": 0.9016585350036621
+            },
+            {
+                "id": "f7d410ac-b462-456d-b78e-62d56a850fa6",
+                "type": 2,
+                "binding_intent": "Consulta_Publica_LI",
+                "simulated_message": "Onde consigo encontrar a documentação da Consulta Pública de LI?",
+                "expected_answer": "Para obter informações sobre a última atualização do Licenciamento de Importação (LI), utilize o endpoint:<br>\n- GET \n/licencas-importacao/data-ultima-atualizacao <br><br>\n\nConsulte nossa documentação para mais detalhes: <a href=\"https://sisOPP-li.OPP.gov.br/sisOPP-li-api/\" target=\"_blank\">Consulta LI</a>",
+                "received_answer": "('Consulta Publica Licenciamento de Importação', 'suggestion-watson|d:697b7c7a-98fa-4e56-89bb-a97e402d3de9'), ('Consulta Publica Declaração de Importação', 'suggestion-watson|d:db5209c0-22ae-47bf-936d-59b52c61bfb0'), ('Nenhuma das anteriores', 'suggestion-watson|d:bd03ad5f-ad43-49c5-a005-6eda3355e748')",
+                "response_time": 1.0543804168701172
+            },
+            {
+                "id": "be69c563-8489-45a8-8019-a6bc6c1cbc13",
+                "type": 2,
+                "binding_intent": "SERVICO_Acessar_API",
+                "simulated_message": "Quais são os serviçoes disponíveis?",
+                "expected_answer": "('Autenticação', 'Fazer Autenticação'), (' Carga Aquaviária', 'Acessar API Carga Aquaviária'), (' Declarações de Importação - DI', 'Acessar API Declaração de Importação'), ('Licenciamento de Importação - LI', 'Acessar API Licenciamento de Importação'), ('LPCO', 'Acessar API LPCO')",
+                "received_answer": "('Acessar Serviços da API', 'suggestion-watson|d:25d267b6-eefd-4c4d-9314-1ceff311c83c'), ('Disponibilidade dos serviços', 'suggestion-watson|d:1690111f-f4a3-4035-8d27-1d472a1aeecb'), ('Nenhuma das anteriores', 'suggestion-watson|d:4d594863-a985-495e-97a9-589c3b84e93f')",
+                "response_time": 0.7934873104095459
+            },
+            {
+                "id": "8a21b33e-d0a1-4281-b208-f030928f2299",
+                "type": 2,
+                "binding_intent": "SERVICO_Bem_vindo",
+                "simulated_message": "Pode me explicar o que é API OPP?",
+                "expected_answer": "Olá! Eu sou a Maia, a assistente virtual do OPP. Estou aqui para te ajudar na contratação e utilização dos serviços do nosso produto.\n\nVocê tem alguma dúvida em que posso te ajudar? Fica à vontade para perguntar sobre temas como contratação, custo, pagamento, autenticação e consultas de Declaração de Importação - DI, Licenciamento de Importação - LI , Carga, Mercante, DUIMP e LPCO.",
+                "received_answer": "O OPP é um produto disponível na loja OPP por onde é possível obter informações de OPP através de uma API de serviços. Como exemplo, os usuários do produto podem obter e acompanhar informações sobre cargas marítimas e declarações de importação. <br>\nPara mais detalhes, acesse nossa <a href=\"https://www.loja.OPP.gov.br/OPP\" target=\"_blank\">Landing Page </a>",
+                "response_time": 0.732351541519165
+            },
+            {
+                "id": "451edbbb-f8ba-4a3a-856c-a655eb51cb5e",
+                "type": 1,
+                "binding_intent": "SERVICO_Consultas_Permitidas",
+                "simulated_message": "Quais informações estão disponíveis sobre os LPCO?",
+                "expected_answer": " Para realizar as consultas é necessário, eCPF ou eCNPJ:\n<br>- eCPF: no caso de Operadores de OPP, para os serviços de acesso às informações de um conhecimento de embarque, DI e LI ou que verificam perfil e representação SisOPP.\n<br>- eCNPJ: no caso das demais empresas, para o(s) serviço(s) de Consulta Declaração de Importação Avulsa (DI), de acesso às informações de LPCO por chave de acesso",
+                "received_answer": "('Consultas Permitidas pelo Serviço', 'suggestion-watson|d:4a1ceff9-1228-47bb-87d7-443831147ade'), ('Acessar LPCO', 'suggestion-watson|d:2806130f-fa66-4070-a0e1-9940922f0a31'), ('Nenhuma das anteriores', 'suggestion-watson|d:59cae527-9759-4d53-bd6f-a80c94362f88')",
+                "response_time": 0.8205783367156982
+            },
+            {
+                "id": "e9c6a39c-ac15-4dbe-ae9a-25a0992d5a54",
+                "type": 1,
+                "binding_intent": "SERVICO_Contratar",
+                "simulated_message": "Quais são as opções de contratação do OPP e como é feito o pagamento?",
+                "expected_answer": "Estou aqui para ajudar nesse processo! No link abaixo você encontra informações sobre a contratação do OPP:\n<a href=\"https://www.loja.OPP.gov.br/OPP\" target=\"_blank\">Informações de Contratação</a>\n\nVocê está com alguma dúvida específica sobre custo, pagamento, disponibilidade e como testar o produto?",
+                "received_answer": "('Contratação dos serviços', 'suggestion-watson|d:5985e67d-87fb-4809-a9a7-79b1574bfae5'), ('Formas de pagamento dos serviços', 'suggestion-watson|d:8a643db9-ad74-45d4-9201-39b95bcaa784'), ('Nenhuma das anteriores', 'suggestion-watson|d:69d98783-db08-41d7-81b6-fc66d95e86ce')",
+                "response_time": 0.7645297050476074
+            },
+            {
+                "id": "a9a3de74-f17a-408e-9b7f-23ee15d7c237",
+                "type": 2,
+                "binding_intent": "SERVICO_Contratar",
+                "simulated_message": "Quais são as opçoes disponiveis e como funciona o pagamento do OPP?",
+                "expected_answer": "Estou aqui para ajudar nesse processo! No link abaixo você encontra informações sobre a contratação do OPP:\n<a href=\"https://www.loja.OPP.gov.br/OPP\" target=\"_blank\">Informações de Contratação</a>\n\nVocê está com alguma dúvida específica sobre custo, pagamento, disponibilidade e como testar o produto?",
+                "received_answer": "('Formas de pagamento dos serviços', 'suggestion-watson|d:d827ffb6-5654-4be7-bd63-bb010208261c'), ('Contratação dos serviços', 'suggestion-watson|d:f055af25-074e-4f35-8cc3-e4779633376d'), ('Nenhuma das anteriores', 'suggestion-watson|d:6492a428-afd8-4ac1-aa1e-d87237775648')",
+                "response_time": 1.0232393741607666
+            },
+            {
+                "id": "db7304e1-9751-48ca-9bc6-5fe5375c53da",
+                "type": 2,
+                "binding_intent": "SERVICO_Custo_Mensal",
+                "simulated_message": "Qual é o preço do OPP?",
+                "expected_answer": "O custo de utilização a plataforma OPP é de 999 consultas por R$ 1.000,00 / mês. Não possui taxa de instalação ou de cancelamento e o acesso é liberado imediatamente.<br>\n\nSe você fizer mais de 999 consultas no mês, o valor unitário da consulta ainda pode cair. Verifique a franquia no link abaixo:\n<a href=\"https://www.loja.OPP.gov.br/OPP\" target=\"_blank\">Custos</a>",
+                "received_answer": "('Custos dos serviços', 'suggestion-watson|d:5997a1d7-7b38-46b8-8ea6-2a824deab114'), ('Definição do Produto', 'suggestion-watson|d:2c88c17d-f083-49ed-acf5-c2e5e91a9911'), ('Nenhuma das anteriores', 'suggestion-watson|d:188b7ece-ae8c-4b39-9983-4e3723ebecb1')",
+                "response_time": 10.028337001800537
+            },
+            {
+                "id": "13785dac-a7f9-4f7a-9065-32312ec33e21",
+                "type": 2,
+                "binding_intent": "SERVICO_Custo_Mensal",
+                "simulated_message": "Qual é o montante a pagar por mês?",
+                "expected_answer": "O custo de utilização a plataforma OPP é de 999 consultas por R$ 1.000,00 / mês. Não possui taxa de instalação ou de cancelamento e o acesso é liberado imediatamente.<br>\n\nSe você fizer mais de 999 consultas no mês, o valor unitário da consulta ainda pode cair. Verifique a franquia no link abaixo:\n<a href=\"https://www.loja.OPP.gov.br/OPP\" target=\"_blank\">Custos</a>",
+                "received_answer": "('Custos dos serviços', 'suggestion-watson|d:29f2314b-de2c-4fcc-976a-9b2d4752575d'), ('Formas de pagamento dos serviços', 'suggestion-watson|d:0960df63-3067-49d5-82dc-d34e3fe34626'), ('Nenhuma das anteriores', 'suggestion-watson|d:9eedcaab-017c-47e5-b555-5daaf170899a')",
+                "response_time": 4.1256725788116455
+            },
+            {
+                "id": "a905c266-005e-4e31-aaf3-03cb08741f43",
+                "type": 1,
+                "binding_intent": "Testar_LPCO",
+                "simulated_message": "Qual é a documentação necessária para realizar testes na LPCO?",
+                "expected_answer": "Para testar os serviços do tema LPCO, dê uma olhada na página com a documentação:\n\n<a href=\"https://doc-OPP.gov.br/OPP/documentacao/lpco/consulta-avulsa.html\" target=\"_blank\">Testar LPCO</a>",
+                "received_answer": "No momento não sei falar sobre isso. Vamos falar de outra coisa?",
+                "response_time": 3.9226365089416504
+            }
+        ]
+    }
+}

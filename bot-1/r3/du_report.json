@@ -1,0 +1,1318 @@
+{
+    "static_evaluation": {
+        "chatbot": "dubi-OPP-bot-1",
+        "conversation_engines": [
+            {
+                "name": "Watson OPP-bot-1",
+                "type": "watson-assistant",
+                "general_info": {
+                    "num_intents": 50,
+                    "num_training_examples": 658,
+                    "avg_training_examples_per_intent": 13.16,
+                    "num_dialog_nodes": 52
+                },
+                "qet": {
+                    "recommended_min_examples": 5,
+                    "recommended_max_examples": 20,
+                    "inadequate_intents_rate": 0.0,
+                    "inadequate_intents": []
+                },
+                "bet": {
+                    "imbalance_threshold": 0.25,
+                    "imbalanced_intents_rate": 0.42,
+                    "imbalanced_intents": [
+                        {
+                            "intent": "COMP_Apresentacao",
+                            "imbalance": 0.44
+                        },
+                        {
+                            "intent": "COMP_Avaliacao",
+                            "imbalance": 0.37
+                        },
+                        {
+                            "intent": "COMP_NaoQueroAvaliar",
+                            "imbalance": 0.52
+                        },
+                        {
+                            "intent": "COMP_Saudacao",
+                            "imbalance": -0.39
+                        },
+                        {
+                            "intent": "IPTU_DESCONTOS_IMOVEIS",
+                            "imbalance": 0.52
+                        },
+                        {
+                            "intent": "IPTU_DESCONTOS_TERRENOS",
+                            "imbalance": 0.52
+                        },
+                        {
+                            "intent": "IPTU_EMISSAO",
+                            "imbalance": 0.29
+                        },
+                        {
+                            "intent": "IPTU_ISENCAO-IPTU-APENAS",
+                            "imbalance": -0.62
+                        },
+                        {
+                            "intent": "IPTU_REQUERIMENTO-DESCONTO",
+                            "imbalance": 0.44
+                        },
+                        {
+                            "intent": "IPTU_VALORIZACAO-DESVALORIZACAO",
+                            "imbalance": 0.52
+                        },
+                        {
+                            "intent": "MENU_BOLSA-FAMILIA",
+                            "imbalance": -0.62
+                        },
+                        {
+                            "intent": "MENU_SAUDE",
+                            "imbalance": -0.39
+                        },
+                        {
+                            "intent": "SAUDE_ATENCAO-BASICA",
+                            "imbalance": -0.39
+                        },
+                        {
+                            "intent": "SAUDE_ATENCAO-BASICA_FIBROMIALGIA",
+                            "imbalance": -0.62
+                        },
+                        {
+                            "intent": "SAUDE_ATENCAO-BASICA_SAUDE-DA-MULHER",
+                            "imbalance": -0.47
+                        },
+                        {
+                            "intent": "SAUDE_ATENCAO-BASICA_SAUDE-DA-MULHER_IMPLANON",
+                            "imbalance": -0.32
+                        },
+                        {
+                            "intent": "SAUDE_ENDERECO-SECRETARIA-SAUDE",
+                            "imbalance": -0.62
+                        },
+                        {
+                            "intent": "SAUDE_TFD-PASSAGENS",
+                            "imbalance": 0.29
+                        },
+                        {
+                            "intent": "VOCABULARIO_DIU",
+                            "imbalance": -0.47
+                        },
+                        {
+                            "intent": "VOCABULARIO_IMPLANON",
+                            "imbalance": -0.62
+                        },
+                        {
+                            "intent": "VOCABULARIO_VALOR-VENAL",
+                            "imbalance": 0.52
+                        }
+                    ]
+                },
+                "tet": {
+                    "min_words_per_training_examples": 3,
+                    "max_words_per_training_examples": 20,
+                    "inadequate_intents_rate": 0.88,
+                    "inadequate_intents": {
+                        "COMP_Agradecimento": {
+                            "examples_few_words": 15,
+                            "examples_many_words": 0
+                        },
+                        "COMP_Avaliacao": {
+                            "examples_few_words": 1,
+                            "examples_many_words": 0
+                        },
+                        "COMP_Encerramento": {
+                            "examples_few_words": 12,
+                            "examples_many_words": 0
+                        },
+                        "COMP_QueroFalarComHumano": {
+                            "examples_few_words": 1,
+                            "examples_many_words": 0
+                        },
+                        "COMP_Saudacao": {
+                            "examples_few_words": 8,
+                            "examples_many_words": 0
+                        },
+                        "IPTU_CONTATO": {
+                            "examples_few_words": 1,
+                            "examples_many_words": 0
+                        },
+                        "IPTU_DESCONTOS": {
+                            "examples_few_words": 1,
+                            "examples_many_words": 0
+                        },
+                        "IPTU_DESCONTOS_IMOVEIS": {
+                            "examples_few_words": 1,
+                            "examples_many_words": 0
+                        },
+                        "IPTU_DESCONTOS_PESSOAIS": {
+                            "examples_few_words": 1,
+                            "examples_many_words": 0
+                        },
+                        "IPTU_DESCONTOS_TERRENOS": {
+                            "examples_few_words": 1,
+                            "examples_many_words": 0
+                        },
+                        "IPTU_DOCUMENTOS-ARBORIZACAO": {
+                            "examples_few_words": 1,
+                            "examples_many_words": 0
+                        },
+                        "IPTU_DOCUMENTOS-CAPTACAO-AGUA": {
+                            "examples_few_words": 1,
+                            "examples_many_words": 0
+                        },
+                        "IPTU_DOCUMENTOS-DOADORES-MEDULA": {
+                            "examples_few_words": 1,
+                            "examples_many_words": 0
+                        },
+                        "IPTU_DOCUMENTOS-DOADORES-SANGUE": {
+                            "examples_few_words": 1,
+                            "examples_many_words": 0
+                        },
+                        "IPTU_DOCUMENTOS-ENERGIA-FOTOVOLTAICA": {
+                            "examples_few_words": 1,
+                            "examples_many_words": 0
+                        },
+                        "IPTU_EMISSAO": {
+                            "examples_few_words": 2,
+                            "examples_many_words": 0
+                        },
+                        "IPTU_ESPECIES-ARVORES": {
+                            "examples_few_words": 1,
+                            "examples_many_words": 0
+                        },
+                        "IPTU_ISENCAO": {
+                            "examples_few_words": 1,
+                            "examples_many_words": 0
+                        },
+                        "IPTU_ISENCAO-IPTU-APENAS": {
+                            "examples_few_words": 1,
+                            "examples_many_words": 0
+                        },
+                        "IPTU_ISENCAO-TAXA-COLETA": {
+                            "examples_few_words": 2,
+                            "examples_many_words": 0
+                        },
+                        "IPTU_REQUERIMENTO-DESCONTO": {
+                            "examples_few_words": 1,
+                            "examples_many_words": 0
+                        },
+                        "IPTU_SOLICITAR-ISENCAO": {
+                            "examples_few_words": 1,
+                            "examples_many_words": 0
+                        },
+                        "MENU_BOLSA-FAMILIA": {
+                            "examples_few_words": 1,
+                            "examples_many_words": 0
+                        },
+                        "MENU_IPTU": {
+                            "examples_few_words": 3,
+                            "examples_many_words": 0
+                        },
+                        "MENU_SAUDE": {
+                            "examples_few_words": 2,
+                            "examples_many_words": 0
+                        },
+                        "SAUDE_AGENDAMENTO-CONSULTAS": {
+                            "examples_few_words": 1,
+                            "examples_many_words": 0
+                        },
+                        "SAUDE_ATENCAO-BASICA": {
+                            "examples_few_words": 1,
+                            "examples_many_words": 0
+                        },
+                        "SAUDE_ATENCAO-BASICA_FIBROMIALGIA": {
+                            "examples_few_words": 1,
+                            "examples_many_words": 0
+                        },
+                        "SAUDE_ATENCAO-BASICA_FORMULAS-INFANTIS": {
+                            "examples_few_words": 1,
+                            "examples_many_words": 0
+                        },
+                        "SAUDE_ATENCAO-BASICA_SAUDE-DA-MULHER": {
+                            "examples_few_words": 1,
+                            "examples_many_words": 0
+                        },
+                        "SAUDE_ATENCAO-BASICA_SAUDE-DA-MULHER_DIU": {
+                            "examples_few_words": 1,
+                            "examples_many_words": 0
+                        },
+                        "SAUDE_ATENCAO-BASICA_SAUDE-DA-MULHER_IMPLANON": {
+                            "examples_few_words": 1,
+                            "examples_many_words": 0
+                        },
+                        "SAUDE_ENDERECO-CENTRAL-REGULACAO-MUNICIPAL": {
+                            "examples_few_words": 1,
+                            "examples_many_words": 0
+                        },
+                        "SAUDE_ENDERECO-SECRETARIA-SAUDE": {
+                            "examples_few_words": 1,
+                            "examples_many_words": 0
+                        },
+                        "SAUDE_OUVIDORIA": {
+                            "examples_few_words": 1,
+                            "examples_many_words": 0
+                        },
+                        "SAUDE_TFD-AJUDA-CUSTO": {
+                            "examples_few_words": 1,
+                            "examples_many_words": 0
+                        },
+                        "SAUDE_TFD-PASSAGENS": {
+                            "examples_few_words": 2,
+                            "examples_many_words": 0
+                        },
+                        "SAUDE_TFD-PASSAGENS-OUTRO-ESTADO": {
+                            "examples_few_words": 2,
+                            "examples_many_words": 0
+                        },
+                        "SAUDE_TFD-PASSAGENS-OPP": {
+                            "examples_few_words": 1,
+                            "examples_many_words": 0
+                        },
+                        "SAUDE_TFD-VEICULO-ESPECIFICO": {
+                            "examples_few_words": 1,
+                            "examples_many_words": 0
+                        },
+                        "SAUDE_TRATAMENTO-FORA-DOMICILIO": {
+                            "examples_few_words": 2,
+                            "examples_many_words": 0
+                        },
+                        "VOCABULARIO_DIU": {
+                            "examples_few_words": 2,
+                            "examples_many_words": 0
+                        },
+                        "VOCABULARIO_IMPLANON": {
+                            "examples_few_words": 1,
+                            "examples_many_words": 0
+                        },
+                        "VOCABULARIO_VALOR-VENAL": {
+                            "examples_few_words": 2,
+                            "examples_many_words": 0
+                        }
+                    }
+                },
+                "sid": {
+                    "similarity_threshold": 0.8,
+                    "similar_intents_rate": 0.12,
+                    "similar_intents": [
+                        {
+                            "intent": "IPTU_DESCONTOS",
+                            "similar_intents": {
+                                "IPTU_REQUERIMENTO-DESCONTO": 0.8601
+                            }
+                        },
+                        {
+                            "intent": "IPTU_REQUERIMENTO-DESCONTO",
+                            "similar_intents": {
+                                "IPTU_DESCONTOS": 0.8601
+                            }
+                        },
+                        {
+                            "intent": "SAUDE_ATENCAO-BASICA_SAUDE-DA-MULHER_DIU",
+                            "similar_intents": {
+                                "VOCABULARIO_DIU": 0.8381
+                            }
+                        },
+                        {
+                            "intent": "SAUDE_TFD-PASSAGENS-OUTRO-ESTADO",
+                            "similar_intents": {
+                                "SAUDE_TFD-PASSAGENS-OPP": 0.827
+                            }
+                        },
+                        {
+                            "intent": "SAUDE_TFD-PASSAGENS-OPP",
+                            "similar_intents": {
+                                "SAUDE_TFD-PASSAGENS-OUTRO-ESTADO": 0.827
+                            }
+                        },
+                        {
+                            "intent": "VOCABULARIO_DIU",
+                            "similar_intents": {
+                                "SAUDE_ATENCAO-BASICA_SAUDE-DA-MULHER_DIU": 0.8381
+                            }
+                        }
+                    ]
+                },
+                "let": {
+                    "idx_min_expected_readability": 50.0,
+                    "desc_min_expected_readability": "Ensino médio: 1o ano.",
+                    "inadequate_intents_rate": 0.28,
+                    "inadequate_intents": [
+                        {
+                            "intent": "COMP_Avaliacao",
+                            "idx_readability": 45.94,
+                            "desc_readability": "Ensino superior: em curso."
+                        },
+                        {
+                            "intent": "IPTU_DESCONTOS-PAGAMENTO-PARCELADO",
+                            "idx_readability": 37.02,
+                            "desc_readability": "Ensino superior: em curso."
+                        },
+                        {
+                            "intent": "IPTU_DOCUMENTOS-ARBORIZACAO",
+                            "idx_readability": 40.85,
+                            "desc_readability": "Ensino superior: em curso."
+                        },
+                        {
+                            "intent": "IPTU_DOCUMENTOS-DOADORES-MEDULA",
+                            "idx_readability": 46.88,
+                            "desc_readability": "Ensino superior: em curso."
+                        },
+                        {
+                            "intent": "IPTU_REQUERIMENTO-DESCONTO",
+                            "idx_readability": 44.07,
+                            "desc_readability": "Ensino superior: em curso."
+                        },
+                        {
+                            "intent": "SAUDE_ATENCAO-BASICA_FIBROMIALGIA",
+                            "idx_readability": 20.98,
+                            "desc_readability": "Ensino superior: graduados."
+                        },
+                        {
+                            "intent": "SAUDE_ATENCAO-BASICA_FORMULAS-INFANTIS",
+                            "idx_readability": 42.59,
+                            "desc_readability": "Ensino superior: em curso."
+                        },
+                        {
+                            "intent": "SAUDE_ATENCAO-BASICA_SAUDE-DA-MULHER",
+                            "idx_readability": 32.19,
+                            "desc_readability": "Ensino superior: em curso."
+                        },
+                        {
+                            "intent": "SAUDE_ATENCAO-BASICA_SAUDE-DA-MULHER_IMPLANON",
+                            "idx_readability": 39.76,
+                            "desc_readability": "Ensino superior: em curso."
+                        },
+                        {
+                            "intent": "SAUDE_ENDERECO-SECRETARIA-SAUDE",
+                            "idx_readability": 40.99,
+                            "desc_readability": "Ensino superior: em curso."
+                        },
+                        {
+                            "intent": "SAUDE_TFD-PASSAGENS-OUTRO-ESTADO",
+                            "idx_readability": 44.07,
+                            "desc_readability": "Ensino superior: em curso."
+                        },
+                        {
+                            "intent": "SAUDE_TFD-PASSAGENS-OPP",
+                            "idx_readability": 37.85,
+                            "desc_readability": "Ensino superior: em curso."
+                        },
+                        {
+                            "intent": "SAUDE_TFD-VEICULO-ESPECIFICO",
+                            "idx_readability": 31.48,
+                            "desc_readability": "Ensino superior: em curso."
+                        },
+                        {
+                            "intent": "SAUDE_TRATAMENTO-FORA-DOMICILIO",
+                            "idx_readability": 44.12,
+                            "desc_readability": "Ensino superior: em curso."
+                        }
+                    ]
+                },
+                "ret": {
+                    "min_expected_representativeness": 0.5,
+                    "intents_low_representativeness_rate": 0.9,
+                    "intents_low_representativeness": [
+                        {
+                            "intent": "COMP_Agradecimento",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "blz",
+                                    "idx_representativeness": 0.0
+                                },
+                                {
+                                    "example": "obg",
+                                    "idx_representativeness": 0.0
+                                },
+                                {
+                                    "example": "obrigada",
+                                    "idx_representativeness": 0.0
+                                },
+                                {
+                                    "example": "obrigado",
+                                    "idx_representativeness": 0.0
+                                },
+                                {
+                                    "example": "shw",
+                                    "idx_representativeness": 0.0
+                                },
+                                {
+                                    "example": "vlw",
+                                    "idx_representativeness": 0.0
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "COMP_Avaliacao",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "OPT-avaliar",
+                                    "idx_representativeness": 0.0
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "COMP_Encerramento",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "naum",
+                                    "idx_representativeness": 0.0
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "COMP_Saudacao",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "ei",
+                                    "idx_representativeness": 0.0
+                                },
+                                {
+                                    "example": "oi",
+                                    "idx_representativeness": 0.0
+                                },
+                                {
+                                    "example": "ola",
+                                    "idx_representativeness": 0.0
+                                },
+                                {
+                                    "example": "olá",
+                                    "idx_representativeness": 0.0
+                                },
+                                {
+                                    "example": "opa",
+                                    "idx_representativeness": 0.0
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "COMP_VoceNaoSabeDeNada",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "Voce só me enrola",
+                                    "idx_representativeness": 0.25
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "IPTU_CONTATO",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "numero de zap",
+                                    "idx_representativeness": 0.33
+                                },
+                                {
+                                    "example": "OPT-contato sefaz",
+                                    "idx_representativeness": 0.0
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "IPTU_DESCONTOS",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "OPT_DESCONTOS",
+                                    "idx_representativeness": 0.0
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "IPTU_DESCONTOS_IMOVEIS",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "imovel com Calçadas com acessibilidade",
+                                    "idx_representativeness": 0.4
+                                },
+                                {
+                                    "example": "OPT-descontos-imoveis",
+                                    "idx_representativeness": 0.0
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "IPTU_DESCONTOS_PESSOAIS",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "OPT-descontos-pessoais",
+                                    "idx_representativeness": 0.0
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "IPTU_DESCONTOS_TERRENOS",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "OPT-descontos-lotes-terrenos",
+                                    "idx_representativeness": 0.0
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "IPTU_DOCUMENTOS-ARBORIZACAO",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "documentar minhas arvores",
+                                    "idx_representativeness": 0.33
+                                },
+                                {
+                                    "example": "inventariar as arvores do imovel",
+                                    "idx_representativeness": 0.4
+                                },
+                                {
+                                    "example": "OPT-documentos-arborizacao",
+                                    "idx_representativeness": 0.0
+                                },
+                                {
+                                    "example": "registrar minhas arvores",
+                                    "idx_representativeness": 0.33
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "IPTU_DOCUMENTOS-CAPTACAO-AGUA",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "OPT-documentos-captacao-agua",
+                                    "idx_representativeness": 0.0
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "IPTU_DOCUMENTOS-DOADORES-MEDULA",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "doação medula ossea",
+                                    "idx_representativeness": 0.33
+                                },
+                                {
+                                    "example": "OPT-documentos-doador-medula",
+                                    "idx_representativeness": 0.0
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "IPTU_DOCUMENTOS-DOADORES-SANGUE",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "OPT-documentos-doador-sangue",
+                                    "idx_representativeness": 0.0
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "IPTU_DOCUMENTOS-ENERGIA-FOTOVOLTAICA",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "OPT-documentos-geracao-energia",
+                                    "idx_representativeness": 0.0
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "IPTU_EMISSAO",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "OPT_EMISSAO",
+                                    "idx_representativeness": 0.0
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "IPTU_ESPECIES-ARVORES",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "especie de arvores",
+                                    "idx_representativeness": 0.33
+                                },
+                                {
+                                    "example": "OPT-especies-arvores",
+                                    "idx_representativeness": 0.0
+                                },
+                                {
+                                    "example": "quais as especies para arborização",
+                                    "idx_representativeness": 0.4
+                                },
+                                {
+                                    "example": "Quais são as espécies indicadas para a arborização no imóvel?",
+                                    "idx_representativeness": 0.4
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "IPTU_ISENCAO",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "OPT_ISENCAO",
+                                    "idx_representativeness": 0.0
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "IPTU_ISENCAO-IPTU-APENAS",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "OPT_isencao-iptu-apenas",
+                                    "idx_representativeness": 0.0
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "IPTU_ISENCAO-TAXA-COLETA",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "OPT_isencao-iptu-taxa-lixo",
+                                    "idx_representativeness": 0.0
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "IPTU_REQUERIMENTO-DESCONTO",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "OPT-solicitacao-desconto",
+                                    "idx_representativeness": 0.0
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "IPTU_SOLICITAR-ISENCAO",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "OPT_solicitar-isencao",
+                                    "idx_representativeness": 0.0
+                                },
+                                {
+                                    "example": "requerer isenção do imovel",
+                                    "idx_representativeness": 0.25
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "IPTU_VALORIZACAO-DESVALORIZACAO",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "desvalorizaçao valor venal",
+                                    "idx_representativeness": 0.33
+                                },
+                                {
+                                    "example": "meu imóvel desvalorizou?",
+                                    "idx_representativeness": 0.33
+                                },
+                                {
+                                    "example": "valorizacao dos imoveis",
+                                    "idx_representativeness": 0.33
+                                },
+                                {
+                                    "example": "valorizaçao valor venal",
+                                    "idx_representativeness": 0.33
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "MENU_BOLSA-FAMILIA",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "OPT-bolsa-familia",
+                                    "idx_representativeness": 0.0
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "MENU_IPTU",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "OPT-iptu",
+                                    "idx_representativeness": 0.0
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "MENU_SAUDE",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "MENU-SAUDE",
+                                    "idx_representativeness": 0.0
+                                },
+                                {
+                                    "example": "Quais são os principais serviços de saúde disponíveis?",
+                                    "idx_representativeness": 0.38
+                                },
+                                {
+                                    "example": "quais serviços de saúde?",
+                                    "idx_representativeness": 0.25
+                                },
+                                {
+                                    "example": "SAUDE",
+                                    "idx_representativeness": 0.0
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "SAUDE_AGENDAMENTO-CONSULTAS",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "agendamento com médico",
+                                    "idx_representativeness": 0.33
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "SAUDE_ATENCAO-BASICA",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "OPT-atencao-basica",
+                                    "idx_representativeness": 0.0
+                                },
+                                {
+                                    "example": "Quais são as áreas de atuação da atenção básica?",
+                                    "idx_representativeness": 0.33
+                                },
+                                {
+                                    "example": "Quais são os principais cuidados prestados na atenção básica?",
+                                    "idx_representativeness": 0.44
+                                },
+                                {
+                                    "example": "Quais são os principais serviços oferecidos na atenção básica?",
+                                    "idx_representativeness": 0.44
+                                },
+                                {
+                                    "example": "quais são os serviços de atenção básica?",
+                                    "idx_representativeness": 0.29
+                                },
+                                {
+                                    "example": "Quais são os serviços oferecidos na atenção básica?",
+                                    "idx_representativeness": 0.38
+                                },
+                                {
+                                    "example": "Quais são os serviços oferecidos pela atenção básica?",
+                                    "idx_representativeness": 0.38
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "SAUDE_ATENCAO-BASICA_FIBROMIALGIA",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "OPT-fibromialgia",
+                                    "idx_representativeness": 0.0
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "SAUDE_ATENCAO-BASICA_FORMULAS-INFANTIS",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "OPT-formulas-infantis",
+                                    "idx_representativeness": 0.0
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "SAUDE_ATENCAO-BASICA_SAUDE-DA-MULHER",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "OPT-saude-da-mulher",
+                                    "idx_representativeness": 0.0
+                                },
+                                {
+                                    "example": "quais métodos contracpetivos",
+                                    "idx_representativeness": 0.0
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "SAUDE_ATENCAO-BASICA_SAUDE-DA-MULHER_DIU",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "como requerer diu",
+                                    "idx_representativeness": 0.33
+                                },
+                                {
+                                    "example": "inserção de diu",
+                                    "idx_representativeness": 0.33
+                                },
+                                {
+                                    "example": "OPT-solicitacao-DIU",
+                                    "idx_representativeness": 0.0
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "SAUDE_ATENCAO-BASICA_SAUDE-DA-MULHER_IMPLANON",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "como requerer implanon",
+                                    "idx_representativeness": 0.33
+                                },
+                                {
+                                    "example": "inserção de implanon",
+                                    "idx_representativeness": 0.33
+                                },
+                                {
+                                    "example": "OPT-solicitacao-implanon",
+                                    "idx_representativeness": 0.0
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "SAUDE_ENDERECO-CENTRAL-REGULACAO-MUNICIPAL",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "OPT-endereco-central-regulacao-municipal",
+                                    "idx_representativeness": 0.0
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "SAUDE_ENDERECO-SECRETARIA-SAUDE",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "OPT-endereco-secretaria-saude",
+                                    "idx_representativeness": 0.0
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "SAUDE_OUVIDORIA",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "OPT_Ouvidoria",
+                                    "idx_representativeness": 0.0
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "SAUDE_TFD-AJUDA-CUSTO",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "OPT-ajuda-custo",
+                                    "idx_representativeness": 0.0
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "SAUDE_TFD-PASSAGENS",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "OPT-passagens",
+                                    "idx_representativeness": 0.0
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "SAUDE_TFD-PASSAGENS-OUTRO-ESTADO",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "OPT-outro-estado",
+                                    "idx_representativeness": 0.0
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "SAUDE_TFD-PASSAGENS-OPP",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "OPT-OPP",
+                                    "idx_representativeness": 0.0
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "SAUDE_TFD-VEICULO-ESPECIFICO",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "OPT-veiculo-especifico",
+                                    "idx_representativeness": 0.0
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "SAUDE_TRATAMENTO-FORA-DOMICILIO",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "OPT-tratamento-fora-domicilio",
+                                    "idx_representativeness": 0.0
+                                },
+                                {
+                                    "example": "TFD",
+                                    "idx_representativeness": 0.0
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "VOCABULARIO_DIU",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "defina DIU",
+                                    "idx_representativeness": 0.0
+                                },
+                                {
+                                    "example": "OPT-DIU",
+                                    "idx_representativeness": 0.0
+                                },
+                                {
+                                    "example": "Quais são os benefícios da inserção do DIU?",
+                                    "idx_representativeness": 0.38
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "VOCABULARIO_IMPLANON",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "OPT-implanon",
+                                    "idx_representativeness": 0.0
+                                }
+                            ]
+                        },
+                        {
+                            "intent": "VOCABULARIO_VALOR-VENAL",
+                            "examples_low_representativeness": [
+                                {
+                                    "example": "conceitue valor venal",
+                                    "idx_representativeness": 0.33
+                                },
+                                {
+                                    "example": "OPT_valor-venal",
+                                    "idx_representativeness": 0.0
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "qio": {
+                    "unlinked_intents_rate": 0.0,
+                    "unlinked_intents": []
+                },
+                "ttr": {
+                    "max_characters_answer": 850,
+                    "inadequate_answers_rate": 0.0,
+                    "inadequate_answers": []
+                },
+                "ltr": {
+                    "idx_min_expected_readability": 50.0,
+                    "desc_min_expected_readability": "Ensino médio: 1o ano.",
+                    "inadequate_answers_rate": 0.42,
+                    "inadequate_answers": [
+                        {
+                            "dialog_node_id": "node_10_1678384812457",
+                            "dialog_node_title": "Passagem OPP",
+                            "inadequate_answers": [
+                                {
+                                    "answer_idx": 1,
+                                    "answer_text": "O pedido de passagens para den...",
+                                    "readability_idx": 41.08,
+                                    "readability_desc": "Ensino superior: em curso."
+                                }
+                            ]
+                        },
+                        {
+                            "dialog_node_id": "node_10_1678388783065",
+                            "dialog_node_title": "Captação de água",
+                            "inadequate_answers": [
+                                {
+                                    "answer_idx": 1,
+                                    "answer_text": "Os documentos necessários para...",
+                                    "readability_idx": 0,
+                                    "readability_desc": "Profissional."
+                                }
+                            ]
+                        },
+                        {
+                            "dialog_node_id": "node_10_1678388863131",
+                            "dialog_node_title": "Doador de sangue",
+                            "inadequate_answers": [
+                                {
+                                    "answer_idx": 1,
+                                    "answer_text": "Os documentos necessários para...",
+                                    "readability_idx": 0,
+                                    "readability_desc": "Profissional."
+                                }
+                            ]
+                        },
+                        {
+                            "dialog_node_id": "node_10a40489-d780-4069-8a8c-14d66b82961a",
+                            "dialog_node_title": "O que é Implanon",
+                            "inadequate_answers": [
+                                {
+                                    "answer_idx": 1,
+                                    "answer_text": "O implante contraceptivo intra...",
+                                    "readability_idx": 45.07,
+                                    "readability_desc": "Ensino superior: em curso."
+                                }
+                            ]
+                        },
+                        {
+                            "dialog_node_id": "node_1afc867f-f27c-4cf8-8bbf-9ed6eb7ad29e",
+                            "dialog_node_title": "Passagem fora estado",
+                            "inadequate_answers": [
+                                {
+                                    "answer_idx": 1,
+                                    "answer_text": "O pedido de passagens para for...",
+                                    "readability_idx": 20.08,
+                                    "readability_desc": "Ensino superior: graduados."
+                                }
+                            ]
+                        },
+                        {
+                            "dialog_node_id": "node_2_1678388627242",
+                            "dialog_node_title": "Valorização imóvel",
+                            "inadequate_answers": [
+                                {
+                                    "answer_idx": 1,
+                                    "answer_text": "Conforme a localização, tamanh...",
+                                    "readability_idx": 9.05,
+                                    "readability_desc": "Profissional."
+                                }
+                            ]
+                        },
+                        {
+                            "dialog_node_id": "node_3036c735-5935-4f28-9e38-9533123b162a",
+                            "dialog_node_title": "Solicitação Implanon",
+                            "inadequate_answers": [
+                                {
+                                    "answer_idx": 1,
+                                    "answer_text": "Apenas na UBS OPP Sul ou...",
+                                    "readability_idx": 48.98,
+                                    "readability_desc": "Ensino superior: em curso."
+                                }
+                            ]
+                        },
+                        {
+                            "dialog_node_id": "node_3_1678383829503",
+                            "dialog_node_title": "Ajuda de custo",
+                            "inadequate_answers": [
+                                {
+                                    "answer_idx": 1,
+                                    "answer_text": "Para ajuda de custo com o tran...",
+                                    "readability_idx": 12.18,
+                                    "readability_desc": "Ensino superior: graduados."
+                                }
+                            ]
+                        },
+                        {
+                            "dialog_node_id": "node_3_1678388655615",
+                            "dialog_node_title": "Geração de energia",
+                            "inadequate_answers": [
+                                {
+                                    "answer_idx": 1,
+                                    "answer_text": "Os documentos necessários para...",
+                                    "readability_idx": 0,
+                                    "readability_desc": "Profissional."
+                                }
+                            ]
+                        },
+                        {
+                            "dialog_node_id": "node_3_1678388825168",
+                            "dialog_node_title": "Árvores",
+                            "inadequate_answers": [
+                                {
+                                    "answer_idx": 1,
+                                    "answer_text": "As espécies de árvores que dão...",
+                                    "readability_idx": 0,
+                                    "readability_desc": "Profissional."
+                                }
+                            ]
+                        },
+                        {
+                            "dialog_node_id": "node_4_1678388894631",
+                            "dialog_node_title": "Doador de medula",
+                            "inadequate_answers": [
+                                {
+                                    "answer_idx": 1,
+                                    "answer_text": "Os documentos necessários para...",
+                                    "readability_idx": 12.25,
+                                    "readability_desc": "Ensino superior: graduados."
+                                }
+                            ]
+                        },
+                        {
+                            "dialog_node_id": "node_527ee2eb-dfc3-45f2-8a11-303dd29cf59e",
+                            "dialog_node_title": "Fórmulas infantis",
+                            "inadequate_answers": [
+                                {
+                                    "answer_idx": 1,
+                                    "answer_text": "Para solicitação de fórmulas i...",
+                                    "readability_idx": 20.69,
+                                    "readability_desc": "Ensino superior: graduados."
+                                }
+                            ]
+                        },
+                        {
+                            "dialog_node_id": "node_653da608-4035-41b2-b112-50fb07ba1d8d",
+                            "dialog_node_title": "Fibromialgia",
+                            "inadequate_answers": [
+                                {
+                                    "answer_idx": 1,
+                                    "answer_text": "Com a carteirinha de fibromial...",
+                                    "readability_idx": 27.15,
+                                    "readability_desc": "Ensino superior: graduados."
+                                }
+                            ]
+                        },
+                        {
+                            "dialog_node_id": "node_7_1677780188261",
+                            "dialog_node_title": "Solicitar isenção",
+                            "inadequate_answers": [
+                                {
+                                    "answer_idx": 1,
+                                    "answer_text": "Procure a Secretaria Municipal...",
+                                    "readability_idx": 0,
+                                    "readability_desc": "Profissional."
+                                }
+                            ]
+                        },
+                        {
+                            "dialog_node_id": "node_8_1678388495834",
+                            "dialog_node_title": "Descontos pessoais",
+                            "inadequate_answers": [
+                                {
+                                    "answer_idx": 1,
+                                    "answer_text": "Você tem direito a descontos n...",
+                                    "readability_idx": 47.44,
+                                    "readability_desc": "Ensino superior: em curso."
+                                }
+                            ]
+                        },
+                        {
+                            "dialog_node_id": "node_8_1678388524077",
+                            "dialog_node_title": "Descontos imóveis",
+                            "inadequate_answers": [
+                                {
+                                    "answer_idx": 1,
+                                    "answer_text": "Para imóvel, você tem direito ...",
+                                    "readability_idx": 0,
+                                    "readability_desc": "Profissional."
+                                }
+                            ]
+                        },
+                        {
+                            "dialog_node_id": "node_8444eaea-e586-48b6-89f7-2c8be30658ea",
+                            "dialog_node_title": "O que é DIU",
+                            "inadequate_answers": [
+                                {
+                                    "answer_idx": 1,
+                                    "answer_text": "O dispositivo intrauterino (DI...",
+                                    "readability_idx": 39.0,
+                                    "readability_desc": "Ensino superior: em curso."
+                                }
+                            ]
+                        },
+                        {
+                            "dialog_node_id": "node_9_1678388555669",
+                            "dialog_node_title": "Solicitação",
+                            "inadequate_answers": [
+                                {
+                                    "answer_idx": 1,
+                                    "answer_text": "Acesse o Formulário de Solicit...",
+                                    "readability_idx": 43.86,
+                                    "readability_desc": "Ensino superior: em curso."
+                                }
+                            ]
+                        },
+                        {
+                            "dialog_node_id": "node_9_1678388747675",
+                            "dialog_node_title": "Arborização",
+                            "inadequate_answers": [
+                                {
+                                    "answer_idx": 1,
+                                    "answer_text": "Os documentos necessários para...",
+                                    "readability_idx": 0,
+                                    "readability_desc": "Profissional."
+                                }
+                            ]
+                        },
+                        {
+                            "dialog_node_id": "node_988f2246-f8cd-4f2a-b674-a3146f805b5c",
+                            "dialog_node_title": "Bolsa Família",
+                            "inadequate_answers": [
+                                {
+                                    "answer_idx": 1,
+                                    "answer_text": "O acompanhamento semestral  ob...",
+                                    "readability_idx": 43.05,
+                                    "readability_desc": "Ensino superior: em curso."
+                                }
+                            ]
+                        },
+                        {
+                            "dialog_node_id": "node_a88d4a23-e4a6-4696-b8df-b1dfa7c7cfb9",
+                            "dialog_node_title": "Solicitação DIU",
+                            "inadequate_answers": [
+                                {
+                                    "answer_idx": 1,
+                                    "answer_text": "Apenas na UBS OPP Sul é ...",
+                                    "readability_idx": 49.57,
+                                    "readability_desc": "Ensino superior: em curso."
+                                }
+                            ]
+                        },
+                        {
+                            "dialog_node_id": "node_ab776411-bf21-4765-9ab2-1afee4cf0911",
+                            "dialog_node_title": "Veículo específico",
+                            "inadequate_answers": [
+                                {
+                                    "answer_idx": 1,
+                                    "answer_text": "Para o transporte em veículo e...",
+                                    "readability_idx": 0,
+                                    "readability_desc": "Profissional."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "rtr": {
+                    "min_expected_representativeness": 0.5,
+                    "dialogs_low_representativeness_rate": 0.02,
+                    "dialogs_low_representativeness": [
+                        {
+                            "dialog_node_id": "node_3_1678388825168",
+                            "dialog_node_title": "Árvores",
+                            "inadequate_answers": [
+                                {
+                                    "answer_idx": 1,
+                                    "answer_text": "As <b>espécies</b> de árvores ...",
+                                    "representativeness_score": 0.38
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "str": {
+                    "inadequate_dialog_nodes_rate": 0.02,
+                    "inadequate_dialog_nodes": [
+                        {
+                            "dialog_node_id": "node_1_1678812483851",
+                            "dialog_title": "Não Quero Avaliar",
+                            "negative_answers": [
+                                {
+                                    "text_answer": "Que pena, a sua avaliação é muito importante para melhorar o meu atendimento.\n\nSe você mudar de ideia, escreva no assistente a frase <b><i>Avaliar o atendimento</i></b>.",
+                                    "negative_score": 0.7031
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "qid": {
+                    "inadequate_dialog_nodes_rate": 0.0,
+                    "inadequate_dialog_nodes": []
+                },
+                "qdv": {
+                    "inadequate_dialog_nodes_rate": 0.0,
+                    "inadequate_dialog_nodes": []
+                },
+                "qdf": {
+                    "inadequate_dialog_nodes_rate": 0.0,
+                    "inadequate_dialog_nodes": []
+                },
+                "qdr": {
+                    "inadequate_dialog_nodes_rate": 0.0,
+                    "inadequate_dialog_nodes": []
+                },
+                "qcf": {
+                    "amount_detected_cycles": 0,
+                    "detected_cycles": []
+                }
+            }
+        ]
+    }
+}
